@@ -1,0 +1,371 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Valenti\n"
+"POT-Creation-Date: 2014-03-05 15:49-0000\n"
+"PO-Revision-Date: 2014-03-05 15:49-0000\n"
+"Last-Translator: \n"
+"Language-Team: Cubell\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _e;__;_;esc_html_e;_n:1,2;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:6
+msgid "Page not found"
+msgstr ""
+
+#: ../404.php:17
+msgid "Oops! The page you were looking for was not found."
+msgstr ""
+
+#: ../archive.php:10
+msgid "Daily Archives"
+msgstr ""
+
+#: ../archive.php:15
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../archive.php:20
+msgid "Yearly Archives"
+msgstr ""
+
+#: ../author.php:14
+msgid "Author"
+msgstr ""
+
+#: ../bbpress.php:15 ../buddypress.php:15
+msgid "Member"
+msgstr ""
+
+#: ../buddypress.php:19
+msgid "Group"
+msgstr ""
+
+#: ../buddypress.php:24 ../buddypress.php:41 ../buddypress.php:46
+#: ../library/core.php:597 ../library/core.php:599
+msgid "Groups"
+msgstr ""
+
+#: ../buddypress.php:28
+msgid "Settings"
+msgstr ""
+
+#: ../buddypress.php:32
+msgid "Forums"
+msgstr ""
+
+#: ../buddypress.php:36 ../buddypress.php:53
+msgid "Activity"
+msgstr ""
+
+#: ../buddypress.php:41 ../buddypress.php:47
+msgid "Create a Group"
+msgstr ""
+
+#: ../comments.php:11
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:20
+msgid "No Responses"
+msgstr ""
+
+#: ../comments.php:20
+msgid "One Response"
+msgstr ""
+
+#: ../comments.php:20
+msgid "% Response"
+msgid_plural "% Responses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:47
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:49
+msgid "Cancel Reply"
+msgstr ""
+
+#: ../comments.php:50
+msgid "Submit"
+msgstr ""
+
+#: ../comments.php:52
+msgid "Your email address will not be published."
+msgstr ""
+
+#: ../comments.php:53 ../library/core.php:861
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:59
+#, php-format
+msgid ""
+"You must be <a href=\"%s\" data-reveal-id=\"cb-login-modal\">logged in</a> "
+"to post a comment."
+msgstr ""
+
+#: ../comments.php:65
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: ../comments.php:75
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:81 ../library/core.php:1529 ../library/core.php:1572
+#: ../library/core.php:1606
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:88 ../library/core.php:1530 ../library/core.php:1573
+#: ../library/core.php:1607
+msgid "Website"
+msgstr ""
+
+#: ../header.php:194 ../library/core.php:163 ../library/core.php:199
+msgid "Search"
+msgstr ""
+
+#: ../page-full-width.php:32 ../page.php:52
+msgid "Tags:"
+msgstr ""
+
+#: ../search.php:9
+msgid "Search Results for:"
+msgstr ""
+
+#: ../search.php:24
+msgid "Sorry, nothing found."
+msgstr ""
+
+#: ../search.php:27
+msgid "Please try searching again, but with different keywords."
+msgstr ""
+
+#: ../tag.php:10
+msgid "Tagged"
+msgstr ""
+
+#: ../library/core.php:153
+msgid "Login / Join"
+msgstr ""
+
+#: ../library/core.php:223
+msgid "Breaking"
+msgstr ""
+
+#: ../library/core.php:312
+msgid "Featured"
+msgstr ""
+
+#: ../library/core.php:318
+msgid "Random"
+msgstr ""
+
+#: ../library/core.php:394 ../library/core.php:443
+msgid "Recent"
+msgstr ""
+
+#: ../library/core.php:535
+msgid "Read more"
+msgstr ""
+
+#: ../library/core.php:566
+msgid "Home"
+msgstr ""
+
+#: ../library/core.php:574 ../library/core.php:578 ../library/core.php:579
+#: ../library/core.php:645 ../library/core.php:649 ../library/core.php:650
+#: ../library/core.php:849
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../library/core.php:615 ../library/core.php:619
+msgid "Members"
+msgstr ""
+
+#: ../library/core.php:627
+msgid "Messages"
+msgstr ""
+
+#: ../library/core.php:632
+msgid "Register"
+msgstr ""
+
+#: ../library/core.php:744
+msgid "Share On"
+msgstr ""
+
+#: ../library/core.php:863
+msgid "Comments"
+msgstr ""
+
+#: ../library/core.php:1044
+msgid "Overall Score"
+msgstr ""
+
+#: ../library/core.php:1102 ../library/core.php:1355
+msgid "You have already voted"
+msgstr ""
+
+#: ../library/core.php:1108 ../library/core.php:1227
+msgid "Vote"
+msgstr ""
+
+#: ../library/core.php:1110 ../library/core.php:1229
+msgid "Votes"
+msgstr ""
+
+#: ../library/core.php:1112 ../library/core.php:1227 ../library/core.php:1229
+msgid "Reader Rating"
+msgstr ""
+
+#: ../library/core.php:1295
+msgid "Your Rating"
+msgstr ""
+
+#: ../library/core.php:1562
+msgid "About The Author"
+msgstr ""
+
+#: ../library/core.php:1619
+msgid "Topics Started"
+msgstr ""
+
+#: ../library/core.php:1623
+msgid "Replies Created"
+msgstr ""
+
+#: ../library/core.php:1629
+msgid "Favorites"
+msgstr ""
+
+#: ../library/core.php:1637
+msgid "Subscriptions"
+msgstr ""
+
+#: ../library/core.php:1642
+msgid "Edit"
+msgstr ""
+
+#: ../library/core.php:1755
+msgid "Related Posts"
+msgstr ""
+
+#: ../library/core.php:1820
+msgid "No More Stories"
+msgstr ""
+
+#: ../library/core.php:2208
+msgid "(Edit)"
+msgstr ""
+
+#: ../library/core.php:2212
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../library/core.php:2733
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: ../library/core.php:2737
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: ../library/core.php:2750
+msgid "sub item"
+msgstr ""
+
+#: ../library/core.php:2782
+msgid "Edit Menu Item"
+msgstr ""
+
+#: ../library/core.php:2791
+msgid "URL"
+msgstr ""
+
+#: ../library/core.php:2798
+msgid "Navigation Label"
+msgstr ""
+
+#: ../library/core.php:2804
+msgid "Title Attribute"
+msgstr ""
+
+#: ../library/core.php:2811
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: ../library/core.php:2816
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: ../library/core.php:2822
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: ../library/core.php:2839
+msgid "Description"
+msgstr ""
+
+#: ../library/core.php:2842
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: ../library/core.php:2847
+msgid "Move"
+msgstr ""
+
+#: ../library/core.php:2848
+msgid "Up one"
+msgstr ""
+
+#: ../library/core.php:2849
+msgid "Down one"
+msgstr ""
+
+#: ../library/core.php:2852
+msgid "To the top"
+msgstr ""
+
+#: ../library/core.php:2859
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: ../library/core.php:2872
+msgid "Remove"
+msgstr ""
+
+#: ../library/core.php:2873
+msgid "Cancel"
+msgstr ""
+
+#: ../library/core.php:3068
+msgid "Load More"
+msgstr ""
+
+#: ../library/core.php:3071 ../library/core.php:3080
+msgid "No more articles"
+msgstr ""

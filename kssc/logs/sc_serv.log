@@ -1,0 +1,16 @@
+2014-07-24 13:27:35	INFO	***************************************************************
+2014-07-24 13:27:35	INFO	** SHOUTcast Distributed Network Audio Server (DNAS)
+2014-07-24 13:27:35	INFO	** Copyright (C) 1999-2013 Nullsoft, Inc.  All Rights Reserved.
+2014-07-24 13:27:35	INFO	***************************************************************
+2014-07-24 13:27:35	INFO	[MAIN] SHOUTcast DNAS/posix(linux x86) v2.2.1.109 (Nov 29 2013)
+2014-07-24 13:27:35	INFO	[MAIN] PID: 31865
+2014-07-24 13:27:35	INFO	[MAIN] Loaded config from sc_serv_basic.conf
+2014-07-24 13:27:35	INFO	[MAIN] Calculated CPU count is 8 -> using all available CPUs
+2014-07-24 13:27:35	INFO	[MAIN] Limited to 1024 file descriptors [relates to ulimit -n]
+2014-07-24 13:27:35	INFO	[MAIN] Starting 8 network threads
+2014-07-24 13:27:35	INFO	[MICROSERVER] Listening for source and client connections on port 8555
+2014-07-24 13:27:35	INFO	[MICROSERVER] Listening for legacy source connections on port 8556
+2014-07-24 13:27:35	INFO	[MICROSERVER] Flash policy file server not enabled
+2014-07-24 13:30:23	INFO	[MAIN] Exiting threads...
+2014-07-24 13:30:23	INFO	[MAIN] Shutdown after 2 minutes 48 seconds running
+

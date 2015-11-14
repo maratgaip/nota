@@ -1,0 +1,212 @@
+;-----The format of this flat file database is as follows:
+;-----[object ID name],[full HTML source description (commas re-folded appropriately)][new line]
+
+;-----For arrayed controls with a variable index name in it's ID use a tab character where the variable/index part is located.
+;-----Arrayed ID names that start or end with the variable/index are not currently supported and their behavior is undefined in this documentation.
+
+;-----Lines that begin with a semicolon (;), with double forward slashes (//), or are empty are ignored.
+
+PlatformSelect,Select the operating system you have (or will) install the SHOUTcast tools on. This setting is important because it tells how to handle file names and paths for the different platforms.
+DNASBasePathInput,If you enter the full path to the folder the DNAS was installed/extracted to the configurator will output settings conducive to a daemon/service run. Leaving it blank will setup for a console configuration.
+TranscoderBasePathInput,If you enter the full path to the folder the Transcoder was installed/extracted to the configurator will output settings conducive to a daemon/service run. Leaving it blank will setup for a console configuration.
+DNASConfFileInput,Enter the name of the configuration file for the DNAS. Do not enter the absolute path parts or relative file path characters or other special OS dependant file location specification characters (e.g.: <span style="font-family:courier; white-space: pre;"> \ / . .. % : </span>)<br/><br/>This setting will affect default file name for the download and the file name used for generating the startup script/batch file.
+TransConfFileInput,Enter the name of the configuration file for the Transcoder. Do not enter the absolute path parts or relative file path characters or other special OS dependant file location specification characters (e.g.: <span style="font-family:courier; white-space: pre;"> \ / . .. % : </span>)<br/><br/>This setting will affect default file name for the download and the file name used for generating the startup script/batch file.
+ModeSelect,SHOUTcast 2 (SC2): Uses the newer SHOUTcast 2 and YP2 protocols with sc_serv and sc_trans multi-point / mount system!<br/><br/>Legacy v1 (SC1): Setup for the legacy YP and single stream output e.g. for DNAS v1.9.8 or alternative DNAS servers
+EnableLoggingCheckBox,This checkbox controls the setting configuration for both the DNAS and the Transcoder. Checking it enables logging to the log file. Unchecking disables it.
+ScreenlogCheckBox,This checkbox controls the setting configuration for both the DNAS and the Transcoder. Checking it enables logging to the console window. Unchecking disables it.
+DNASLogFileInput,Enter the relative path and file name for the DNAS log file.
+TransLogFileInput,Enter the relative path and file name for the Transcoder log file.
+W3CLoggingCheckBox,Check to enable W3C logging. Uncheck to disable.
+W3CLogFileInput,Enter the relative path and file name for the W3C log file.
+WebClientDebugCheckBox,Check to enable logging of web client connections. Uncheck to disable.
+StreamTitleInput,Enter the name of your radio station or stream as you would like it to appear in the stream metadata and on the YP.
+StreamURLInput,Enter website/webpage URL for your stream or radio station.
+StreamGenreInput,Enter the genre applicable to the format of your station/stream. <a target="_blank" href="http://forums.winamp.com/showthread.php?t=303241">Click here</a> for a list of the supported genres by the SHOUTcast Directory. Only one value can be entered.
+;AIMInput,Enter the AIM contact ID to show for the radio station or stream.
+;IRCInput,Enter the IRC contact ID to show for the radio station or stream.
+;ICQInput,Enter the ICQ contact ID to show for the radio station or stream.
+UseMetadataCheckBox,Check to use the in-file metadata stored in file tags. Uncheck to disable.
+MetadataPatternInput,Enter the pattern used for extracting metadata from the filename.<br/><br/>Note: See <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Transcoder_2#Filename_Metadata_Extraction">section 6.0</a> in the Transcoder documentation for more details about this.
+DisplayMetadataPatternInput,Enter the pattern to use to form the metadata output string for SHOUTcast 1 metadata.
+TitleFormatInput,Enter the pattern string to be used in-place of the default icy-name string being used.
+URLFormatInput,Enter the string to be used in-place of the default icy-url string being used.
+DNASPublicSelect,This setting allows you to override the public setting from the connected source when a connection is being made to the YP directory.<br/><br/><b>Set by source</b><br/>&nbsp;&nbsp;&nbsp;Use the setting provided by the source.<br/><b>Always</b><br/>&nbsp;&nbsp;&nbsp;Force the source to be public.<br/><b>Never</b><br/>&nbsp;&nbsp;&nbsp;Never allow the use the setting provided by the source.
+TransPublicCheckBox,Check to register the radio station or stream with the YP/directory. Uncheck to disable public listing.<br/><br/>Note: If connected to sc_serv then this is used by the 'DNAS public' setting unless it is being overriden (see DNAS documentation - <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#YP_Server_Behaviour">section 4.14</a>).
+MetaIntervalInput,Enter the metadata transmission interval in bytes.<br/><br/>This is for the legacy YP protocol only.
+YPAddrInput,Enter the address of a different YP server if required.
+YPPortInput,Enter the port used to connect to the YP server if required.<br/><br/>Port 666 for broadcasters behind a proxy.
+YPPathInput,Enter the port path to the YP2 services on the server.
+YPTimeoutInput,Enter the timeout interval in seconds for requests made to the YP server.
+YPMaxRetriesInput,Enter the maximum number of times a YP request will be re-tried.<br/><br/>This is for the legacy YP protocol only.
+YPReportIntervalInput,Enter the maximum time in which the YP must have contacted the server in seconds.<br/><br/>This is for the legacy YP protocol only.
+YPMinReportIntervalInput,Enter the minimum time in which the YP can contact the server in seconds.<br/><br/>This is for the legacy YP protocol only.
+PortBaseInput,Enter the port which clients and sources need to use to connect to the server. This option controls the primary port configuration for both the DNAS and Transcoder.<br/><br/>Note: SHOUTcast 1 sources are only able to connect to 'portbase + 1'.
+TransAdminPortInput,Enter the port used to access the administrative control page on the Transcoder. If no valid port is specified (i.e. zero) then this feature is disabled.
+RobotsTxtInput,Enter the relative path and file name for a custom robots.txt file to be used instead of the one built into the DNAS. The default robots.txt returned by the DNAS contains the following:<br/>&nbsp;&nbsp;&nbsp;&nbsp;User-agent:*<br/>&nbsp;&nbsp;&nbsp;&nbsp;Disallow:/
+DNASIPInput,Enter the IP address or the FQDN of the network device that the DNAS will be running on relative to the Transcoder if it's on a different machine.
+SourceBindAddressInput,Enter the server side binding address for sources to connect on.
+DestinationBindAddressInput,Enter the server side binding address for listeners.
+DJPortInput,Enter the port to listen on for DJ access using the SHOUTcast 1 protocol.<br/><br/>This actually attempts to open <b>Port+1</b> or <b>Port</b> and <b>Port+1</b> depending on the Transcoder version being used.<br><br>If the value specified conflicts with SC2 DJ port both DJ port configurations will be dropped from the configuration output.
+DJPort2Input,Enter the port to listen on for DJ access using the SHOUTcast 2 protocol.<br/><br/>If the value specified conflicts with the older DJ port both DJ port configurations will be dropped from the configuration output.<br><br>If this is specified as zero, with compatbile Transcoder releases, the Transcoder will setup the DJ ports so only 'DJ port' needs to be provided to the DJs irrespective of the source version used by them to connect.
+NameLookupsCheckBox,Check to allow reverse DNS look-ups on incoming IP addresses. Uncheck to disable.
+PasswordInput,Enter the desired password for source connections to the DNAS. The Transcoder configuration output will be updated to match.
+AdminPasswordInput,Enter the desired password to access the administrative control page in the Transcoder and the password for accessing the DNAS features.
+DJCipherInput,Enter the key used to obfuscate the initial handshaking with the SHOUTcast 2 protocol.<br/><br/>Only change this if you really need to do so as not all SHOUTcast 2 clients will allow you to edit this value from the default value.<br/><br/>If using the Source DSP plug-in then see <a href="http://wiki.winamp.com/wiki/Source_DSP_Plug-in#SHOUTcast_2_Cipher_Key">dsp_sc.txt - section 5.0</a> for details on how to change the plug-in to use a differnet value.
+VUImageDirectoryInput,Enter the relative folder path in which to look for the VU meter images to use.<br/><br/>Note: The image files are named vuimage_XX.<vuimagesuffix> where 'XX' is from 0 to 100 and the path specified will need to be properly terminated to work correctly.
+VUImageSuffixInput,Enter the suffix for VU meter images to be used from the image directory.
+VUImageMimeTypeInput,Enter the mime type for the VU images to be used.
+DNASFlashPolicyFileInput,Enter the relative path and filename of the file containing the flash crossdomain policies for the DNAS.
+DNASFlashPolicyServerPortInput,Enter the the port used for the flash policy server on the DNAS.<br/><br/>Note: Use port '843' if you want to turn this on.
+FlashPolicyFileInput,Enter the relative path and filename of the file which contains the flash crossdomain policies to be used for the Transcoder.
+FlashPolicyServerPortInput,Enter the the port used for the flash policy server on the Transcoder.<br/><br/>Note: Use port '843' if you want to turn this on.
+MaxListenersInput,Enter the maximum number of clients allowed to connect to the server. This cannot be zero (0).
+ListenerTimeInput,Enter the maximum time in minutes a client can listen to the stream.<br/><br/>Note: A value of zero means there will be no time limit.
+AutoDumpUsersCheckBox,Check to allow the server to disconnect all listeners if the source disconnects.
+BanFileInput,Enter the relative path and filename of the file to store the list of banned listener IP addresses.
+RipFileInput,Enter the relative path and filename of the file to store the list of reserved listener IP addresses.
+RipOnlyCheckBox,Check to only allow listener connections to be made from IP addresses listed in the Rip file.
+CalendarFileInput,Enter the relative path and filename to the xml based calendar file.<br/><br/>Note: See calendarxml.txt for more information on the event format and what it allows you to do with playlist, DJ and relay access.
+CalendarEnableRewriteCheckBox,Check to enable re-writing the calendar file when the Transcoder is shutdown.
+PlaylistFileInput,Enter the relative path and filename to the playlist file to use.
+EnableShuffleCheckBox,Check to enable shuffling of the specified playlist entries.
+XFadeTimeInput,Enter the number of seconds to crossfade playback. Set to zero (0) to disable crossfading.
+XFadeThresholdInput,Enter the minimum duration in seconds a file must be to allow crossfading in and out on it.
+PlaylistFolderInput,Enter the relative path to the folder used for priority playlists.
+PlaylistArchiveFolderInput,Enter the relative path to the folder used for archiving priority playlists.
+DJAutoDumpSourceTimeInput,Enter the maximum idle time for the DJ in seconds before being disconnected.
+DJCaptureEnableCheckBox,Check to allow the recording of the DJ broadcast.
+DJBroadcastsPathInput,Enter the relative path to the directory in which DJ broadcasts will be recorded into.
+DJFilePatternInput,Enter the pattern for how the DJ archive filenames will be created in the form of:<br/>&lt;djname&gt;&lt;date time pattern&gt;suffix<br/><br/>Note: The date and time information are formatted using strftime().
+DJAddButton,Add a DJ to the list of DJs<br/><br/>If the 'DJ Login Name' or 'DJ Password' options are left empty the DJ will not be added to the configuration output.
+DJ	LoginInput,Enter the username required for the DJ to get access.<br/><br/>Note: When connecting as a SHOUTcast 1 source the password has to be specified as &lt;djlogin&gt;:&lt;djpassword&gt; e.g. dj:noise
+DJ	PasswordInput,Enter the password required for the DJ to get access.
+DJ	PriorityInput,Enter the priority for the DJ when multiple DJ's are connected.
+DJ	DeleteButton,Remove the DJ from the list and the configuration.
+DJ	CalendarAddButton,Add a DJ Calendar event to the event list. Without the named DJ in the Calendar event list the DJ will not be able to source to the Transcoder.<br/><br/>Note: After adding the DJ to the Calendar the DJ will be granted 24/7 access to the Transcoder unless you change the new Calendar event parameters.
+EnableCaptureCheckBox,Check to allow the use of live capture as an input.
+CaptureDeviceInput,Enter the Platform/OS dependent device name used for live capture.<br/><br/>Note: When run under Windows on an operating system newer than XP there is a possibility for the device name obtained from Windows to be longer than 32 characters. This is a problem as the api's used only support device names up to 31 characters in length so sc_trans will attempt to clip the device name specified with 'capturedevice' to 31 characters to try to get a match with the devices the OS is reporting.<br/><br/>If you are having issues with the live capture then enable Capture Debug to allow you to see the device names reported back to sc_trans by the OS.
+CaptureInputInput,Enter the Platform/OS dependent input name used for live capture.
+CaptureSampleRateInput,Enter the sample rate used for live capture.
+CaptureNumChannelsInput,Enter the number of channels to use for live capture.
+ApplyReplayGainCheckBox,Check to honour the replay gain values stored in the file.
+DefaultReplayGainInput,Enter the adjustment value used to apply replay gain if no replay gain is found in the file.
+DJReplayGainInput,Enter the replay gain to be applied to DJ streams.
+CaptureReplayGainInput,Enter the replay gain to apply to the live capture input.
+CalculateReplayGainCheckBox,Check to calculate the replay gain on the handled files.
+ReplayGainTempFolderInput,Enter the relative path to the temporary directory for the replay gain calculator to work in.
+ReplayGainRunAheadInput,Enter the number of tracks head start to give the replay gain calculator.
+ReplayGainDontWriteCheckBox,Check to disable rewriting calculated replay gain values to the handled files.
+EnhanceReplayGainInput,Enter the additional ammount of replay gain to add to files if the file has replay gain and it is being used.
+MP3UnlockKeyNameInput,Enter the name to use to unlock mp3 encoding (case sensitive.)<br/><br/>You can <a target="_blank" href="http://shop.winamp.com/servlet/PromoServlet/promoID.48873700">click here</a> to purchase your unlock name and key.
+MP3UnlockKeyCodeInput,Enter the code associated with name to unlock mp3 encoding.<br/><br/>You can <a target="_blank" href="http://shop.winamp.com/servlet/PromoServlet/promoID.48873700">click here</a> to purchase your unlock name and key.
+DefaultAuthHashInput,Enter the default authhash needed for YP2 directory registrations for all endpoints not individually specified for any of the endpoints/mountpoints below.<br/><br/>This is a requirement for using the YP2 system and without it you will not be able to be listed in the SHOUTcast Directory or allow clients to connect to your stream(s).<br/><br/>See <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#Getting_Started">section 3.0</a> for details of how to obtain an authhash via the in-DNAS process if you do not already have an authhash to manually enter.
+NumOfEndPointsInput,Enter the number of endpoints/mountpoints you would like to configure.
+EndPoint	NameInput,Enter the name of the endpoint.<br/><br/>Note: This is used to identify the encoder such as when using the AJAX api interfaces. See sc_trans_ajax_api.txt for more information on the use of this.
+EndPoint	PathInput,Enter a custom path clients can use to access the stream. If not specified then the DNAS will automatically use /stream/#/ (where # is the endpoint number) for clients to be able to connect to the stream.
+EndPoint	MaxUserInput,Enter the maximum number of listeners allowed to connect to this endpoint.<br/><br/>If set to zero, not specified or higher than the global 'Maximum listeners' then the value set for 'Max Listeners' (see <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#Client_Behaviour">section 4.2</a>) will be used for all known streams.<br/><br/>Changing this to a value between zero and the global 'Max Listeners' will enforce the listener connection limit for the specified value in this endpoint configuration.
+EndPoint	TypeSelect,Select the encoder type to use, either MP3 or AAC (using the ADTS-AAC format).
+EndPoint	MP3QualitySelect,Select the MP3 encoder quality to use when encoding.
+EndPoint	MP3ModeSelect,Select the MP3 encoder mode to be either constanst (CBR) or variable (VBR) to use when encoding.
+EndPoint	BitrateInput,Enter the encoding bitrate in bits per second.
+EndPoint	SamplerateInput,Enter the encoding sample rate to use.
+EndPoint	NumchnsInput,Enter the number of channels to encode.
+EndPoint	AuthHashInput,Enter the authhash needed for YP2 directory registration. This setting overides the default auth hash for the endpoint.<br/><br/>This is a requirement for using the YP2 system and without it you will not be able to be listed in the SHOUTcast Directory or allow clients to connect to your stream(s).<br/><br/>See <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#Getting_Started">section 3.0</a> for details of how to obtain an authhash via the in-DNAS process if you do not already have an authhash to manually enter.
+EndPoint	PasswordInput,Enter the desired password for source connections to the DNAS for this specific endpoint. The Transcoder configuration output will be updated to match.<br/><br/>If not specified (and only do so if you need to) then the main 'Source password' will be used.
+EndPoint	AdminInput,Enter the desired password for accessing the DNAS administration features for this specific endpoint. This can be used to make contained stations in a DNAS providing multiple streams.<br/><br/>If not specified (and only do so if you need to) then the main 'Admin password' will be used.
+EndPoint	TitleInput,Enter the name of your radio station or stream as you would like it to appear in the stream metadata and on the YP.
+DNASConfigreWriteCheckBox,Check to enable the re-writing of the configuration file on DNAS exit.
+TransConfigreWriteCheckBox,Check to enable the re-writing of the configuration file on Transcoder exit.
+DNASAdminPageThemeInput,Use this to change the theme of the DNAS index.html and administration pages. This can be one of the following options:<br/><br/><span style="padding-left: 22px;">v1&nbsp;-&nbsp;Uses the v1 DNAS style</span><br/><span style="padding-left: 22px;">v2&nbsp;-&nbsp;Uses the newer SHOUTcast 2 style</span><br/><span style="padding-left: 22px;">path_to_local_css_file e.g. my_index.css</span>
+DNASAdminPageFavIconInput,Use this to specify the location of a favourite icon (favicon.ico) provided to the browser when viewing the DNAS administration pages. If not specified then this will use the built-in favourite icon in the DNAS.
+DNASAdminPageFavIconMimeTypeInput,Use this to specify the mime type of the favourite icon (favicon.ico) provided to the browser when viewing the DNAS administration pages. If not specified then this will use the mime type of the built-in favourite icon in the DNAS.
+DNASIntroFileInput,Enter the relative path and file name to the file to play when a listener first connects to the DNAS.
+DNASBackupFileInput,Enter the relative path and file name to the file to play if the source disconnects from the DNAS.
+MaxSpecialFileSizeInput,Enter the the maximum size in bytes of the backup and intro files for the DNAS.
+ServerBackupFileInput,Enter the relative path and file name to the file the Transcoder will upload to the DNAS for broken connection playback.<br/><br/>Note: With both of these options, they will override any files specified in the DNAS's configuration file and also requires the new SHOUTcast2 protocol for it to be supported (see <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Transcoder_2#Network_Options">section 3.11</a> for the options 'outprotocol' supports).<br/><br/>Additionally when connecting to the DNAS via the Transcoder, the server intro and backup files as specified in the DNAS configuration file (see sc_serv.txt - <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#Introduction_and_Backup_Files">section 4.5</a>) will not be played so you need to specify them in the Transcoder configuration if required for the stream (this is a quirk of how the Transcoder currently works.)
+ServerIntroFileInput,Enter the relative path and file name to the file the Transcoder will upload to the DNAS that is played when a listener first connects.<br/><br/>Note: With both of these options, they will override any files specified in the DNAS's configuration file and also requires the new SHOUTcast2 protocol for it to be supported (see <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Transcoder_2#Network_Options">section 3.11</a> for the options 'outprotocol' supports).<br/><br/>Additionally when connecting to the DNAS via the Transcoder, the server intro and backup files as specified in the DNAS configuration file (see sc_serv.txt - <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Server_2#Introduction_and_Backup_Files">section 4.5</a>) will not be played so you need to specify them in the Transcoder configuration if required for the stream (this is a quirk of how the Transcoder currently works.)
+SongHistoryInput,Enter the maximum song history to preserve.
+MaxHeaderLineSizeInput,Enter the maximum size of an HTTP header line.
+MaxHeaderLineCountInput,Enter the maximum header lines in an HTTP style exchange.
+BufferTypeSelect,Select whether the buffer size is fixed or adaptive.
+AdaptiveBufferSizeInput,Enter the adaptive buffer size in seconds.
+FixedBufferSizeInput,Enter the fixed buffer size in bytes.
+BufferHardLimitInput,Enter the maximum buffer size in bytes which it can never go above.
+YP1DebugCheckBox,Check to enable debug logging of YP connections.
+YP2DebugCheckBox,Check to enable debug logging of YP2 connections.
+SHOUTcastSourceDebugCheckBox,Check to enable debug logging of SHOUTcast source connections.
+UVOX2SourceDebugCheckBox,Check to enable debug logging of SHOUTcast 2 source connections.
+SHOUTcast1ClientDebugCheckBox,Check to enable debug logging of SHOUTcast streaming clients.
+SHOUTcast2ClientDebugCheckBox,Check to enable debug logging of SHOUTcast 2 streaming clients.
+RelaySHOUTcastDebugCheckBox,Check to enable debug logging for SHOUTcast relay.
+RelayUVOXDebugCheckBox,Check to enable debug logging for SHOUTcast 2 relay.
+RelayDebugCheckBox,Check to enable debug logging of common relay functions.
+StreamDataDebugCheckBox,Check to enable debug logging of common streaming functions.
+HTTPStyleDebugCheckBox,Check to enable debug logging of http style requests.
+StatsDebugCheckBox,Check to enable debug logging of statistics.
+MicroServerDebugCheckBox,Check to enable debug logging of common server activity.
+ThreadRunnerDebugCheckBox,Check to enable debug logging of the thread manager.
+RTMPClientDebugCheckBox,Check to enable debug logging of RTMP clients.
+ShuffleDebugCheckBox,Check to activate debug logging of playlist shuffling.
+SHOUTcastDebugCheckBox,Check to activate debug logging for SHOUTcast transmission.
+UVOXDebugCheckBox,Check to activate debug logging for SHOUTcast 2 (Ultravox 2.1) transmissions.
+GainDebugCheckBox,Check to activate debug logging for replay gain on playback.
+PlaylistDebugCheckBox,Check to activate debug logging for playlists.
+MP3EncDebugCheckBox,Check to activate debug logging for MP3 encoding.
+MP3DecDebugCheckBox,Check to activate debug logging for MP3 decoder.
+ResamplerDebugCheckBox,Check to activate debug logging for the resampler.
+RGCalcDebugCheckBox,Check to activate debug logging for the replay gain calculator.
+APIDebugCheckBox,Check to activate debug logging for the AJAX api.
+CalendarDebugCheckBox,Check to activate debug logging for the calendar events.
+CaptureDebugCheckBox,Check to activate debug logging for live captures.
+DJDebugCheckBox,Check to activate debug logging for DJ management.
+FlashPolicyServerDebugCheckBox,Check to activate debug logging for the flash policy server.
+FileConverterDebugCheckBox,Check to activate debug logging for the server side file converter.
+SourceRelayDebugCheckBox,Check to active debug logging for relayed sources.
+SourceAndEndpointManagerDebugCheckBox,Check to activate debug logging for endpoint management.
+ResetButton,<span style="color: maroon; font-weight: bold;">&nbsp;<u>WARNING</u>:&nbsp;</span> Only use this if you need to revert the configuration builder back to its default state as any changes you have made since starting will be lost and will need to be re-entered again.
+CalendarEventAddButton,Add a calendar event.
+Calendar	StartDateInput,Enter as yyyy/mm/dd<br/><br/>e.g. 2010/12/31<br/><br/>The 'Start Date' and 'End Date' settings indicate the date range the event is valid for otherwise the event will be ignored. Either value can be left out and if so then the event will be unbounded in that direction i.e. leaving 'Start Date' blank is the way to indicate the event takes effect when the Transcoder starts.
+Calendar	EndDateInput,Enter as yyyy/mm/dd<br/><br/>e.g. 2010/12/31<br/><br/>The 'Start Date' and 'End Date' settings indicate the date range the event is valid for otherwise the event will be ignored. Either value can be left out and if so then the event will be unbounded in that direction i.e. leaving 'Start Date' blank is the way to indicate the event takes effect when the Transcoder starts.
+Calendar	StartTimeInput,Enter as hh:mm:ss - 24 hour format<br/><br/>e.g. 23:59:59<br/><br/>The 'Start Time' and 'End Time' settings work in a similar manner to the date ones for the event but are used when the associated 'Start Date' is met. So if no 'Start Time' is entered then the event starts immediately on 'Start Date'. So as you can see this could be left out along with 'Start Date' to make events start always when sc_trans is started.
+Calendar	DurationInput,Enter as hh:mm:ss - 24 hour format<br/><br/>e.g. 23:59:59<br/><br/>The 'Duration' setting is the length of the scheduled event and if this is not specified then the event will end when 'End Date' (if specified) is reached.
+Calendar	TimeOffsetInput,Enter as hh:mm:ss - 24 hour format<br/><br/>e.g. 23:59:59<br/><br/>Time periodic events are those which occur at regular intervals and are defined by the'Start Time', 'Time Offset' and 'repeat' attributes allowing for control over the timeinterval between the event and the next instance of the event.<br/><br/>The 'Start Time' attribute is used to indicate the interval between this type of event andthe next time it will occur. So with a number of these events you can have a jingle playat a specific time during the day at a consistent time.<br/><br/>The 'Time Offset' atribute is used to indicate an offset from midnight at which theperiodic event will be applied relative to the 'Start Time' value. This will allow you tospecify a specific time during the interval so if you wanted to have an event which isactivated every hour but on the half hour you could do:<br/><br/>Time Offset: 00:30:00<br/>Start Time: 01:00:00<br/><br/><br/>If no other repeat field values are specified i.e. repeat isn't 128 the the event willbe valid for every day of the week. If other values are specified then the event will be restricted to those days specified<br/> e.g.<br/> repeat=190repeats the event only during weekdays<br/><br/><br/> Important Note: If you use this on a playlist event then the event will be activated at the specified time period after the last event successfully occurred but the required file(s) will not be played until the currently playing file has completed playing as playlist events add to the main playback queue and do not act as an instant event as the relay and DJ events do.
+Calendar	PerCheckBox,Time periodic events are those which occur at regular intervals and are defined by the'Start Time', 'Time Offset' and 'repeat' attributes allowing for control over the timeinterval between the event and the next instance of the event.<br/><br/>The 'Start Time' attribute is used to indicate the interval between this type of event andthe next time it will occur. So with a number of these events you can have a jingle playat a specific time during the day at a consistent time.<br/><br/>The 'Time Offset' atribute is used to indicate an offset from midnight at which theperiodic event will be applied relative to the 'Start Time' value. This will allow you tospecify a specific time during the interval so if you wanted to have an event which isactivated every hour but on the half hour you could do:<br/><br/>Time Offset: 00:30:00<br/>Start Time: 01:00:00<br/><br/><br/>If no other repeat field values are specified i.e. repeat isn't 128 the the event willbe valid for every day of the week. If other values are specified then the event will be restricted to those days specified<br/> e.g.<br/> repeat=190repeats the event only during weekdays<br/><br/><br/> Important Note: If you use this on a playlist event then the event will be activated at the specified time period after the last event successfully occurred but the required file(s) will not be played until the currently playing file has completed playing as playlist events add to the main playback queue and do not act as an instant event as the relay and DJ events do.
+Calendar	SunCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	MonCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	TueCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	WedCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	ThuCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	FriCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	SatCheckBox,The 'Repeat' setting is a combined setting for an event which gives control over how an event will be repeated. The repeat setting can be one of the following as shown or a combination to create more complicated repeat patterns.
+Calendar	EventDeleteButton,Remove the calendar event.
+Calendar	EventTypeSelect,Select the type of the event; DJ, Playlist, or Relay
+Calendar	DJNameInput,Enter the name of the DJ as configured in the Transcoder.<br/><br/>This is enabled in combination with the settings in the sc_trans configuration file for controlling DJ access. So for this to work you will also need to make sure you enable 'DJ Port / DJ SC2 Port' and to set any passwords and names in the sc_trans config file to match the event. See sc_trans.txt - <a target="_blank" href="http://wiki.winamp.com/wiki/SHOUTcast_DNAS_Transcoder_2#DJ_Support">section 3.3</a> for more information setting up DJ support.
+Calendar	DJArchiveSelect,Select if the DJ show is to be archived (captured.)<br/><br/>Inherit - Use value set for 'DJ Capture' in the Transcoder configuration.<br/>Yes - Always capture.<br/>No - Never capture.
+Calendar	PlaylistNameInput,The playlists are those defined by the 'playlistfilename' and 'playlistfilepath' entries in your Transcoder configuration file which allows for multiple playlists to be accessed by this event type.
+Calendar	PlaylistLoopAtEndCheckBox,Check if the playlist is to be restarted if the end of the playlist is reached.
+Calendar	PlaylistShuffleSelect,Select if the playlist is to be shuffled when being played.<br/><br/>Inherit - Use value set for 'Shuffle' in the Transcoder configuration.<br/>Yes - Always shuffle.<br/>No - Never shuffle.
+Calendar	PlaylistPriorityInput,Enter the priority of the playlist when a playlist event overlaps with that of another playlist event. The result in this case is that the playlist event with the highest priority will become active.<br/><br/>Note: Supported priority values are 1 (default) and higher.
+Calendar	RelayURLInput,Enter the url of the source to be relayed in the format: http://fqdn.tld:port<br/><br/>e.g. http://my_site.com:8000<br/><br/>Note: It may be necessary to append /; onto the end of the url as in some cases the wrong mime type will be returned from the server and so causes the relay url fail to be recognised by sc_trans. This depends on the server.
+Calendar	RelayPriorityInput,Enter the priority of the source when a relay event overlaps with that of another relay event. The result in this case is that the relay event with the highest priority will become active.<br/><br/>Note: Supported priority values are 1 (default) and higher.
+PlaylistMulti	CalendarAddButton,Add a Playlist Calendar event to the event list. Without the named playlist in the Calendar event list the playlist will not run automatically in the Transcoder.<br/><br/>Note: After adding the playlist to the Calendar event list you need to set the run-time of the playlist event to accrue the desired effect.
+AddPlaylistButton,Add a playlist to the collection of named playlists.
+PlaylistMulti	RemoveButton,Remove the playlist from the collection of named playlists.
+PlaylistMulti	SymNameInput,Enter the symbolic name of the playist as it should appear in Transcoder AJAX API and calendar event.<br/><br/>This allows you to schedule playlists to be used at the specified time or date thus making it easier to change to a weekend or an evening playlist if needed.<br/><br/>The playlists are those defined by the Symbolic Name and File entries which allows for multiple playlists to be accessed by the calendar events.
+PlaylistMulti	FileInput,Enter the relative path and file name of the symbolically named playlist.
+DNASDebugMode	Radio,Use this to enable or disable all debug logging features or to specify only the debug logging features you require. Choosing custom will show the available debug logging options otherwise they will be hidden.
+TransDebugMode	Radio,Use this to enable or disable all debug logging features or to specify only the debug logging features you require. Choosing custom will show the available debug logging options otherwise they will be hidden.
+BuilderViewModeSimpleRadio,Basic mode will help you to setup a basic Server and Transcoder install which has the Transoder playing from a specified playlist and the Server then broadcasting the stream created. In this mode, options which are unlikely to be required or may cause confusion during setup have been hidden.<br/><br/>Choose the Advanced mode if you require more than the Basic mode configuration allows e.g. configuring calendar events or live capture support. Additionally, choosing this will show all configuration options available.
+BuilderViewModeAdvancedRadio,Basic mode will help you to setup a basic Server and Transcoder install which has the Transoder playing from a specified playlist and the Server then broadcasting the stream created. In this mode, options which are unlikely to be required or may cause confusion during setup have been hidden.<br/><br/>Choose the Advanced mode if you require more than the Basic mode configuration allows e.g. configuring calendar events or live capture support. Additionally, choosing this will show all configuration options available.
+GenerateMinimalCheckBox,Enable this to prevent most configuration options known to be at their default value to appear in the generated configuration files.<br><br>This will usually make smaller configuration files which are usually easier to understand.
+TranscoderInheritCheckBox,Enable this option to make the Transcoder determine the source passwords and other information from the DNAS configuration file.<br><br>Using this instead of specifying all values in the Transcoder configuration file makes it easier to use the Transcoder with a different DNAS setup at a later stage or if there are any changes made with the used DNAS will then be found by the Transcoder without having to update another configuration file.
+ClientConnectCheckBox,This checkbox controls the logging of details about client connections and disconnections made to the DNAS server e.g. how long a client was connected when it disconnects. If disabled then the information about connected clients is still available via the DNAS administation pages.
+prigenre,Select the primary genre applicable to the format of your station/stream. This will provide a secondary genre to choose (if available) allowing for fine tuning where you station/stream is listed in the SHOUTcast Directory.<br/><br/>If a secondary genre is not selected or is not available then the primary genre is the one used.
+subgenres,Select the secondary genre applicable to the format of your station/stream to have it listed in a smaller group on the SHOUTcast Directory whilst still being searchable via the primary genre.<br/><br/>If a secondary genre is not selected or is not available then the primary genre is the one used.
+HideStatsCheckBox,Specify if the publically accessible <b>stats?sid=#</b> page can be accessed or if it is only available via the private administration pages (<b>admin.cgi?sid=#&mode=viewxml&page=1</b>).
+ConfigSelect,Choose the configuration file you want to preview before saving or when saving fails.
+SCServLinesTextArea,Preview of the DNAS configuration file.
+SCTransLinesTextArea,Preview of the Transcoder configuration file.
+SCCalendarLinesTextArea,Preview of the Calendar XML configuration file as used by the Transcoder for events setup.
+DownloadSCServButton,Saves the DNAS configuration file.
+DownloadSCTransButton,Saves the Transcoder configuration file.
+DownloadCalendarButton,Saves the Calendar XML configuration file as used by the Transcoder for events setup.

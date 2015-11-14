@@ -1,0 +1,44 @@
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.lalaplus\.com
+
+RewriteRule (.*) http://lalaplus.com/$1 [R=301,L]
+
+RewriteRule ^social/facebook(/?)+$  social/facebook.php [L]
+
+RewriteRule ^social/twitter(/?)+$  social/twitter.php [L]
+
+RewriteRule ^create-account/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=126552620845564&display=page&next=http://ex.tancode.com/social/facebook&response_type=code&fbconnect=1&perms=publish_stream,offline_access,read_stream,email,publish_actions [L]
+
+RewriteRule ^create-account/twitter(/?)+$ social/twitter.php [L]
+
+RewriteRule ^connect/twitter(/?)+$ social/twitter.php [L]
+
+RewriteRule ^connect/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=126552620845564&display=page&next=http://ex.tancode.com/social/facebook&response_type=code&fbconnect=1&perms=publish_stream,offline_access,read_stream,email,publish_actions [L]
+
+RewriteRule ^register(/?)+$ register.php [L]
+
+RewriteRule ^register/facebook(/?)+$ register.php?social=facebook [L]
+
+RewriteRule ^register/twitter(/?)+$ register.php?social=twitter [L]
+
+RewriteRule ^search/([^/]*)(/?)+$ seo.php?type=search&keyword=$1 [L]
+
+RewriteRule ^search/([^/]*)/page/([0-9]+)(/?)+$ seo.php?type=search&keyword=$1&page=$2 [L]
+
+RewriteRule ^sign-out(/?)+$ index.php?action=logout [L]
+
+RewriteRule ^settings(/?)+$ seo.php [L]
+
+RewriteRule ^settings/([^/]*)(/?)+$ seo.php [L]
+
+RewriteRule ^explore(/?)+$ seo.php?type=explore&action=$1 [L]
+
+RewriteRule ^explore/([^/]*)(/?)+$ seo.php?type=explore&action=$1 [L]
+
+RewriteRule ^trending(/?)+$ seo.php?type=trending [L]
+
+RewriteRule ^song/([^/]*)(/?)+$ seo.php?type=song&id=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)(/?)$ seo.php?type=user&username=$1 [L]

@@ -1,0 +1,379 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Valenti\n"
+"POT-Creation-Date: 2014-03-05 15:49-0000\n"
+"PO-Revision-Date: 2014-03-28 16:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: Cubell\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _e;__;_;esc_html_e;_n:1,2;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:6
+msgid "Page not found"
+msgstr "Pagina non trovata"
+
+#: ../404.php:17
+msgid "Oops! The page you were looking for was not found."
+msgstr "Ops! La pagina che cercavi non è stata trovata."
+
+#: ../archive.php:10
+msgid "Daily Archives"
+msgstr "Archivi giornalieri"
+
+#: ../archive.php:15
+msgid "Monthly Archives"
+msgstr "Archivi mensili"
+
+#: ../archive.php:20
+msgid "Yearly Archives"
+msgstr "Archivi annuali"
+
+#: ../author.php:14
+msgid "Author"
+msgstr "Autore"
+
+#: ../bbpress.php:15 ../buddypress.php:15
+msgid "Member"
+msgstr "Membro"
+
+#: ../buddypress.php:19
+msgid "Group"
+msgstr "Gruppo"
+
+#: ../buddypress.php:24 ../buddypress.php:41 ../buddypress.php:46
+#: ../library/core.php:597 ../library/core.php:599
+msgid "Groups"
+msgstr "Gruppi"
+
+#: ../buddypress.php:28
+msgid "Settings"
+msgstr "Setting"
+
+#: ../buddypress.php:32
+msgid "Forums"
+msgstr "Forum"
+
+#: ../buddypress.php:36 ../buddypress.php:53
+msgid "Activity"
+msgstr "Attività"
+
+#: ../buddypress.php:41 ../buddypress.php:47
+msgid "Create a Group"
+msgstr "Crea un gruppo"
+
+#: ../comments.php:11
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Questo post è protetto da password. Inserisci la password per vedere i "
+"commenti."
+
+#: ../comments.php:20
+msgid "No Responses"
+msgstr "Nessuna risposta"
+
+#: ../comments.php:20
+msgid "One Response"
+msgstr "1 risposta"
+
+#: ../comments.php:20
+msgid "% Response"
+msgid_plural "% Responses"
+msgstr[0] "% Risposta"
+msgstr[1] "% Risposte"
+
+#: ../comments.php:47
+msgid "Leave a Reply"
+msgstr "Scrivi"
+
+#: ../comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Rispondi a  %s"
+
+#: ../comments.php:49
+msgid "Cancel Reply"
+msgstr "Cancella commento"
+
+#: ../comments.php:50
+msgid "Submit"
+msgstr "Invia"
+
+#: ../comments.php:52
+msgid "Your email address will not be published."
+msgstr "La tua email non sarà pubblicata"
+
+#: ../comments.php:53 ../library/core.php:861
+msgid "Comment"
+msgstr "Commenta"
+
+#: ../comments.php:59
+#, php-format
+msgid ""
+"You must be <a href=\"%s\" data-reveal-id=\"cb-login-modal\">logged in</a> "
+"to post a comment."
+msgstr ""
+"Devi essere <a href=\"%s\" data-reveal-id=\"cb-login-modal\">loggato</a>per "
+"commentare."
+
+#: ../comments.php:65
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Loggato come <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Esci?</a>"
+
+#: ../comments.php:75
+msgid "Name"
+msgstr "Nome"
+
+#: ../comments.php:81 ../library/core.php:1529 ../library/core.php:1572
+#: ../library/core.php:1606
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:88 ../library/core.php:1530 ../library/core.php:1573
+#: ../library/core.php:1607
+msgid "Website"
+msgstr "Sito"
+
+#: ../header.php:194 ../library/core.php:163 ../library/core.php:199
+msgid "Search"
+msgstr "Cerca"
+
+#: ../page-full-width.php:32 ../page.php:52
+msgid "Tags:"
+msgstr "Tag:"
+
+#: ../search.php:9
+msgid "Search Results for:"
+msgstr "Risultati:"
+
+#: ../search.php:24
+msgid "Sorry, nothing found."
+msgstr "Spiacenti, nessun risultato."
+
+#: ../search.php:27
+msgid "Please try searching again, but with different keywords."
+msgstr "Prova a cercare di nuovo, ma con altre keyword."
+
+#: ../tag.php:10
+msgid "Tagged"
+msgstr "Taggato"
+
+#: ../library/core.php:153
+msgid "Login / Join"
+msgstr "Login / Registrati"
+
+#: ../library/core.php:223
+msgid "Breaking"
+msgstr "Breaking"
+
+#: ../library/core.php:312
+msgid "Featured"
+msgstr "In evidenza"
+
+#: ../library/core.php:318
+msgid "Random"
+msgstr "Casuale"
+
+#: ../library/core.php:394 ../library/core.php:443
+msgid "Recent"
+msgstr "Recenti"
+
+#: ../library/core.php:535
+msgid "Read more"
+msgstr "Leggi di più"
+
+#: ../library/core.php:566
+msgid "Home"
+msgstr "Home"
+
+#: ../library/core.php:574 ../library/core.php:578 ../library/core.php:579
+#: ../library/core.php:645 ../library/core.php:649 ../library/core.php:650
+#: ../library/core.php:849
+#, php-format
+msgid "View all posts in %s"
+msgstr "Guarda tutti i post in %s"
+
+#: ../library/core.php:615 ../library/core.php:619
+msgid "Members"
+msgstr "Membri"
+
+#: ../library/core.php:627
+msgid "Messages"
+msgstr "Messaggi"
+
+#: ../library/core.php:632
+msgid "Register"
+msgstr "Registrati"
+
+#: ../library/core.php:744
+msgid "Share On"
+msgstr "Condividi"
+
+#: ../library/core.php:863
+msgid "Comments"
+msgstr "Commenti"
+
+#: ../library/core.php:1044
+msgid "Overall Score"
+msgstr "Punteggio totale"
+
+#: ../library/core.php:1102 ../library/core.php:1355
+msgid "You have already voted"
+msgstr "Hai già votato"
+
+#: ../library/core.php:1108 ../library/core.php:1227
+msgid "Vote"
+msgstr "Vota"
+
+#: ../library/core.php:1110 ../library/core.php:1229
+msgid "Votes"
+msgstr "Voti"
+
+#: ../library/core.php:1112 ../library/core.php:1227 ../library/core.php:1229
+msgid "Reader Rating"
+msgstr "Voti lettori"
+
+#: ../library/core.php:1295
+msgid "Your Rating"
+msgstr "Il tuo voto"
+
+#: ../library/core.php:1562
+msgid "About The Author"
+msgstr "A proposito dell'autore"
+
+#: ../library/core.php:1619
+msgid "Topics Started"
+msgstr "Topic iniziati"
+
+#: ../library/core.php:1623
+msgid "Replies Created"
+msgstr "Risposte"
+
+#: ../library/core.php:1629
+msgid "Favorites"
+msgstr "Preferiti"
+
+#: ../library/core.php:1637
+msgid "Subscriptions"
+msgstr "Iscrizioni"
+
+#: ../library/core.php:1642
+msgid "Edit"
+msgstr "Edit"
+
+#: ../library/core.php:1755
+msgid "Related Posts"
+msgstr "Post correlati"
+
+#: ../library/core.php:1820
+msgid "No More Stories"
+msgstr "Nessun'altra storia"
+
+#: ../library/core.php:2208
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../library/core.php:2212
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in moderazione"
+
+#: ../library/core.php:2733
+#, php-format
+msgid "%s (Invalid)"
+msgstr "%s (Non valido)"
+
+#: ../library/core.php:2737
+#, php-format
+msgid "%s (Pending)"
+msgstr "%s (In attesa)"
+
+#: ../library/core.php:2750
+msgid "sub item"
+msgstr "sub item"
+
+#: ../library/core.php:2782
+msgid "Edit Menu Item"
+msgstr "Edita voce Menu"
+
+#: ../library/core.php:2791
+msgid "URL"
+msgstr "URL"
+
+#: ../library/core.php:2798
+msgid "Navigation Label"
+msgstr "Etichetta di navigazione"
+
+#: ../library/core.php:2804
+msgid "Title Attribute"
+msgstr "Attributo Titolo"
+
+#: ../library/core.php:2811
+msgid "Open link in a new window/tab"
+msgstr "Apri il link in una nuova finestra/tab"
+
+#: ../library/core.php:2816
+msgid "CSS Classes (optional)"
+msgstr "Classi CSS (opzionale)"
+
+#: ../library/core.php:2822
+msgid "Link Relationship (XFN)"
+msgstr "Link Relationship (XFN)"
+
+#: ../library/core.php:2839
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../library/core.php:2842
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+"Questa descrizione verrà mostrata nel menu se il corrente tema la supporta."
+
+#: ../library/core.php:2847
+msgid "Move"
+msgstr "Muovi"
+
+#: ../library/core.php:2848
+msgid "Up one"
+msgstr "Su di uno"
+
+#: ../library/core.php:2849
+msgid "Down one"
+msgstr "Giù di uno"
+
+#: ../library/core.php:2852
+msgid "To the top"
+msgstr "Torna su"
+
+#: ../library/core.php:2859
+#, php-format
+msgid "Original: %s"
+msgstr "Originale: %s"
+
+#: ../library/core.php:2872
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: ../library/core.php:2873
+msgid "Cancel"
+msgstr "Cancella"
+
+#: ../library/core.php:3068
+msgid "Load More"
+msgstr "Carica altri"
+
+#: ../library/core.php:3071 ../library/core.php:3080
+msgid "No more articles"
+msgstr "Nessun altro articolo"

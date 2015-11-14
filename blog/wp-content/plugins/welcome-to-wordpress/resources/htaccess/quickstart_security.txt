@@ -1,0 +1,15 @@
+# Copyright 2012 Go Daddy Operating Company, LLC. All Rights Reserved.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase $$HOME_PATH$$
+	RewriteRule ^wp-admin/includes/ - [F,L]
+	RewriteRule !^wp-includes/ - [S=3]
+	RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+	RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+	RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+<Files "wp-config.php">
+	Order allow,deny
+	Deny from all
+</Files>
+Options -Indexes

@@ -1,0 +1,21 @@
+#button-dialog { }
+#button-dialog div{ padding: 5px 0; height: 20px;}
+#button-dialog label { display: block; float: left; margin: 0 8px 0 0; width: 80px; }
+#button-dialog select, #button-dialog input { display: block; float: right; width: 100px; padding: 3px 5px;}
+#button-dialog select { width: 112px; }
+#button-dialog #insert { display: block; line-height: 24px; text-align: center; margin: 10px 0 0 0; float: right;}
+
+#button-dialog-wide { }
+#button-dialog-wide div{ padding: 5px 0; height: 20px;}
+#button-dialog-wide label { display: block; float: left; margin: 0 8px 0 0; width: 170px; }
+#button-dialog-wide select, #button-dialog-wide input { display: block; float: right; width: 100px; padding: 3px 5px;}
+#button-dialog-wide select { width: 112px; }
+#button-dialog-wide #insert { display: block; line-height: 24px; text-align: center; margin: 10px 0 0 0; float: right;}
+
+#button-dialog-module { }
+#button-dialog-module div{ padding: 5px 0; height: 20px;}
+#button-dialog-module label { display: block; float: left; margin: 0 8px 0 0; width: 60px; }
+#button-dialog-module select, #button-dialog-module input { display: block; float: right; width: 160px; padding: 3px 5px;}
+#button-dialog-module select { width: 160px; }
+#button-dialog-module #insert { display: block; line-height: 24px; text-align: center; margin: 0
+; float: right;}

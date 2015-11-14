@@ -1,0 +1,1504 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Content\n"
+"POT-Creation-Date: 2013-08-26 11:24-0000\n"
+"PO-Revision-Date: 2013-10-11 11:15+0100\n"
+"Last-Translator: Michele Bugliaro Goggia <bugliaro@centralstudio.ch>\n"
+"Language-Team: Michele Bugliaro Goggia <bugliaro@centralstudio.ch>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: IT\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Arnar\\Dropbox\\Bluth\\Themeforest\\content"
+"\\wordpress\\wp-content\\themes\\content\n"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/404.php:5
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/single.php:130
+msgid "Page not found"
+msgstr "Pagina non trovata"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/404.php:6
+msgid "We could not find the page you were looking for."
+msgstr "Non è stato possibile trovare la pagina che stavi cercando."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/404.php:8
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/index.php:114
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-left-sidebar.php:59
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-single-column.php:55
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page.php:69
+msgid "Try searching"
+msgstr "Prova una ricerca"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/comments.php:31
+msgid "Older Comments"
+msgstr "Commenti Più Vecchi"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/comments.php:32
+msgid "Newer Comments"
+msgstr "Commenti Più Recenti"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/comments.php:42
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:107
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr "Installa I Plugin Richiesti"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:108
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr "Installa I Plugin"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:109
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installando Il Plugin: %s"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:110
+msgid "Something went wrong with the plugin API."
+msgstr "Qualcosa è andato storto con la API del plugin"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:121
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:178
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr "Ritorna All'installer Dei Plugin Richiesti"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:122
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:179
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr "Plugin attivato con successo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:123
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Tutti i plugin installati e attivati con successo. %s"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:287
+msgid "Previous Page"
+msgstr "Pagina Precedente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:301
+msgid "Next Page"
+msgstr "Prossima Pagina"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:380
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:380
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:406
+msgid "(Edit)"
+msgstr "(Modifica)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:390
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:393
+msgid "Author"
+msgstr "Autore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:397
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in attesa di moderazione."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/functions.php:439
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-audio.php:56
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-gallery.php:41
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-image.php:46
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-link.php:46
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-video.php:41
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content.php:47
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-audio.php:49
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-image.php:34
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-video.php:40
+msgid "Continue reading..."
+msgstr "Continua a leggere..."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/index.php:110
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-left-sidebar.php:56
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-single-column.php:52
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page.php:66
+msgid "Post not found"
+msgstr "Post non trovato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/index.php:112
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-left-sidebar.php:57
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page-single-column.php:53
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/page.php:67
+msgid "We could not find that post you were looking for."
+msgstr "Non è stato possibile trovare quel post che stavi cercando."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:32
+msgid "Image"
+msgstr "Immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:33
+msgid "Pattern"
+msgstr "Pattern"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:34
+msgid "Solid Color"
+msgstr "Colore Pieno"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:45
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:173
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:388
+msgid "Theme Options"
+msgstr "Opzioni del Tema"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:49
+msgid "Background"
+msgstr "Sfondo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:50
+msgid "What kind of background do you want?"
+msgstr "Che tipo di sfondo vorresti?"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:57
+msgid "Background Image"
+msgstr "Immagine Di Sfondo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:58
+msgid "Upload your background image here."
+msgstr "Carica la tua immagine di sfondo qui."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:65
+msgid "Show stripe overlay"
+msgstr "Mostra sovrapposizione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:66
+msgid ""
+"Uncheck this to remove the stripe overlay that covers the background image"
+msgstr ""
+"Deseleziona questo per rimuovere la sovrapposizione che copre l'immagine di "
+"sfondo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:96
+msgid "Upload Pattern"
+msgstr "Carica Un Pattern"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:97
+msgid ""
+"Upload a new pattern here. If this feature is used it will overwrite the "
+"selection above."
+msgstr ""
+"Carica un pattern qui. Se utilizzato, sovrascriverà la selezione sopra."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:103
+msgid "Background Color"
+msgstr "Colore Di Sfondo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:104
+msgid ""
+"Select the background color ( Only works if the custom color option is "
+"chosen )"
+msgstr ""
+"Seleziona il colore di sfondo (Funziona soltanto se l'opzione colore "
+"personalizzato è selezionata)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:111
+msgid "Logo"
+msgstr "Logo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:112
+msgid ""
+"Upload your logo here. Remove the image to show the name of the website in "
+"text instead. (Recommended: 45x45)"
+msgstr ""
+"Carica qui il tuo logo. Rimuovi l'immagine per mostrare il nome del sito "
+"come solo testo (Raccomandato: 45x45)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:117
+msgid "Mini Logo"
+msgstr "Mini Logo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:118
+msgid ""
+"Upload your mini logo here. Logo that appears in the header when the user "
+"scrolls down on your website."
+msgstr ""
+"Carica il tuo mini logo qui. Questo logo compare nell'intestazione quando "
+"l'utente scrolla la pagina."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:123
+msgid "Facebook App Id"
+msgstr "Facebook App Id"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:124
+msgid ""
+"Insert you Facebook app id here. If you don't have one for your webpage you "
+"can create it <a target=\"_blank\" href=\"https://developers.facebook.com/"
+"apps\">here</a>"
+msgstr ""
+"Inserisci il too Facebook app id qui. Se non ne hai uno per il too sito puoi "
+"crearne uno <a target=\"_blank\" href=\"https://developers.facebook.com/apps"
+"\">qui</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:129
+msgid "Enable Facebook comments for posts"
+msgstr "Abilita i commenti di Facebook per i post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:130
+msgid ""
+"Check this to use Facebook comments instead of regular wordpress comments "
+"for posts. Requires a Facebook app id in the field above."
+msgstr ""
+"Seleziona qui per usare i commenti di Facebook invece di quelli di WordPress "
+"per i post. Richiede una Facebook app id nel campo sopra."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:136
+msgid "Show search in header"
+msgstr "Mostra la ricerca nella intestazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:137
+msgid "Uncheck this to remove the search input from the header"
+msgstr "Deseleziona questo per rimuovere il campo di ricerca dall'intestazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:143
+msgid "Disable Sticky Header"
+msgstr "Disabilita L'intestazione Fissa"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:144
+msgid ""
+"Check this to disable the sticky header feature. (The header won't stay "
+"fixed at the top of the window when you scroll down)"
+msgstr ""
+"Seleziona qui per disattivare l'intestazione appiccicata. (L'intestazione "
+"non resterà fissa in alto alla pagina se si scrolla la pagina)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:150
+msgid "Disable Responsive CSS"
+msgstr "Disattiva Il Css Responsive (Meglio Non Farlo)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:151
+msgid ""
+"Check this to disable responsive css. Responsive css enable the webpage to "
+"adapt to every screen size allowing mobile users to browse the website more "
+"easily."
+msgstr ""
+"Seleziona qui per disabilitare il CSS responsive. Il CSS responsive permette "
+"di adattare la pagina ad ogni schermo, quindi anche ai cellulari."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:170
+msgid "Blog Layout"
+msgstr "Layout Del Blog"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:171
+msgid "Select the default blog layout."
+msgstr "Seleziona il layout predefinito del blog."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:181
+msgid "Right-to-Left Language"
+msgstr "Lingua Destra-Verso-Sinistra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:182
+msgid "Check this if your language is written in a Right-to-Left direction"
+msgstr "Seleziona questo se la tua lingua si scrive da destra verso sinistra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:188
+msgid "Footer text"
+msgstr "Testo footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:189
+msgid "{year} will be replaced with the current year"
+msgstr "{year} verrà rimpiazzato con l'anno corrente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:195
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:196
+msgid ""
+"Add your Google Analytics tracking code here. Google Analytics is a free web "
+"analytics service more info here: <a href=\"http://www.google.com/analytics/"
+"\">Google Analytics</a>"
+msgstr ""
+"Aggiungi il tuo Google Analytics tracking code qui. Google Analytics è un "
+"servizio gratuito di analisi del traffico web, più info qui: <a href="
+"\"http://www.google.com/analytics/\">Google Analytics</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:202
+msgid "SEO plugin support"
+msgstr "Supporto per SEO plugin"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:203
+msgid ""
+"Check this to give an SEO plugin control of meta description, title and open "
+"graph tags."
+msgstr ""
+"Seleziona questo per dare al SEO plugin il controllo sulla descrizione meta, "
+"sul titolo e le tag open graphs"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:210
+msgid "Posts & Pages"
+msgstr "Post & Pagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:222
+msgid "Enable page comments"
+msgstr "Abilita i commenti alle pagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:223
+msgid "Check this to enable comments on all pages as well as posts."
+msgstr ""
+"Seleziona questo per abilitare i commenti su tutte le pagine ed i post."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:229
+msgid "Disable share buttons at the bottom of posts"
+msgstr "Disabilita i bottoni di condivisione in fondo ai post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:230
+msgid "Check this to remove the \"Share\" button in the post footer."
+msgstr ""
+"Seleziona questo per disattivare il bottone \"Share\" in fondo ai post."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:236
+msgid "Disable the tags footer for posts"
+msgstr "Disattiva le tag in fondo ai post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:237
+msgid "Check this to remove the footer with the post tags on all posts"
+msgstr ""
+"Seleziona questo per rimuovere in blocco tutte le tag in fondo ai post "
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:243
+msgid "Disable next/previous buttons"
+msgstr "Disattiva i bottoni prossimo/precedente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:244
+msgid ""
+"Check this to remove the Next/Previous buttons at the bottom of each post."
+msgstr ""
+"Seleziona questo per rimuovere i bottoni prossimo/precedente in fondo ad "
+"ogni post."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:250
+msgid "Disable Related Posts"
+msgstr "Disattiva I Post Correlati"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:251
+msgid ""
+"Related articles are show below each post when you view it. Check this to "
+"disable that feature."
+msgstr ""
+"Gli articoli correlati appaiono sotto ad ogni post che si vede. Seleziona "
+"questo per disattivare questa funzione."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:257
+msgid "Enable author box"
+msgstr "Abilita il box autore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:258
+msgid "Uncheck this to remove the author box below each post."
+msgstr "Deseleziona questo per rimuovere il box autore sotto ad ogni post."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:264
+msgid "Author Box Image"
+msgstr "Immagine Per Il Box Autore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:265
+msgid "Upload a cover for the author box"
+msgstr "Carica una cover per il box autore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:271
+msgid "Enable posts excerpt (post summary)"
+msgstr "Abilita l'abstract dei post (prime righe di ogni post)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:272
+msgid ""
+"Check this to only show the post excerpt or the summary of a post in the "
+"browse page. The default behavior is to show the whole post but you can "
+"provide a cut-off point by adding the <a href=\"http://codex.wordpress.org/"
+"Customizing_the_Read_More\" target=\"_blank\">More</a> tag."
+msgstr ""
+"Seleziona questo per mostrare l'abstract del post o il relativo riassunto "
+"nell'archivio blog. Il comportamento predefinito prevede di mostrare il post "
+"intero ma puoi aggiungere un punto di taglio con la <a href=\"http://codex."
+"wordpress.org/Customizing_the_Read_More\" target=\"_blank\">More</a> tag."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:278
+msgid "Exerpt Length"
+msgstr "Lunghezza Abstract"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:279
+msgid ""
+"How many words would you like to show in the post summary. Default: 55 words"
+msgstr "Quante parole vorresti mostrare nell'abstract. Di default: 55 parole"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:286
+msgid "Show Continue Reading link"
+msgstr "Mostra Il Link 'Leggi Il Resto'"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:287
+msgid ""
+"Uncheck this to hide the Continue Reading link that appears below the post "
+"conent."
+msgstr ""
+"Deseleziona questo per nascondere il link 'Leggi il resto' che compare sotto "
+"il contenuto del post. "
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:293
+msgid "Open featured post images in lightbox"
+msgstr "Apri immagine in evidenza in una lightbox"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:294
+msgid ""
+"Check this to open featured post images in a lightbox instead of linking to "
+"the post itself."
+msgstr ""
+"Seleziona questo per aprire l'immagine in evidenza in una lightbox invece "
+"che collegarla al post stesso."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:326
+msgid "Standard Post Icon"
+msgstr "Icona Post Di Tipo Standard"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:327
+msgid "Select an icon for the standard post type. (Default: icon-calendar-3)"
+msgstr ""
+"Seleziona un'icona per il post di tipo standard. (Di base: icon-calendar-3)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:334
+msgid "Standard Post Color"
+msgstr "Colore Del Post Di Tipo Standard"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:335
+msgid "Select the color for the standard post icon and links"
+msgstr "Seleziona il colore per l'icona del post standard e per i link."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:342
+msgid "Gallery Post Icon"
+msgstr "Icona Post  Di Tipo Galleria"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:343
+msgid "Select an icon for the gallery post type. (Default: icon-picture)"
+msgstr ""
+"Seleziona un'icona per il tipo di post galleria. (Di base: icon-picture)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:350
+msgid "Gallery Post Color"
+msgstr "Colore Post Di Tipo Galleria"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:351
+msgid "Select the color for the gallery post icon and links"
+msgstr "Seleziona il colore per l'icona del post galleria e dei link."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:358
+msgid "Image Post Icon"
+msgstr "Icona Post Di Tipo Immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:359
+msgid "Select an icon for the image post type. (Default: icon-picture-1)"
+msgstr "Seleziona un'icona per il post immagine. (Di base: icon-picture-1)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:366
+msgid "Image Post Color"
+msgstr "Colore Post Di Tipo Immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:367
+msgid "Select the color for the image post icon and links"
+msgstr "Seleziona il colore per il post immagine e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:374
+msgid "Link Post Icon"
+msgstr "Collegamento Post Di Tipo Icona"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:375
+msgid "Select an icon for the link post type. (Default: icon-link)"
+msgstr "Seleziona un'icona per il post link. (Di base: icon-link)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:382
+msgid "Link Post Color"
+msgstr "Collegamento Post Di Tipo Link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:383
+msgid "Select the color for the link post icon and links"
+msgstr "Seleziona il colore per il post link e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:390
+msgid "Quote Post Icon"
+msgstr "Icona Post Di Tipo Citazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:391
+msgid "Select an icon for the quote post type. (Default: icon-quote-left)"
+msgstr ""
+"Seleziona il colore per il post citazione e per i link. (Di base: icon-quote-"
+"left)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:398
+msgid "Quote Post Color"
+msgstr "Colore Post Di Tipo Citazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:399
+msgid "Select the color for the quote post icon and links"
+msgstr "Seleziona il colore per il post citazione e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:406
+msgid "Audio Post Icon"
+msgstr "Icona Post Di Tipo Audio"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:407
+msgid "Select an icon for the audio post type. (Default: icon-volume-up)"
+msgstr ""
+"Seleziona il colore per il post audio e per i link. (Di base: icon-volume-up)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:414
+msgid "Audio Post Color"
+msgstr "Colore Post Di Tipo Audio"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:415
+msgid "Select the color for the audio post icon and links"
+msgstr "Seleziona il colore per il post audio e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:422
+msgid "Video Post Icon"
+msgstr "Icona Post Di Tipo Video"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:423
+msgid "Select an icon for the video post type. (Default: icon-videocam)"
+msgstr ""
+"Seleziona il colore per il post video e per i link. (Di base: icon-videocam)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:430
+msgid "Video Post Color"
+msgstr "Colore Post Di Tipo Video"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:431
+msgid "Select the color for the video post icon and links"
+msgstr "Seleziona il colore per il post video e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:438
+msgid "Status Post Icon"
+msgstr "Icona Post Di Tipo Status"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:439
+msgid "Select an icon for the status post type. (Default: icon-book-1)"
+msgstr "Seleziona il colore per il post status. (Di base: icon-book-1)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:446
+msgid "Status Post Color"
+msgstr "Colore Post  Di Tipo Status"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:447
+msgid "Select the color for the status post icon and links"
+msgstr "Seleziona il colore per il post status e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:454
+msgid "Sticky Post Icon"
+msgstr "Icona Post Sempre In Primo Piano"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:455
+msgid "Select an icon for sticky posts. (Default: icon-pin)"
+msgstr ""
+"Seleziona il colore per il post sempre in primo piano. (Di base: icon-pin)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:462
+msgid "Sticky Post Color"
+msgstr "Colore Post Sempre In Primo Piano"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:463
+msgid "Select the color for the sticky post icon and links"
+msgstr "Seleziona il colore per il post appiccicato e per i link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:473
+msgid "Colors & Fonts"
+msgstr "Colori E Font"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:478
+msgid "Color Theme"
+msgstr "Schema Cromatico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:479
+msgid "Choose a predefined color theme"
+msgstr "Seleziona uno schema cromatico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:491
+msgid "Custom Color Theme"
+msgstr "Schema Cromatico Personalizzato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:492
+msgid "Check this to make your own color theme"
+msgstr "Seleziona questo per creare il tuo schema cromatico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:498
+msgid "Main Theme Color"
+msgstr "Schema Cromatico Preimpostato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:499
+msgid "Select the theme's main color"
+msgstr "Seleziona lo schema cromatico principale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:506
+msgid "Top Banner Color"
+msgstr "Colore Banner Superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:507
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:515
+msgid "Select the color for the top header that includes the logo"
+msgstr ""
+"Seleziona il colore per l'intestazione superiore (quella che include il logo)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:514
+msgid "Top Banner Font Color"
+msgstr "Colore Font Nella Fascia Superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:522
+msgid "Top Banner Social Buttons"
+msgstr "Bottoni Social Nella Fascia Superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:523
+msgid "Select the color for the social buttons in the top banner"
+msgstr "Seleziona il colore per i bottoni social nella fascia superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:530
+msgid "Top Header Color"
+msgstr "Colore Intestazione Superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:531
+msgid "Select the color for the top header that includes the menu"
+msgstr ""
+"Seleziona il colore per l'intestazione superiore (quella che include il logo)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:538
+msgid "Top Header Font Color"
+msgstr "Colore Font Nell'intestazione Superiore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:539
+msgid "Select the color for the top header menu links"
+msgstr ""
+"Seleziona il colore per l'intestazione superore (quella con il menu "
+"principale)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:546
+msgid "Post Header Color"
+msgstr "Colore Intestazione Dei Post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:547
+msgid "Select the color for the top header of each post"
+msgstr "Seleziona il colore per l'intestazione superiore di ogni post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:554
+msgid "Widget Header Color"
+msgstr "Colore Intestazione Dei Widget"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:555
+msgid "Select the default color for the top header of each widget"
+msgstr "Seleziona il colore di base per l'intestazione di ogni widget"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:562
+msgid "Widget Header Font Color"
+msgstr "Colore Font Del Titolo Dei Widget"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:563
+msgid "Select the color for the heading font in each widget"
+msgstr "Seleziona il colore per il titolo dei widget"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:570
+msgid "Footer Color"
+msgstr "Colore Footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:571
+msgid "Select the default color for the footer"
+msgstr "Seleziona il colore di base per il footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:578
+msgid "Footer Header Color"
+msgstr "Colore Intestazione Footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:579
+msgid "Select the default color for the footer headers"
+msgstr "Seleziona il colore di base per l'intestazione del footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:586
+msgid "Footer Font Color"
+msgstr "Colore Font Del Footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:587
+msgid "Select the default color for the footer font"
+msgstr "Seleziona il colore di base per il font nel footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:596
+msgid "Heading font"
+msgstr "Colore intestazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:597
+msgid "Select a font type for all heading"
+msgstr "Seleziona un tipo di font per tutte le intestazioni (i titoli)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:603
+msgid "Main font"
+msgstr "Font principale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:604
+msgid "Select a font type for normal text"
+msgstr "Seleziona una famiglia di font per il testo normale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:610
+msgid "Menu links font"
+msgstr "Font voci di menu"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:611
+msgid "Select a font type for the menu items in the header"
+msgstr "Seleziona una famiglia di font per le voci di menu nell'intestazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:617
+msgid "Brand font"
+msgstr "Font per il logo testuale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:618
+msgid ""
+"Select a font type for the brand. If you use text instead of a logo in your "
+"header this setting changes the font family for that text."
+msgstr ""
+"Seleziona una famiglia di font per il logo testuale. Se si usa la versione "
+"testuale del logo nell'intestazione questa impostazione cambia la famiglia "
+"di font per questo testo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:628
+msgid "Advertising"
+msgstr "Pubblicità"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:634
+msgid "Ad spot #1 - Above the header."
+msgstr "Ad spot #1 - Sopra l'intestazione."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:635
+msgid ""
+"Select what kind of ad you want added above the top menu. <a target=\"_blank"
+"\" href=\"http://www.bluth.is/wordpress/keilir/wp-content/uploads/2013/07/"
+"ad_above_example.png\">See Example</a>"
+msgstr ""
+"Seleziona quale tipo di pubblicità avuoi aggiungere al menu principale. <a "
+"target=\"_blank\" href=\"http://www.bluth.is/wordpress/keilir/wp-content/"
+"uploads/2013/07/ad_above_example.png\">Vedi esempio</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:640
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:676
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:736
+msgid "None"
+msgstr "Nessuno"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:641
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:677
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:737
+msgid "Shortcode or HTML code like Adsense"
+msgstr "Shortcode o codice HTML tipo Adsense"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:642
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:678
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:738
+msgid "Image with a link"
+msgstr "Immagine con link"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:646
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:682
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:742
+msgid "Add Shortcode or HTML code here"
+msgstr "Aggiungi qui uno Shortcode o un codice HTML"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:647
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:683
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:743
+msgid ""
+"Insert a shortcode provided by this theme or any plugin. You can also add "
+"advertising code from any provider or use plain html. To add Adsense just "
+"paste the embed code here that they provide and save."
+msgstr ""
+"Insert uno shortcode fornito da questo tema o da un plugin. Puoi anche "
+"inserire codice pubblicitario da qualsiasi provider oppure usare codice "
+"HTML. Per aggiungere Adsense incollare semplicemente il codice ufficiale e "
+"salva."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:654
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:690
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:750
+msgid "Upload Image"
+msgstr "Carica immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:655
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:751
+msgid ""
+"Upload an image to add above the header menu and add a link for it in the "
+"input box below"
+msgstr ""
+"Carica un'immagine da aggiungere sopra il menu principale e aggiungi un link "
+"nel campo di testo qui sotto."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:661
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:697
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:757
+msgid "Image link"
+msgstr "Link immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:662
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:698
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:758
+msgid "Add a link to the image"
+msgstr "Aggiungi un link all'immagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:670
+msgid "Ad spot #2 - Between posts"
+msgstr "Ad spot #2 - Fra i post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:671
+msgid ""
+"Here you can add advertising between posts. <a target=\"_blank\" href="
+"\"http://www.bluth.is/wordpress/keilir/wp-content/uploads/2013/07/"
+"ad_posts_example.png\">See Example</a>"
+msgstr ""
+"Qui puoi aggiungere pubblicità fra i post. <a target=\"_blank\" href="
+"\"http://www.bluth.is/wordpress/keilir/wp-content/uploads/2013/07/"
+"ad_posts_example.png\">Vedi esempio</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:691
+msgid ""
+"Upload an image to add between posts and add a link for it in the input box "
+"below"
+msgstr ""
+"Carica un'immagine da aggiungere fra i post e aggiungi un link nel campo di "
+"testo qui sotto"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:705
+msgid "Display Frequency"
+msgstr "Frequenza Di Pubblicazione"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:706
+msgid "How often do you want the ad to appear?"
+msgstr "Quanto spesso vuoi far apparire la pubblicità?"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:712
+msgid "Between every post"
+msgstr "Fra ogni post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:713
+msgid "Every 2th posts"
+msgstr "Ogni 2 post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:714
+msgid "Every 3th post"
+msgstr "Ogni 3 post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:715
+msgid "Every 4th post"
+msgstr "Ogni 4 post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:716
+msgid "Every 5th post"
+msgstr "Ogni 5 post "
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:720
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:765
+msgid "Add white background"
+msgstr "Aggiungi sfondo bianco"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:721
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:766
+msgid "Check this to wrap the ad content in a white box"
+msgstr "Seleziona questo per inserire la pubblicità in un box bianco"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:730
+msgid "Ad spot #3 - Above the content."
+msgstr "Ad spot #3 - Sopra il contenuto."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:731
+msgid ""
+"Select what kind of ad you want added above the main container. <a target="
+"\"_blank\" href=\"http://www.bluth.is/wordpress/keilir/wp-content/"
+"uploads/2013/07/ad_content_example.png\">See Example</a>"
+msgstr ""
+"Seleziona quale tipo di pubblicità vuoi aggiungere sopra il main container. "
+"<a target=\"_blank\" href=\"http://www.bluth.is/wordpress/keilir/wp-content/"
+"uploads/2013/07/ad_content_example.png\">Vedi esempio</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:773
+msgid "Add padding"
+msgstr "Aggiungi un padding"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:774
+msgid "Add padding to the banner container"
+msgstr "Aggiungi un padding al contenitore della pubblicità"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:781
+msgid "Banner placement"
+msgstr "Posizionamento banner"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:782
+msgid "Where do you want the banner to appear?"
+msgstr "Dove vuoi che compaia il banner?"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:792
+msgid "Frontpage"
+msgstr "Pagina iniziale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:793
+msgid "Pages"
+msgstr "Pagine"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:794
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_tabs.php:139
+msgid "Posts"
+msgstr "Post"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:798
+msgid "Social"
+msgstr "Social"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:802
+msgid "Facebook"
+msgstr "Facebook"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:803
+msgid "Your facebook link"
+msgstr "Il tuo link facebook"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:809
+msgid "Twitter"
+msgstr "Twitter"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:810
+msgid "Your twitter link"
+msgstr "Il tuo link twitter"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:816
+msgid "Google+"
+msgstr "Google+"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:817
+msgid "Your google+ link"
+msgstr "Il tuo link google+"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:823
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:824
+msgid "Your LinkedIn link"
+msgstr "Il tuo link LinkedIn"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:830
+msgid "Youtube"
+msgstr "Youtube"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:831
+msgid "Your youtube link"
+msgstr "Il tuo link youtube"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:837
+msgid "RSS"
+msgstr "RSS"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:838
+msgid "Your RSS feed"
+msgstr "Il too feed RSS"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:844
+msgid "Flickr"
+msgstr "Flickr"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:845
+msgid "Your Flickr link"
+msgstr "Il tuo link Flickr"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:851
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:852
+msgid "Your vimeo link"
+msgstr "Il tuo link vimeo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:858
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:859
+msgid "Your pinterest link"
+msgstr "Il tuo link pinterest"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:865
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:866
+msgid "Your dribbble link"
+msgstr "il tuo link dribbble"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:872
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:873
+msgid "Your tumblr link"
+msgstr "il tuo link tumblr"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:879
+msgid "Instagram"
+msgstr "Instagram"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:880
+msgid "Your instagram link"
+msgstr "il tuo link instagram"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:886
+msgid "Custom CSS"
+msgstr "CSS personalizzato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:890
+msgid "Add Custom CSS rules here"
+msgstr "Aggiungi le tue regole CSS qui"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/options.php:891
+msgid ""
+"Here you can overwrite specific css rules if you want to customize your "
+"theme a little. Write into this box just like you would do in a regular css "
+"file. Example: body{ color: #444; }"
+msgstr ""
+"Qui puoi sovrascrivere regale CSS specifiche nel case voles personalizzare "
+"il tema un pochino.Scrivi dentro quest box come se fosse un foglio stile "
+"CSS. Esempio: body{ color: #444; }"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/searchform.php:4
+msgid "Search.."
+msgstr "Cerca.."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/sidebar.php:11
+msgid "Archives"
+msgstr "Archivi"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/sidebar.php:18
+msgid "Meta"
+msgstr "Meta"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr "Qualcosa è andato storto."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tutti i plugin sono stati installati ed attivati con successo. %1$s"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:517
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr "Torna alla Bacheca"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "Il seguente plugin è stato attivato con successo: %s."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr "Nascondi questa notifica"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr "Link esterno"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr "Archivio Privato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr "Pre-Compresso"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr "Archivio WordPress"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr "Richiesto"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr "Raccomandato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr "Non Installato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr "Installato Ma Non Attivato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Nessun plugin da install are o attire <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Torna alla bacheca</a>"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr "Plugin"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr "Fonte"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr "Tipo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr "Status"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr "Installare"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr "Attivare"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr "Pacchetto di installazione non disponibile"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Sto scaricando il pacchetto di installazione da <span class=\"code\">%s</"
+"span>&#8230;"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr "Decomprimendo il pacchetto&#8230;"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr "Installando il plugin&#8230;"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr "Installazione del plugin fallita."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr "Plugin installato con successo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr "Attivazione plugin fallita."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Il processo di installazione ed attivazione è iniziato. Questo processo "
+"potrebbe richiedere un po' di tempo su certi host, per cui abbi pazienza."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s è stato installato ed attivato con successo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1956
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr "Mostra Dettagli"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1956
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr "Nascondi Dettagli"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr "Tutte le installazioni e le attivazione sono state completate."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installando E Attivando Il Plugin %1$s (%2$d/%3$d)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Il processo di installazione è iniziato. Questo processo potrebbe richiedere "
+"un po' di tempo su certi host, per cui abbi pazienza."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Un errore è intervenuto durante l'installazione %1$s: <strong>%2$s</strong>."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "L'installazione di %1$s è fallita."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s è stato installato con successo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr "Tutte le installazioni sono state completate con successo."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installando il plugin %1$s (%2$d/%3$d)"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/meta-bottom.php:14
+msgid "Share story"
+msgstr "Condividi articolo"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/meta-top.php:9
+msgid "View all posts in"
+msgstr "Vedi tutti i post in"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/recent-posts.php:7
+msgid "Things you might like"
+msgstr "Ti potrebbe interessare anche"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/related-posts.php:27
+msgid "You might also like"
+msgstr "Potrebbe anche piacerti"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/mailchimp/subscribe.php:27
+msgid "No email address provided"
+msgstr "Nessun indirizzo email inserito"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/mailchimp/subscribe.php:32
+msgid "Email address is invalid"
+msgstr "Indirizzo email non valido"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-audio.php:59
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-gallery.php:43
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-image.php:49
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-link.php:47
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content-video.php:44
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/content.php:50
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-audio.php:52
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-gallery.php:39
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-image.php:35
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-link.php:47
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-status.php:49
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single-video.php:43
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/post-format/single.php:33
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:204
+msgid "Clear"
+msgstr "Cancella"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:205
+msgid "Default"
+msgstr "Predefinito"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:206
+msgid "Select Color"
+msgstr "Seleziona colore"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:252
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Premi ok per reimpostare. Ogni impostazione del tema verrà perduta!"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:284
+msgid "Default options restored."
+msgstr "Opzioni predefinite reimpostate."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-framework.php:338
+msgid "Options saved."
+msgstr "Opzioni salvate."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr "Nessun file selezionato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:54
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:111
+msgid "Upload"
+msgstr "Carica"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:56
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:112
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+"Aggiorna la tua versione di WordPress per un supporto completo dei media."
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-media-uploader.php:83
+msgid "View File"
+msgstr "Vedi File"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:232
+msgid "No Repeat"
+msgstr "Non Ripetere"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr "Ripeti Orizzontalmente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr "Ripeti Verticalmente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:235
+msgid "Repeat All"
+msgstr "Ripeti In Tutti I Sensi"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:248
+msgid "Top Left"
+msgstr "Angolo Superiore Sinistro"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:249
+msgid "Top Center"
+msgstr "Angolo Superiore Centrato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:250
+msgid "Top Right"
+msgstr "Angolo Superiore Destro"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:251
+msgid "Middle Left"
+msgstr "Centrato Sinistra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:252
+msgid "Middle Center"
+msgstr "Centrato"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:253
+msgid "Middle Right"
+msgstr "Centrato Destra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr "In Basso A Sinistra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr "In Basso Al Centro"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr "In Basso A Destra"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr "Scorri Normalmente"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr "Fisso"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:344
+msgid "Normal"
+msgstr "Normale"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:345
+msgid "Italic"
+msgstr "Italico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:346
+msgid "Bold"
+msgstr "Grassetto"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/theme-options/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr "Grassetto Italico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_author.php:26
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_featured_post.php:56
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:120
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_html.php:56
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_imagebox.php:26
+msgid "Title:"
+msgstr "Titolo:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:17
+msgid "Displays recent Flickr photos in a widget"
+msgstr "Mostra le foto recenti di Flickr in un widget"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:21
+msgid "Bluth Flickr"
+msgstr "Bluth Flickr"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:125
+msgid "Flickr ID:"
+msgstr "Flickr ID:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:131
+msgid "Flickr Username:"
+msgstr "Nome utente Flickr:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_flickr2.php:136
+msgid "Photos Count:"
+msgstr "Conteggio foto:"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_html.php:75
+msgid "Automatically add paragraphs"
+msgstr "Aggiungi paragrafi in automatico"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_instagram.php:132
+msgid "Followers"
+msgstr "Followers"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_instagram.php:136
+msgid "Following"
+msgstr "Following"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_instagram.php:140
+msgid "Images"
+msgstr "Immagini"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_newsletter.php:118
+msgid "Email address"
+msgstr "Indirizzo email"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_newsletter.php:119
+msgid "Subscribe!"
+msgstr "Iscriviti!"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_newsletter.php:124
+msgid "No email provided!"
+msgstr "Nessun email inserito!"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_newsletter.php:125
+msgid "Thank you for subscribing!"
+msgstr "Grazie per la tua iscrizione!"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_tabs.php:140
+msgid "Comments"
+msgstr "Commenti"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/bl_tabs.php:141
+msgid "Tags"
+msgstr "Tag"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/widgets.php:73
+msgid "Footer Widgets"
+msgstr "Widget nel footer"
+
+#: C:\Users\Arnar\Dropbox\Bluth\Themeforest\content\wordpress\wp-content\themes\content/inc/widgets/widgets.php:75
+msgid "There are 4 slots available in the footer"
+msgstr "Ci sono 4 posizioni nel footer"

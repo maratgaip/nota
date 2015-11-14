@@ -1,0 +1,139 @@
+/*
+  Images for retina screens, double-resolution
+  Included for every device with devicePixelRatio > 1
+  Which are iPhone 4(s), iPod Touch and new iPad
+*/
+
+/* Main Menu */
+.menu #nav-user-profile {
+  background-image: url(/img/HD/icon-profile@2x.png);
+}
+.menu #nav-user-collection {
+  background-image: url(/img/HD/icon-collection@2x.png);
+}
+.menu #nav-user-favorites {
+  background-image: url(/img/HD/icon-favorites@2x.png);
+}
+.menu #nav-user-playlists {
+  background-image: url(/img/HD/icon-playlists@2x.png);
+}
+.menu #nav-user-following {
+  background-image: url(/img/HD/icon-following@2x.png);
+}
+
+/* list header icons */
+.list-header .list-header-play-now:after  {
+  background-image: url(/img/HD/list-header-play-now@2x.png);
+}
+.list-header .list-header-sort:after  {
+  background-image: url(/img/HD/list-header-sort@2x.png);
+}
+
+/* context menu */
+.context-menu .play-now {
+  background-image: url(/img/HD/context-play-now@2x.png);
+}
+.context-menu .play-next {
+  background-image: url(/img/HD/context-play-next@2x.png);
+}
+.context-menu .play-last {
+  background-image: url(/img/HD/context-play-last@2x.png);
+}
+.context-menu .favorite  {
+  background-image: url(/img/HD/context-favorite@2x.png);
+}
+.context-menu .collection {
+  background-image: url(/img/HD/context-collection@2x.png);
+}
+.context-menu .offline {
+  background-image: url(/img/HD/context-offline@2x.png);
+}
+.list-row .context-menu-button:after {
+  background-image: url(/img/HD/context-menu-down@2x.png);
+}
+.list-row .context-menu-button.active:after {
+  background-image: url(/img/HD/context-menu-up@2x.png);
+}
+
+/* popover (queue header, basically) */
+.popover .popover-header .popover-switch-queue span {
+  background-image: url(/img/HD/now-playing@2x.png);
+}
+.popover .popover-header .popover-switch-nowplaying span {
+  background-image: url(/img/HD/queue@2x.png);
+}
+
+/* queue player */
+.queue-actions li.queue-actions-prev {
+  background-image: url(/img/HD/queue-actions-prev@2x.png);
+}
+.queue-actions li.queue-actions-paused,
+.little-queue .little-queue-state.paused {
+  background-image: url(/img/HD/queue-actions-play@2x.png);
+}
+.queue-actions li.queue-actions-playing,
+.little-queue .little-queue-state.playing {
+  background-image: url(/img/HD/queue-actions-pause@2x.png);
+}
+.queue-actions li.queue-actions-next {
+  background-image: url(/img/HD/queue-actions-next@2x.png);
+}
+
+/* queue top actions bar */
+.queue-list-actions .queue-list-action-ordered {
+  background-image: url(/img/HD/queue-list-shuffle@2x.png);
+}
+.queue-list-actions .queue-list-action-norepeat {
+  background-image: url(/img/HD/queue-list-repeat@2x.png);
+}
+.queue-list-actions .queue-list-action-edit {
+  background-image: url(/img/HD/queue-list-edit@2x.png);
+}
+.queue-list-actions .queue-list-action-clear {
+  background-image: url(/img/HD/queue-list-clear@2x.png);
+}
+
+/* queue song list */
+.queue-song-list .song-row .song-row-remove {
+  background-image: url(/img/HD/queue-song-row-remove@2x.png);
+}
+.queue-song-list .song-row .queue-song-row-move-up:after {
+  background-image: url(/img/HD/queue-list-up@2x.png);
+}
+.queue-song-list .song-row .queue-song-row-move-down:after {
+  background-image: url(/img/HD/queue-list-down@2x.png);
+}
+
+/* now playing */
+.progressbar .progressbar-progress .progressbar-scrubber {
+  background-image: url(/img/HD/scrubber@2x.png);
+}
+
+/* search */
+.search .input-reduce {
+  background-image: url(/img/HD/searchbar-icon@2x.png);
+}
+
+/* pin to home */
+#ios-pin {
+  background-image: url(/img/HD/app-icon@2x.png);
+}
+
+/* ads */
+#ads #close-ad span {
+  background-image: url(/img/HD/close-ad@2x.png);
+}
+
+/*
+  Group spinner.gif's in the one place, reduces base64'ed footprint
+  These needs to be at the end, otherwise 'background' declaration would override 'background-image'
+  Also, we override queue actions here (and probably something else)
+*/
+#loading,
+.little-queue .little-queue-state.loading,
+.list-counts .list-counts-loading,
+.badge-loading,
+.list-loading p,
+.queue-actions li.queue-actions-loading {
+  background-image: url(/img/HD/spinner@2x.gif);
+}

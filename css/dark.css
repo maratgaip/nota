@@ -1,0 +1,185 @@
+section section {
+  background-color: #000;
+}
+h2.section-title {
+  color: #aaa;
+}
+#about-icons {
+  border-top: 1px solid #111;
+}
+#about-icons .column.border {
+  border-right: 1px solid #111;
+}
+
+#about-icons .column:hover {
+  background-color: #191919;
+}
+
+#header-section.altmenu nav ul li ul li a,
+#header-section.altmenu.header-show ul li a {
+  color: #fff;
+}
+
+#about-icons h2 {
+  color: #aaa;
+}
+
+#team-members h3 {
+  color: #aaa;
+}
+
+.gray {
+  background-color: #191919;
+}
+
+.filter-row {
+  background-color: #191919;
+}
+
+.section-tagline, ul.filter > li a {
+  color: #aaa;
+}
+
+#option-section {
+  background-color: #222;
+}
+
+p {
+  color: #adadad;
+}
+
+ul.filter > li.active:after,
+ul.filter-target > li.active:after {
+  border-bottom: 10px solid #222;
+}
+
+.table {
+  border: 1px solid #222;
+}
+
+.table.popular, .table:hover {
+  border: 1px solid #222;
+  background-color: #222;
+}
+
+#features h3 {
+  color: #aaa
+}
+
+#posts h2 a {
+  color: #aaa;
+}
+
+#team-members .row {
+  background: #222;
+  border-top: 1px solid #333;
+}
+#team-members .row .column:first-child {
+  border-right: 1px solid #333;
+}
+
+#posts {
+  background-color: #222;
+}
+
+ul.filter > li.active:after {
+  border-bottom: 10px solid #222;
+}
+
+#posts .category {
+  color: #aaa;
+  border: 1px solid #333;
+}
+
+#posts .single-post {
+  border-bottom: 1px solid #111;
+}
+
+#posts h1 a {
+  color: #aaa;
+}
+
+#contact #form {
+  background-color: #222;
+}
+
+#contact input[type="text"], #contact textarea,#contact input[type="submit"] {
+  border: 1px solid #111;
+  background-color: #191919;
+  color: #aaa;
+}
+
+#contact input[type="text"]:focus, #contact textarea:focus {
+  background-color: #191919;
+}
+
+#header-section {
+  border-bottom: none;
+  background: #000;
+  background: #000;
+}
+
+header nav ul li ul li {
+  background: rgb(25, 25, 25);
+  background: rgba(25, 25, 25, 0.95);
+}
+
+header nav ul li ul:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #191919;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  
+
+#header-section.altmenu.header-hide ul li ul li {
+    background: #222;
+}
+
+#header-section.altmenu.header-hide ul li ul:before {
+    border-bottom:10px solid #222;
+}
+
+#header-section #navigation ul li > a {
+  color: #adadad;
+  border-bottom: 1px solid #333;
+}
+
+#header-section #navigation {
+  background: #191919;
+}
+
+#quote-request .lm-button {
+  float: none;
+}
+
+header nav ul li ul:before {
+  border-bottom: transparent;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+  
+ul.filter > li a, ul.filter-target > li a, #portfolio #port-filter > li a {
+  border-top: 1px solid #222;
+}
+
+
+  #team-members .row {
+    border-top: none;
+  }
+
+  #team-members .row .column {
+    border-bottom:1px solid #333;
+  }
+
+}
+
+footer{
+  background-color: #000;
+}

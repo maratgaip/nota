@@ -1,0 +1,22 @@
+#about-icons .column {
+    min-height: 380px;
+    height: expression(this.scrollHeight < 381 ?"380px": "auto");
+}
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    line-height: 32px;
+}
+#callout input[type="text"] {
+    line-height: 46px;
+}
+.parallax-background:before {
+    background: url(../img/ie-bg.png);
+}
+#portfolio-wrapper .block .portfolio-hover {
+    background: #222;
+}
+#team-photo {
+    min-height: 1000px;
+}
+.wow {
+    visibility: visible!important;
+}

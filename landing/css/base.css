@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------------
+ * Version - 1.0
+ * File    - base.css
+ * Author  -  MGH
+ * Description - 
+ *   Base CSS
+ *-----------------------------------------------------------------------*/
+
+/* Reset
+-------------------------------------------------------------- */
+*:focus{outline:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+button,input,legend,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+table{border-collapse:collapse;border-spacing:0; }
+sup,sub{vertical-align:baseline; }
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,textarea,caption,table,tbody,tfoot,thead,tr,th,td
+{font-family:inherit;font-size:inherit;}
+
+img { border:none; }
+
+
+
+

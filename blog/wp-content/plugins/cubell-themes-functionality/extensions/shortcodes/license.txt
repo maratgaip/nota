@@ -1,0 +1,10 @@
+/*
+Plugin Name: Friendly Short Code Buttons
+Plugin URI: http://pippinsplugins.com
+Description: Adds user-friendly short code buttons to your  WordPress site. This plugin is more of an example than anything, but does provide a few nice looking buttons
+Version: 1.0.1
+Author: Pippin Williamson
+Author URI: http://pippinsplugins.com
+License: GPL
+*/
+ 

@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Nota Hit",
+        "url": "http://nota.kg/api/notaHit.m3u"
+    },
+    {
+        "name": "Tumar",
+        "url": "http://nota.kg/api/radio/tumar.m3u”
+    },
+    {
+        "name": "Kg Obondoru",
+        "url": "http://nota.kg/api/radio/kgobondoru.m3u"
+    },
+    {
+        "name": "Manas Fm",
+        "url": "http://nota.kg/api/radio/manas.m3u"
+    },
+    {
+        "name": "Evropa Plyus",
+        "url": "http://nota.kg/api/radio/evropaplyus.m3u"
+    },
+    {
+        "name": “Avto Radio”,
+        "url": "http://nota.kg/api/radio/avtoradio.m3u"
+    },
+    {
+        "name": “Best Fm”,
+        "url": "http://nota.kg/api/radio/bestfm.m3u"  
+    },
+    {
+        "name": “Hit Fm”,
+        "url": "http://nota.kg/api/radio/hitfm.m3u"
+    }
+]

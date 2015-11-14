@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Nullsoft SHOUTcast DNAS Server Changelog</title>
+	<style type="text/css">body,table,textarea,pre{font-family:Arial,Helvetica,sans-serif;font-size:10pt;}
+	a:link,a:visited{color:#2762AE;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	ul{list-style-type:none;text-align:left;}
+	ul.n{list-style-type:square;text-align:left;}
+	pre{background-color:#F0F0F0;border:1px solid #CCCCCC;font-weight:bold;padding:5px 10px 5px 10px;display:inline-block;margin-top:0;margin-bottom:0;margin-left:25px;}
+	pre.src{border:0;font-family:monospace;background-color:white;}
+	span.b{font-weight:normal;color:#3366CC;}
+	span.c{font-style:italic;font-weight:normal;color:#808080;}
+	span.v{font-weight:normal;}
+	span.r{font-weight:normal;color:#000066;}
+	span.s{font-weight:normal;color:#FF0000;}
+	#toc {background-color:#F0F0F0;border:1px solid #CCCCCC;padding:0 5px 0 5px;text-align: center;}
+	p.ver{color:#4C4C4C;font-size:85%;margin-top:-1.5em;text-align:center;}
+	.thumb{float:right;clear:both;margin-left:10px;margin-top:5px;margin-bottom:10px;width:202px;}
+	.serv{float:right;clear:both;margin-left:10px;margin-top:5px;margin-bottom:10px;width:252px;}
+	.pages{white-space:nowrap;padding-right:25px;}
+	img{width:200px;}
+	img.serv{width:250px;}
+	img.thumb{border:1px solid #CCCCCC;}
+	hr{border:0;background-color:#CCCCCC;height:1px;)</style>
+	<script type="text/javascript">if(window.showTocToggle){var tocShowText="show";var tocHideText="hide";showTocToggle()}function showTocToggle(){if(document.createTextNode){var linkHolder=document.getElementById('toctitle');if(!linkHolder){return}var outerSpan=document.createElement('span');outerSpan.className='toctoggle';var toggleLink=document.createElement('a');toggleLink.id='togglelink';toggleLink.className='internal';toggleLink.href='javascript:toggleToc()';toggleLink.appendChild(document.createTextNode(tocHideText));outerSpan.appendChild(document.createTextNode('['));outerSpan.appendChild(toggleLink);outerSpan.appendChild(document.createTextNode(']'));linkHolder.appendChild(document.createTextNode(' '));linkHolder.appendChild(outerSpan);var cookiePos=document.cookie.indexOf("slog_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+13)==1){toggleToc()}}}function changeText(el,newText){if(el.innerText){el.innerText=newText}else if(el.firstChild&&el.firstChild.nodeValue){el.firstChild.nodeValue=newText}}function toggleToc(){var toc=document.getElementById('toc').getElementsByTagName('ul')[0];var first=document.getElementById('first');var toggleLink=document.getElementById('togglelink');if(toc&&toggleLink&&toc.style.display=='none'){changeText(toggleLink,tocHideText);document.getElementById('toc').style.cssFloat='left';toc.style.display='block';first.style.marginLeft='180px';document.cookie="slog_hidetoc=0"}else{changeText(toggleLink,tocShowText);document.getElementById('toc').style.cssFloat='';toc.style.display='none';first.style.marginLeft='';document.cookie="slog_hidetoc=1"}}window.onload=function(){var cookiePos=document.cookie.indexOf("slog_hidetoc=");if(cookiePos>-1&&document.cookie.charAt(cookiePos+13)==1){toggleToc()}}</script>
+</head>
+<h1 align="center">Nullsoft SHOUTcast DNAS Server Changelog</h1>
+<p class="ver">(Last Updated 29 November 2013)</p>
+<hr>
+<table id="toc" style="float:left;margin-right:40px;margin-bottom:5px;"><tbody><tr><td>
+<div id="toctitle"><b>Contents</b> <span class="toctoggle">[<a id="togglelink" class="internal" href="javascript:toggleToc()">hide</a>]</span></div>
+<ul style="padding-left:0px;">
+<li><a href="#109">v2.2.1 Build 109</a></li>
+<li><a href="#107">v2.2.0 Build 107</a></li>
+<li><a href="#29">v2.0.0 Build 29</a></li>
+<li><a href="#28">v2.0.0 Build 28 (RC 2)</a></li>
+<li><a href="#27">v2.0.0 Build 27 (RC 1)</a></li>
+<li><a href="#19">v2.0.0 Build 19 (Beta)</a></li>
+<li><a href="#18">v2.0.0 Build 18 (Beta)</a></li>
+<li><a href="#17">v2.0.0 Build 17 (Beta)</a></li>
+<li><a href="#14">v2.0.0 Build 14 (Beta)</a></li>
+<li><a href="#13">v2.0.0 Build 13 (Beta)</a></li>
+<li><a href="#10">v2.0.0 Build 10 (Beta)</a></li>
+<li><a href="#7">v2.0.0 Build 7 (Beta)</a></li>
+</ul>
+</td></tr></tbody></table>
+
+<a name="107"></a><h3>v2.2.1 Build 109</h3>
+<hr>
+<ul class="n" id="first" style="margin-left:180px;">
+<li>Completed remaining v1.x compatibility improvements (specifically relating to YP availability issues so clients are now only blocked from connecting if there is no source connected)</li>
+<li>Added experimental 'streamportlegacy' option to allow for supporting more than one direct legacy v1 source connection to the server (see documentation for usage / limitations)</li>
+<li>Changed Windows service install / uninstall messages when UAC elevation / admin access is required to undertake the action</li>
+<li>Fixed issues due to a bug in the handling of the 'useicy' option which is now deprecated and replaced by the 'disableicy' option (see documentation for usage)</li>
+<li>Fixed reported issues with the 'Source Login Details' page (mainly showing mode availability incorrectly)</li>
+<li>Fixed missing 'UID' value for client disconnects in the main log output</li>
+<li>Fixed some clients being incorrectly shown as 'HTML5' client types when they were not on the admin pages</li>
+<li>Fixed compile issues preventing the BSD build from being built for the prior release</li>
+<li>Other miscellaneous code changes, improvments and related documentation updates</li>
+</ul>
+<p><br></p>
+
+<a name="107"></a><h3>v2.2.0 Build 107</h3>
+<hr>
+<ul class="n" id="first" style="margin-left:180px;">
+<li>Added a 'setup' mode which allows basic configuration of the server when run without a configuration file (see documentation for usage)</li>
+<li>Added a 'builder' mode which allows for the configuration builder to be run within the server (broadcasting is disabled in this mode)</li>
+<li>Added automatic authhash generation when a stream source is connected on a public stream and an authhash was not already present (can be disabled using autoauthhash=0)</li>
+<li>Added /statistics which consolidates all of the /stats?sid=# results for all known and active streams</li>
+<li>Added 'flashpolicyserverport' allowing the DNAS to serve up the Flash policy file (as per 'flashpolicyfile') on port 843 or a custom port (as well as on 'portbase')</li>
+<li>Added serving of 'shoutcast.swf' for custom flash players to be handled in the same domain as the server (see documentation for usage)</li>
+<li>Added listen.xspf and listen.qtl to the /listen* playlist options available (so now pls, m3u, asx, qtl and xspf are available on a stream)</li>
+<li>Added 'portlegacy' to allow changing or disabling the port legacy v1 sources connect on (see documentation for usage)</li>
+<li>Added 'publicport' to allow changing the port reported to the YP servers and any clients using the /listen.* playlists where 'portbase' is not the port externally seen</li>
+<li>Added option on 'Server Summary' page (accessed from admin.cgi?sid=0) to allow for manually setting the stream authhash e.g. if needed for a relay</li>
+<li>Added 'Stream DJ' (if known) on the stream admin pages as well as &lt;DJ/&gt; in all statistics for getting the current DJ of the connected source (more formal specification than fiddling the IRC / AIM / ICQ values as used with v1 DNAS setups)</li>
+<li>Added 'streammaxbitrate' and 'maxbitrate' options for per-stream or global limiting of the source bitrate allowed for a connection</li>
+<li>Added 'streambackupurl' option for per-stream fallback if the original source (direct or via a relay) fails to keep the stream alive (see documentation for usage)</li>
+<li>Added server bandwidth usage reporting for the server administrator via the admin.cgi?mode=bandwidth action (see documentation for usage)</li>
+<li>Added JSON and JSON-P responses to the /stats?sid=# and /statistics responses by appending &json=1 for JSON and appending &callback=&lt;function&gt; for JSON-P</li>
+<li>Added XML, JSON and JSON-P support to the /played response as well as to support &pass to allow song history access to the XML, JSON and JSON-P responses even when public display of them is disabled</li>
+<li>Added admin.cgi?mode=viewjson as a JSON and JSON-P equivalent of admin.cgi?mode=viewxml (see documentation for usage)</li>
+<li>Added ability to kick all connected clients on a stream via the stream admin summary page in addition to the existing single client kicking</li>
+<li>Added 'redirecturl', 'streamredirecturl' and 'streamhidestats' options for per-stream or global redirection / blocking of publically accessible pages when 'hidestats' or the new 'streamhidestats' options are enabled</li>
+<li>Added SIGUSR1 and SIGUSR2 support in non-Windows builds for reloading the configuration file from the console (see documentation for usage)</li>
+<li>Added SIGWINCH support in non-Windows builds for reloading the Reserved IP file(s) from the console (see documentation for usage)</li>
+<li>Added support for GZIP (RFC 1952) encoding of appropriate page and data responses if supported by the requesting connection and will provide a bandwidth saving</li>
+<li>Added a 'View Source Login Details' page to the server summary page to make it easier to get the login details required for all appropriate stream configurations</li>
+<li>Added sp=&lt;streampath&gt; support to all web methods which support sid=&lt;streamid&gt; to be able to access a page by streampath instead of streamid - streamid is still the preferred method (see documentation for usage)</li>
+<li>Added 'admin.cgi?mode=viewlog&viewlog=save' method to allow for downloading the server log output as a GZIP compressed archive (useful for checking the log output remotely or for support issues)</li>
+<li>Added 'streammovedurl' option for per-stream redirection of permanently stopped or moved streams from the server</li>
+<li>Added archiving of log, w3c and streamw3c files when rotating these files would cause them to be deleted (which happens when there are usually five rotated copies already)</li>
+<li>Added 'logrotates' and 'logbackup' options to provide finer control over the rotation (default of 5 files) and backup (default off) of the log files during rotations</li>
+<li>Added icy=http parameter detection on v1 client connections to return a HTTP instead of a ICY header response type e.g. server:port/?icy=http</li>
+<li>Added 'url' parameter to the 'updinfo' action to replicate v1 DNAS functionality which had not been re-implemented in the v2 DNAS</li>
+<li>Added 'dj' parameter to the 'updinfo' action to allow for scripted updating of the 'DJ' reported for a stream (useful for legacy source software)</li>
+<li>Added 'ypstatus' method for the server administrator via the admin.cgi?mode=ypstatus action (see documentation for usage)</li>
+<li>Added reporting of the stationid for public listings on the server and stream administrator pages</li>
+<li>Added 'streamuptime' to the /stats and /statistic responses to aid in monitoring of the length of source connections to the server</li>
+<li>Added /streamart?sid=# and /playingart?sid=# methods as a public version of the verions viewable via 'admin.cgi?mode=art&sid=#'</li>
+<li>Added back /7(.html) support due to issues in getting legacy reporting tools updated to support the recommended 'stats' methods</li>
+<li>Added admin.cgi?mode=history as an admin page equivalent of played.html?sid=# so stream administrators can easily see the played history of the stream</li>
+<li>Added 'useicy' option to control if the DNAS will provide ICY (default) or HTTP (HTML5 compatible) headers for client connections</li>
+<li>Improved YP interaction when the IP address of the DNAS changes whilst it is still broadcasting (requires YP update for this to work fully)</li>
+<li>Improved handling of source relay connections especially via the server's admin pages e.g. a pending source relay connection can be aborted</li>
+<li>Improved handling with large client numbers to reduce CPU usage as well as not crashing when exhausting the imposed maximum file descriptors (e.g. ulimit -n)</li>
+<li>Changed 'streampath' to default to / for streamid=1 to improve compatibility (/stream/&lt;sid&gt;/ is still default on all other streams)</li>
+<li>Changed config file handling to automatically use 'sc_serv.ini' or 'sc_serv.conf' if present if no config file is specified (better replicates v1 DNAS behaviour)</li>
+<li>Changed relayconnectretries to accept zero (relayconnectretries=0) to keep trying to reconnect to the relay source and changed the default to 0 from 3</li>
+<li>Changed reporting of the YP connection state on the admin pages to make it clearer if the authhash is invalid or empty</li>
+<li>Changed the 'Stream Configurations' xml response to fill &lt;STREAMAUTHHASH/&gt; with EMPTY or INVALID on error as applicable</li>
+<li>Changed YP2 connection attempts to not be made if the authhash is determined to be invalid or empty</li>
+<li>Changed 'hidestats' to allow for more control over the pages which are able to be disabled (see documentation for usage)</li>
+<li>Changed 'updinfo' to not need 'type=xml' as it now auto-detects how to process the title information received</li>
+<li>Changed 'configrewrite' to accept 'configrewrite=2' so now 'configrewrite=1' generates minimal configurations (only saves values not at the default) and 'configrewrite=2' outputs all configuration options (like 'configrewrite=1' used to do)</li>
+<li>Changed YP2 handling to show the stream number, outputting of detailed error messages (where provided) and not output /yp/resp/updatefreq errors</li>
+<li>Changed handling of the SHOUTcast site player client connections to not send in-stream metadata to workaround issues with title changes</li>
+<li>Changed song history and current song titles shown in any reports to use the pre-formatted title from the source if available (does not change titles in clients)</li>
+<li>Changed handling of introfile to attempt to strip any tags from the raw file to improve client compatibility</li>
+<li>Changed client listener reports (via the stream administrator page and xml reports) to now be sorted oldest to newest</li>
+<li>Changed w3c log handling to output header information to improve tool compatibility (replicates v1 DNAS behaviour)</li>
+<li>Changed handling of 'streamid' so if not specified then a stream configuration will be created if any appropriate stream* options are read on loading</li>
+<li>Changed SHOUTcast 2 source logging to only output complete metadata and connection details when using uvox2sourcedebug=1 (instead of always as before) </li>
+<li>Changed all /listen* playlist options to output the 'backupserver' provided by the YP where possible</li>
+<li>Changed some of the server and stream admin page header links to better hide invalid options and to make navigation easier, etc</li>
+<li>Changed the configuration reload option ('admin.cgi?mode=reload' on the 'Server Summary' page) to also update the debugging options and other options (see documentation for additions)</li>
+<li>Changed Reserved IP handling to allow connections from 127.0.0.1 through even if not specified (allows access to admin pages)</li>
+<li>Changed the Ban and Reserve IP administration actions to save changes (if enabled) at the time instead of only on exit</li>
+<li>Changed YP2 stream registration to wait until the source has provided a title to allow the station listing to appear sooner (requires YP update for this to work fully)</li>
+<li>Changed handling of authhash changes via the update option to update the current stream information without requiring the stream(s) to be restarted</li>
+<li>Changed server summary page to count inactive relay configurations (if correctly specified) as available streams so it is possible to restart them easier</li>
+<li>Changed the user agent (mainly for relay connections) to now be 'Ultravox/2.1 SHOUTcast Server x.x.x.x' (where x.x.x.x is the version and build numbers)</li>
+<li>Changed the stream admin page to also report the type (v1 or v2) of the connected clients</li>
+<li>Changed the current listener list on the admin summary page (admin.cgi?sid=#) to group client connections from the same IP address (make non-unique connections easier to find)</li>
+<li>Changed all /listen.* handling to use the public IP of the DNAS as reported by the YP when publically listed (requires YP update for this to work fully)</li>
+<li>Changed 'flashpolicyfile' handling to use an internal copy if a custom file is not specified (which has the benefit of specifying the actual ports used)</li>
+<li>Changed console output to highlight errors in red, warnings in yellow and debug output in green to make them more obvious (cannot be disabled)</li>
+<li>Changed the 'view logfile' administration pages to highlight errors, warnings and debug output to make them more obvious (colours can be changed via css)</li>
+<li>Changed /stats?sid=# to support &pass to allow stats access even when public display of them is disabled</li>
+<li>Changed Windows builds to only send warning and error messages to the event log in service mode or if a critical error happens on startup before file logging occurs</li>
+<li>Changed autodumpsourcetime and streamautodumpsourcetime to be known as autodumptime and streamautodumptime respectively to better reflect the general usage of these options</li>
+<li>Changed server summary page to display configured but non-running configurations along with active sources and inactive relay configurations</li>
+<li>Changed 'yptimeout' default from 60 to 30 seconds</li>
+<li>Changed 'Shoutcast Metadata Puller' handling to only return the title update (if enabled) instead of the audio data to help save bandwidth on popular listed streams</li>
+<li>Changed GCC version used to build the Linux versions (now using GCC 4.4.6 instead of GCC 4.1.2 from CentOS 5.8)</li>
+<li>Changed 'admin.cgi?sid=#&mode=kickdst' to support IP address(s) in addition to the existing unique client id(s) support</li>
+<li>Removed Ultravox 2.0 (old Aol Radio) client and source support (reduces memory and cpu usage - amount depends on the setup used)</li>
+<li>Removed 'yp2' configuration option and the ability to run the DNAS in YP1 mode</li>
+<li>Fixed all reported issues with the authhash management system since it was first released for public use</li>
+<li>Fixed random crashes due to incomplete / dodgy client requests made to the server (resolved from user reports)</li>
+<li>Fixed destip not being followed for YP connections so binding to a different IP or using a DNS name should now work (requires YP update for this to fully work)</li>
+<li>Fixed some rare issues with binding to a custom destip failing when it should have worked</li>
+<li>Fixed updating of 'streampath' not causing a YP details refresh (remove then add) on any changed stream configurations</li>
+<li>Fixed crash on Windows versions after choosing a config file to use when run without write permissions to create 'logfile' when no config file is specified</li>
+<li>Fixed crash on non-Windows versions when processing invalid xml metadata from sources</li>
+<li>Fixed some attempts to create / update authhashes not working due to url-encoding issues with the data passed on to the YP</li>
+<li>Fixed handling of clearly invalid authhashes to not show the update and remove admin options</li>
+<li>Fixed handling of 'unique' causing the DNAS to lockup on loading in some scenarios</li>
+<li>Fixed some relative path issues when using 'include' in some scenarios</li>
+<li>Fixed v1 sources not able to connect if icy-name / icy-url are empty even if titleformat / urlformat have been specified</li>
+<li>Fixed stream url on the summary pages not providing valid links in some scenarios</li>
+<li>Fixed MAXLISTENERS on /stats?sid=# reporting maxuser instead of streammaxuser when no source is connected</li>
+<li>Fixed UID in the Listener Stats being output in the wrong number format</li>
+<li>Fixed the 'Unique Listeners' total on the administrator summary page not always reporting the correct number</li>
+<li>Fixed the SHOUTcast Directory metadata puller / tester client statistics filtering due to related YP changes</li>
+<li>Fixed accessing the root summary page with the Opera browser to not start streaming like a client connection</li>
+<li>Fixed /currentsong?sid=# not returning a title if present when songhistory or streamhistory is zero</li>
+<li>Fixed titles not appearing in the SHOUTcast Directory listings when using a v1 source in some scenarios</li>
+<li>Fixed some v1 sources (e.g. butt) not being able to connect in some cases due to non-standard icy* headers received</li>
+<li>Fixed the windows w3c log file outputting additional linebreaks which were not required</li>
+<li>Fixed some Winamp v5.5x clients being incorrectly sent a v2 instead of a v1 SHOUTcast stream (resolves missing stream titles)</li>
+<li>Fixed loading issues related to not being able to create the logfile and force reverts to default path</li>
+<li>Fixed OS path conversion on config file entries not always working e.g. when moving a windows config to linux</li>
+<li>Fixed relays not running if http:// was not specified (is now automatically appended internally)</li>
+<li>Fixed additional issues relating to relay connection errors including not following the retry timeouts in all scenarios or not attempting to reconnect in specific scenarios</li>
+<li>Fixed the next song being incorrectly reported at times or not being correctly cleared as applicable</li>
+<li>Fixed enabling 'riponly=1' blocking access to the admin pages of the DNAS plus it now allowa connections from 127.0.0.1 / localhost through even if not added to the list (for local monitoring)</li>
+<li>Fixed Banned and Reserved IP checks not always working (better validates against per-stream and global lists now)</li>
+<li>Fixed handling of user agents with invalid control characters causing log / reporting issues</li>
+<li>Fixed issues with 'admin.cgi?mode=reload' attempting to keep updating values which were already updated or incorrectly removing additional stream configurations when only 1 needed removing</li>
+<li>Fixed accessing a stream using 'streampath' not working correctly in all cases e.g. when no / was prefixed for the entry in the configuration file</li>
+<li>Fixed current song display issues with some v1 based relays where non-english characters are present and were not correctly handled as utf-8</li>
+<li>Fixed issues with multiple connection attempts generated for an already pending relay connection via the configuration reload or 'startrelay' method or when a relay is removed but was pending</li>
+<li>Fixed issues with Windows service and non-Windows daemon use primarily when no configuration file is specified (see documentation for amended usage)</li>
+<li>Fixed more clients than is specified for (stream)maxusers if only reserved clients are allowed to connect to the server (will reject reserved clients if no one can be kicked to free a slot)</li>
+<li>Fixed listen.pls generation for NSV streams generating incomplete playlists (all other playlist formats were generated correctly)</li>
+<li>Fixed out of order metadata packets being incorrectly handled if another metadata packet of a different type is received whilst waiting on an existing type (mainly affected in-stream artwork)</li>
+<li>Fixed checking for configuration files not always working on non-Windows versions or incorrectly reporting a directory as a valid file</li>
+<li>Fixed 'w3clog' and 'streamw3clog' not always being rotated when using SIGHUP or when the main log file is auto-rotated or on starting the server</li>
+<li>Fixed DNS lookup issue on non-Windows builds which could prevent access to the SHOUTcast servers</li>
+<li>Fixed crash when getting repeated connection attempts and no source is connected in rare cases</li>
+<li>Fixed some invalid characters being kept from song title updates which could cause some of the XML responses being invalid</li>
+<li>Fixed title updates from some v1 based sources not being accepted when allowed by a v1 based DNAS server previously</li>
+<li>Fixed some DNAS provided web page access failing in specific OS and machine configurations</li>
+<li>Upgraded libraries to use expat-2.1.0</li>
+<li>Other miscellaneous code changes, de-duplication of error messages, cleanup of normal running log messages, admin page tweaks and minimisations, improvments and related documentation updates</li>
+</ul>
+<p><br></p>
+
+<a name="29"></a><h3>v2.0.0 Build 29 <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Changed SHOUTcast 2 client header to show the DNAS's actual version instead of just 'SHOUTcast 2.0'</li>
+<li>Fixed SHOUTcast 2 compatible clients only allowed to connect as a SHOUTcast 1 client (build 27 / 28 specific)</li>
+<li>Fixed more config files being shown than allowed on non-Windows versions when no configuration file specified</li>
+</ul>
+<p><br></p>
+
+<a name="28"></a><h3>v2.0.0 Build 28 (RC 2) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added listen.asx to the /listen* playlist options available (so now pls, m3u and asx are available on a stream)</li>
+<li>Added detection of sc_serv.ini if no configuration file was passed on loading (detects v1 configuration files)</li>
+<li>Added 'type=xml' parameter to the 'updinfo' action to allow for v2 style XML metadata titles to be manually done</li>
+<li>Changed 'streampath' handling to allow '/' to be used again (was disabled in build 27)</li>
+<li>Fixed kicking of listeners failing to respond / taking multiple attempts to react</li>
+<li>Other miscellaneous code changes, improvments and related documentation updates</li>
+</ul>
+<p><br></p>
+
+<a name="27"></a><h3>v2.0.0 Build 27 (RC 1) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added ability to create, update and remove authhashes via the administrator summary page (accessed from admin.cgi?sid=0)</li>
+<li>Added reporting of per-stream and total server listener counts on admin.cgi or admin.cgi?sid=0</li>
+<li>Added 'streamw3clog' option for per-stream logging with fallback to 'w3clog' if not specified</li>
+<li>Added 'faviconfile' and 'faviconmimetype' to allow for a local icon / image file to be served as the favicon.ico for the server webpages</li>
+<li>Added 'robotstxtfile' to allow for a local robots.txt to be served as the robots.txt for the server</li>
+<li>Added supporting features for in-stream artwork (related to March 2011 protocol changes) with online verions viewable via 'admin.cgi?mode=art&sid=#' for admins to check (see documentation for usage)</li>
+<li>Added /stats?sid=# to allow easier access to the stream information (this mirrors admin.cgi?sid=#mode=viewxml&page=1) and is the effective replacement of 7.html</li>
+<li>Added 'hidestats' to allow disabling of the new /stats?sid=# mode (see documentation for usage)</li>
+<li>Added 'admin.cgi?mode=rotate' and SIGHUP support to rotate 'logfile', 'w3clog' and 'streamw3clog' whilst sc_serv is running (see documentation for usage)</li>
+<li>Added ability to restart a kicked relay source via the administration pages</li>
+<li>Added 'relayconnectretries' to control how many times a relay attempts to reconnect to the specified source before it is failed</li>
+<li>Added a 5 second refresh delay when 'admin.cgi?mode=reload' is used and results in changes to source connections / relays unlikely to be displayed immediately</li>
+<li>Added back clickable link support for IRC stream entries on the administration pages only if the IRC stream entry begins with irc://</li>
+<li>Added UNIQUELISTENERS to admin.cgi?mode=viewxml to complement REPORTEDLISTENERS (as the server status pages display)</li>
+<li>Added STREAMPATH to admin.cgi?mode=viewxml for pages 0, 1 and 6 to show the 'streampath' of the specified stream configuration otherwise will output /stream/&lt;sid&gt;/</li>
+<li>Changed the ban action for connected clients on the administation pages to also kick the client connection used for the ban action</li>
+<li>Changed accessing stream and root urls (i.e. http://ip:port or http://ip:port/stream/1) in a browser to show the html pages (index.html) instead of providing the stream (replicates v1 DNAS behaviour)</li>
+<li>Changed the /listen* handling to improve auto-filling of the server IP in the generated playlist files</li>
+<li>Changed the /listen* handling to attempt to provide a title much like the YP generated playlist files instead of just an address</li>
+<li>Changed the delimiter in file paths read from the configuration file to be converted to the correct format for the OS being used</li>
+<li>Changed the admin.cgi?mode=viewxml action to return a slimmer xml response compared to prior builds (to save more bandwidth)</li>
+<li>Changed the rotate action to reset the 1 day delay until the next automatic rotation if a rotate is manually run</li>
+<li>Changed how the SHOUTcast Directory metadata puller / tester is handled in client statistics to no longer skew listener totals</li>
+<li>Changed how the version of the DNAS is reported to make it more like the v1 DNAS as well as fixing it not being reported in some error response</li>
+<li>Removed REPORTEDLISTENERS from admin.cgi?mode=viewxml for pages 0 and 1 as it duplicated the CURRENTLISTENERS entry</li>
+<li>Removed POINTER from admin.cgi?mode=viewxml for page 3 as it duplicated the UID entry</li>
+<li>Removed direct support for specifying 'relayport' and 'relayserver' (though if found then they are mapped to streamrelayurl against streamid=1 and will be removed if using configrewrite=1)</li>
+<li>Fixed 'autodumpsourcetime' and 'streamautodumpsourcetime' not being applied correctly especially if either were set to 0</li>
+<li>Fixed usage of 'streampath' in the listen playlists generated to ensure the formed playlist entry will work where possible for client connections</li>
+<li>Fixed connection issues with YP directory listings when no 'streampath' is specifed (now ensures /stream/&lt;sid&gt;/ is set as the path so connections will be made against the correct stream)</li>
+<li>Fixed some client connection issues when 'streampath' has been specifed (could lead to sid=1 being played even if the streampath_2 was attempted)</li>
+<li>Fixed non-english title compatibility with v1 sources i.e. titles with accented characters, was leading to title issues (also affected legacy DNAS builds)</li>
+<li>Fixed some specific stream configuration issues with not all values being correctly mapped to the expected stream configuration</li>
+<li>Fixed 'admin.cgi?mode=viewlog' to escape the log file contents correctly so appears correctly in the html output</li>
+<li>Fixed issues with 'admin.cgi?mode=reload' where it could cause a lockup (non-Windows versions), caused incorrect removal of a configuration groups, source password changes not always applied, relays not being updated or started in all cases</li>
+<li>Fixed logfile not being correctly set if no config file is passed but a selection is then made from the list shown</li>
+<li>Fixed kicking and banning not working in some cases</li>
+<li>Fixed issues handling invalid stream id values on source counnection attempts</li>
+<li>Fixed crash when attempting to use configuration groups where 'streamrelayurl' contains an url</li>
+<li>Fixed incorrect loading of some v1 DNAS boolean based configiruation options</li>
+<li>Fixed 'allowrelay=0' from preventing connection attempts to be made to the YP directory when there is no relay</li>
+<li>Fixed crash when changing a stream's authhash and then doing a configuration reload</li>
+<li>Fixed 'include' not working with some relative file paths e.g. include=sc_serv_debug.conf when include=.\sc_serv_debug.conf worked</li>
+<li>Fixed listen.m3u not always providing a valid stream url especially when using 'streampath'</li>
+<li>Fixed 'configrewrite' to no longer write some old / invalid configuration options when enabled</li>
+<li>Other miscellaneous code changes, crash fixes, improvments and related documentation updates</li>
+</ul>
+<p><br></p>
+
+<a name="19"></a><h3>v2.0.0 Build 19 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Changed password handling to not allow 'password' to be the same as 'adminpassword' with relevant checks on the per-stream passwords</li>
+<li>Changed Ultavox 2.0 Winamp clients (typically prior to v5.60x) to receive a v1 SHOUTcast stream instead of an Ultravox 2 stream to resolve missing stream titles</li>
+<li>Changed some of the reported details in the http headers used for SHOUTcast 2 (Ultravox 2.1) streams</li>
+<li>Changed the stream admin page to also report the user agent of the connected clients</li>
+<li>Fixed some more issues with password handling related to the changes in builds 17 and 18</li>
+</ul>
+<p><br></p>
+
+<a name="18"></a><h3>v2.0.0 Build 18 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added prompt for configuration file to load if one is not specified or there is an error loading the configuration file in non-daemon / service mode</li>
+<li>Fixed some admin options not working due to password related changes in the previous release e.g. prevented legacy client title updates</li>
+<li>Fixed loading issues on non-Windows versions related to the handling of the banned and reserved IP files</li>
+</ul>
+<p><br></p>
+
+<a name="17"></a><h3>v2.0.0 Build 17 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added per stream versions of the following configuration options (prefix with 'stream' to use them in addition to the master options e.g. streampassword): password, adminpassword, publicserver, allowrelay, allowpublicrelay, riponly, autodumpsourcetime, autodumpusers, listenertime, songhistory, uvoxcipherkey, introfile, backupfile, banfile, ripfile</li>
+<li>Added 'logclients' configuration option to allow for client connections and disconnects to not be logged (default behaviour is to log these events)</li>
+<li>Added summary administration page accessed via admin.cgi or admin.cgi?sid=0 instead of going to the default stream summary page (only works with 'adminpassword' access)</li>
+<li>Added '&iponly=1' support to 'admin.cgi?mode=viewxml' so listener stats (in standard mode or when using &page=3) will only output the listener's IP address instead of all other information</li>
+<li>Changed 'admin.cgi?mode=reload' to only be available via the new summary administration page instead of on each stream administration page</li>
+<li>Changed the /currentsong and &lt;songtitle&gt; values to be a formatted title as 'artist - title' if the v2 stream source metadata allows instead of just showing 'title'</li>
+<li>Changed the /listen* actions to auto-fill the server IP in the generated playlist files if 'dstip / destip' is not set so the playlist is more likely to be valid</li>
+<li>Changed the /home action to open the stream url in a new window / tab instead or replacing the current view of the admin pages</li>
+<li>Changed the server to not load if appropriate passwords have not been specified (including per stream configurations) to improve security especially with per-stream password support</li>
+<li>Changed the title produced for v1 clients to be 'artist - title' instead of 'artist - album - title' to resolve some legacy client related issues</li>
+<li>Changed some of the admin page text spacing and other misc html changes</li>
+<li>Changed administration pages to not allow access to the 'tail logfile' and 'view logfile' pages when using 'streamadminpassword' to prevent information from other stream configuration groups being seen</li>
+<li>Fixed the Ban and Reserve IP administration actions to not re-add an already banned or reserved IP (overlap of single vs subnets still happens)</li>
+<li>Fixed stream configuration options not being applied correctly when using the plain name (without _X on the end) for streamid=1 configurations</li>
+<li>Fixed /stream/sid client access not working correctly if an invalid station id (sid) was passed on the connection attempt</li>
+<li>Fixed the root index.html page occassionally reporting streams as available when they are not</li>
+<li>Fixed 'admin.cgi?mode=reload&sid=#' not always updating or removing stream configurations correctly despite reporting it had especially with streamid=1 changes or the source password changed</li>
+<li>Fixed YP2 connections not following the 'yptimeout' configuration option</li>
+<li>Fixed 'admin.cgi?sid=#&mode=updinfo' only updating the default stream configuration instead of the stream configuration required</li>
+<li>Removed invalid link for the IRC stream entry on the administration pages</li>
+<li>Updated Configuration Builder to latest version</li>
+<li>Updated documentation to reflect new options and related errata</li>
+</ul>
+<p><br></p>
+
+<a name="14"></a><h3>v2.0.0 Build 14 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Improved handling of the mimetype reported by legacy mp3 sources to improve usage of v1 sources (maps more mimetypes to audio/mpeg as applicable)</li>
+<li>Added /nextsongs?sid=# to show the next coming songs in an xml form (if known) when using a compatible v2 stream source</li>
+<li>Added 'admincssfile' option to allow for using v1 DNAS / SHOUTcast 2 / custom css styling of the index.html and the admin pages (check documentation for usage)</li>
+<li>Changed 'admin.cgi?mode=reload&sid=#' to also update 'password' and 'requirestreamconfigs'</li>
+<li>Changed 'configrewrite=1' to not output 'include' on exit</li>
+<li>Fixed Windows version logfile path generation if none or an invalid configuration file is passed (relates to change of default logfile path to %temp%\sc_serv.log in previous build)</li>
+<li>Fixed Windows service not running and being identified as sc_trans in the system event logs</li>
+<li>Updated some of the example configurations to resolve issues with platform specific path handling</li>
+<li>Updated Configuration Builder to latest version</li>
+</ul>
+<p><br></p>
+
+<a name="13"></a><h3>v2.0.0 Build 13 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Added 'streammaxuser' to the stream configuration group options to allow for a per stream limit with 'maxuser' still ensuring a maximum client limit on the server</li>
+<li>Added support for wildcards via the 'include' feature e.g. 'include=stream/*.conf' to allow for a specific file for each stream configuration on the server</li>
+<li>Added a new 'admin.cgi?mode=reload&sid=#' mode to the administration support which will make the server reload its stream configurations by adding / removing / updating any streams on the fly where it can (unless '&force=1' is also passed) otherwise it will kick sources and clients as applicable</li>
+<li>Added YP connection status on the 'Server Status' message on index.html and the admin page to make it easier to see if a YP connection on a public server exists</li>
+<li>Added more information to the log generated to indicate if a YP connection has worked or not without having to enable debugging in the configuration file or completely cryptic messages</li>
+<li>Added &page=5 additional param handling to the admin.cgi?mode=viewxml stats action to provide the currently held metadata of the playing song (amount of information depends on the source and what metadata it provides)</li>
+<li>Added &page=6 additional param handling to the admin.cgi?mode=viewxml stats action to provide the currently known stream configurations (amount of information depends on the number of stream configurations specified)</li>
+<li>Added Configuration Builder (see config_builder folder) as a graphical way of making working configuration files (in combination with forum user thinktink)</li>
+<li>Now ships in linux 64-bit - is identified as 'posix(linux x64)' with the 32-bit version now identified as 'posix(linux x86)'</li>
+<li>Changed YP2 connection failures to be reported more clearly instead of an obscure /yp/resp/updatefreq missing error or requiring 'yp2debug=1' to be enabled</li>
+<li>Changed default location of the log file on Windows installs to %temp%\sc_serv.log instead of c:\sc_serv.log (resolves some issues on Windows Vista / 7 and write permissions)</li>
+<li>Changed pvt_update(..) to not spam the logs when 'yp2debug=1' is enabled in the configuration file if a connection attempt to the YP2 fails</li>
+<li>Changed http header checks to allow empty values from a 'key:value' pair to resolve some client connection issues</li>
+<li>Changed the 'Server Status' message on the index.html and the admin pages to show 'There is no source connected or no stream is configured for stream #X' when the stream is not active or there is no source connected</li>
+<li>Changed the reported configuration file on the index.html and the admin pages to be the base file loaded instead of the last included file if 'include' is used in the configuration files</li>
+<li>Changed handling of v1 sources to autofill the aim, irc and icq entries with N/A or 0 as appropriate if not set in what the source sends to the server e.g. Nicecast on Mac</li>
+<li>Fixed an api dependency issue preventing this from running on Windows 2000</li>
+<li>Fixed /nextsong?sid=# to show the unescaped version of the &lt;soon/&gt; metadata tag if received from the source</li>
+<li>Fixed clients trying to connect via Ultravox 2.0 (e.g. Winamp 5.5x and older versions) not being able to connect or causing non-Windows versions of the server to terminate incorrectly</li>
+<li>Fixed logging not working when passing certain invalid configuration files</li>
+<li>Fixed admin.cgi?mode=resetxml not working - now will reset &lt;peaklisteners&gt; and &lt;streamhits&gt; fields to mimick v1 DNAS handling</li>
+<li>Disabled the &lt;webdata/&gt; block in the admin.cgi?mode=viewxml stats (as well as via the &page=2 additional param) for the time being</li>
+<li>Disabled some of the admin.cgi?mode=viewxml stats entries not currently being filled in just to cut down on unnecessary bandwidth usage - better use the &page=# option to get specific sets of stats instead of all in one go to keep bandwidth usage down</li>
+<li>Updated documentation based on user feedback and related changes, added sc_serv_simple.conf as an ultra simple configuration example, minor other issues & changes made</li>
+</ul>
+<p><br></p>
+
+<a name="10"></a><h3>v2.0.0 Build 10 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>Now ships in BSD 8.x and Windows 64-bit</li>
+<li>Added 'next song' to the stream + admin pages</li>
+<li>Added a disconnect message indicating the duration, number of bytes sent and agent of the connection being closed</li>
+<li>Added a current and next song pages (/currentsong?sid=# and /nextsong?sid=#) along with &lt;NEXTSONG&gt; in the xml report for consistency</li>
+<li>Added description for the Win32 service so it's clearer the service is ours</li>
+<li>Accessing any admin / info pages with no stream id or the stream id is less than or equal to zero will show a summary of any available streams (if there are any)</li>
+<li>Fully enabled SHOUTcast 2 (Ultravox 2.1) protocol support with server output (used with YP2=1 in config and a compatible connecting client)</li>
+<li>Changed 'yp2' configuration setting default to 'on'</li>
+<li>Changed config handling to close sc_serv if not set or missing / invalid</li>
+<li>Fixed locale issues preventing sc_serv from loading without changing the machine's locale (non-Win32 issue)</li>
+<li>Minor log message changes to sort of standardise the message style</li>
+<li>Fixed segfault issue when attempting to connect to YP2 (may have been an internal thing, not sure)</li>
+<li>On Windows versions 'ctrl + break' is now handled as a valid quit command instead of just having the running instance closed</li>
+<li>Upgraded libraries to use expat-2.0.1</li>
+</ul>
+<p><br></p>
+
+<a name="7"></a><h3>v2.0.0 Build 7 (Beta) <a style="font-size:55%;" href="#">[top]</a></h3>
+<hr>
+<ul class="n">
+<li>First public release of the v2 DNAS</li>
+</ul>
+<p><br></p>

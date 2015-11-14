@@ -1,0 +1,50 @@
+/* To skip js for ie8 media querie fix, lets use CSS */
+.row .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.column {
+    float: left;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.column.flow-opposite {
+    float: right;
+}
+.column.one {
+    width: 8.33333%;
+}
+.column.two {
+    width: 16.66667%;
+}
+.column.three {
+    width: 25%;
+}
+.column.four {
+    width: 33.33333%;
+}
+.column.five {
+    width: 41.66667%;
+}
+.column.six {
+    width: 50%;
+}
+.column.seven {
+    width: 58.33333%;
+}
+.column.eight {
+    width: 66.66667%;
+}
+.column.nine {
+    width: 75%;
+}
+.column.ten {
+    width: 83.33333%;
+}
+.column.eleven {
+    width: 91.66667%;
+}
+.column.twelve {
+    width: 100%;
+}

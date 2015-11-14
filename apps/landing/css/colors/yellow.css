@@ -1,0 +1,346 @@
+.color {
+  color: #dbef52!important;
+}
+.section-title:after {
+  background: #dbef52;
+}
+
+.big_white span {
+  color: #dbef52;
+}
+
+.hero-btn:hover {
+  background: #dbef52;
+  border-color: #dbef52;
+}
+
+.big_white.choco {
+    border-top: 2px solid #dbef52;
+    border-bottom: 2px solid #dbef52;
+}
+
+.hero-single .meta span:after {
+  color: #dbef52;
+}
+
+#header-section nav a:hover,#header-section nav a.active {
+  color: #dbef52;
+}
+
+#header-section.altmenu.header-show ul li a:hover, 
+#header-section.altmenu.header-show ul li a.active {
+  color: #dbef52;
+}
+
+#about-icons i {
+  color: #dbef52;
+}
+
+ul.filter > li.active a,ul.filter > li a:hover {
+  color: #dbef52;
+}
+.progress-bar > span {
+    background-color:#dbef52;
+}
+
+#achievements .icon:hover {
+  background: #dbef52;
+}
+#achievements .number {
+  color: #dbef52;
+}
+
+.post .stats .icon {
+  border: 1px solid #dbef52;
+}
+
+#portfolio-single h1#portfolio-title:after {
+  background: #dbef52;
+}
+
+#portfolio #port-filter li a:hover,#portfolio #port-filter li.active a {
+  color: #dbef52;
+}
+#pricing-tables .table .price {
+  color: #dbef52;
+}
+
+.table .lm-button {
+  border: 1px solid #dbef52;
+  color: #dbef52;
+}
+
+.table .lm-button:hover {
+  border: 1px solid #dbef52;
+  background-color: #dbef52;
+}
+
+.table .lm-button.fill {
+  background-color: #dbef52;
+}
+
+.table .lm-button.fill:hover {
+  color: #dbef52;
+}
+
+ul.social li a:hover {
+  border: 1px solid #dbef52;
+  color: #dbef52;
+}
+
+#social ul li a:hover {
+  border: 1px solid #dbef52;
+  color: #dbef52;
+}
+
+span.fill {
+  background-color: #dbef52;
+}
+
+.lm-button:hover, .post .lm-button:hover {
+  border: 1px solid #dbef52;
+  background-color: #dbef52;
+  color: #fff;
+}
+
+.lm-button.fill {
+  background-color: #dbef52;
+  color: #fff;
+}
+
+.lm-button.fill:hover {
+  background-color: transparent;
+  color: #dbef52;
+}
+#features i {
+  color: #dbef52;
+}
+
+#team-members .team-image a:hover {
+  color: #dbef52;
+}
+
+#quote-request {
+  background-color: #dbef52;
+}
+
+#quote-request .lm-button:hover {
+  background-color: #fff;
+  color: #dbef52;
+}
+
+#posts a:hover {
+  color: #dbef52;
+}
+
+#posts h1 a:hover {
+  color: #dbef52;
+}
+
+#twitter .tweet-actions li a {
+  color: #dbef52;
+}
+#contact #forms .column.four:after {
+  color: #dbef52;
+}
+#contact #forms .column.twelve:after {
+  color: #dbef52;
+}
+
+#contact input[type="text"]:focus,#contact textarea:focus {
+  border: 1px solid #dbef52;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #dbef52;
+}
+
+#contact .column > a:hover {
+  color: #dbef52;
+}
+
+#contact i {
+  color: #dbef52;
+}
+
+#callout input[type="text"]:focus {
+  border: 1px solid #dbef52;
+}
+
+#callout input[type="submit"] {
+  background-color: #dbef52;
+  border: 1px solid #dbef52;
+}
+#portfolio-single #images .owl-pagination .owl-page.active span {
+  background-color: #dbef52;
+  border: 1px solid #dbef52;
+}
+
+footer .block a:hover {
+  color: #dbef52;
+}
+
+footer #social:before {
+  background: #dbef52;
+}
+
+.post a {
+  color: #dbef52;
+}
+
+p.bigletter:first-letter {
+    color: #dbef52;
+}
+
+#single-post blockquote {
+  border-left: 1px solid #dbef52;
+}
+
+#single-post #tags a {
+  border:1px solid #e6e6e6;
+}
+
+#single-post #tags a:hover {
+  color: #dbef52;
+  border: 1px solid #dbef52;
+}
+
+#pagination a:hover{
+  color: #dbef52;
+}
+
+#user .social a:hover {
+  color: #dbef52;
+}
+
+#comments-section .more:hover {
+  background-color: #dbef52;
+  color: #fff;
+}
+
+#comment input[type="text"]:focus,#comment textarea:focus {
+  border: 1px solid #dbef52;
+}
+
+#comment input[type="submit"]:hover {
+  background-color: #dbef52;
+  color: #fff;
+}
+
+#menu-toggle {
+  background: #dbef52;
+}
+
+#menu-toggle:after, #menu-toggle:before {
+    background: #dbef52;
+}
+
+#header-section.altmenu ul li a:hover {
+  color: #dbef52;
+}
+
+#portfolio-wrapper .block .portfolio-hover, #portfolio-wrapper .block .video-hover {
+  background: rgba(219,239,82 ,0.7);
+}
+
+#header-section.leftmenu {
+    background: rgba(219,239,82 ,0.9);
+}
+
+#blog .loadmore {
+  background: #dbef52;
+}
+
+footer .block a {
+  color: #808080;
+}
+
+footer .block a:hover {
+  color: #dbef52;
+}
+
+#blog .loadmore:hover {
+  color: #dbef52;
+}
+
+footer #copyright i{
+  color: #dbef52;
+}
+
+ul.filter > li.active a, ul.filter > li a:hover, ul.filter-target > li.active a, ul.filter-target > li a:hover {
+  color: #dbef52;
+}
+
+.post .lm-button, .lm-button {
+  border: 1px solid #dbef52;
+  color: #dbef52;
+}
+
+#header-section.colormenu.header-show {
+  background: rgb(219,239,82 );
+  background: rgba(219,239,82 , 0.95)
+}
+
+#header-section.colormenu.header-show nav ul li ul li {
+  background: rgb(219,239,82 );
+  background: rgba(219,239,82 , 0.95)
+}
+
+.overlay.color {
+  background: rgba(219,239,82 , 0.6); /* browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#7cdbef52', endColorstr='#7cdbef52'); /* IE */
+}
+
+
+ul.checked li:before {
+    color: #dbef52;
+}
+
+ul.arrow li:before {
+    color: #dbef52;
+}
+
+ul.star li:before {
+    color: #dbef52;
+}
+
+ul.caret li:before {
+    color: #dbef52;
+}
+
+ul.circle li:before {
+    color: #dbef52;
+}
+
+ul.double-angle li:before {
+  color: #dbef52;
+}
+
+.table .price {
+  color: #dbef52;
+}
+
+.tabable .tabs li a:hover,.tabable .tabs li.active a {
+  color: #dbef52;
+}
+
+.stats .icon:hover {
+  background-color: #dbef52;
+}
+
+.stats .number {
+  color: #dbef52;
+}
+
+.big_white.choco {
+    border-top: 1px solid #f64747;
+    border-bottom: 1px solid #f64747;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #header-section #navigation ul li a:hover {
+    background-color: #dbef52;
+  }
+
+}

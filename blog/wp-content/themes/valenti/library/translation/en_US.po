@@ -1,0 +1,312 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Valenti\n"
+"POT-Creation-Date: 2013-10-15 15:17-0000\n"
+"PO-Revision-Date: 2013-10-27 13:23-0000\n"
+"Last-Translator: \n"
+"Language-Team: Cubell\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html_e;_n\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\valenti\\wp-content\\themes\\codeone\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\valenti\\wp-content\\themes\\codeone\n"
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/404.php:17
+msgid "Oops! The page you were looking for was not found."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/archive.php:10
+msgid "Daily Archives"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/archive.php:15
+msgid "Monthly Archives"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/archive.php:20
+msgid "Yearly Archives"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/author.php:14
+msgid "Author"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:11
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:20
+msgid "No Responses"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:20
+msgid "One Response"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:20
+msgid "% Response"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:47
+msgid "Leave a Reply"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:49
+msgid "Cancel Reply"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:50
+msgid "Submit"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:52
+msgid "Your email address will not be published."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:53
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:724
+msgid "Comment"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:59
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:65
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:75
+msgid "Name"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:81
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1349
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1383
+msgid "Email"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/comments.php:88
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1350
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1384
+msgid "Website"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/page-full-width.php:28
+#: C:\wamp\www\valenti\wp-content\themes\codeone/page.php:34
+msgid "Tags:"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/search.php:9
+msgid "Search Results for:"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/search.php:24
+msgid "Sorry, nothing found."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/search.php:27
+msgid "Please try searching again, but with different keywords."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/single.php:49
+msgid "Pages"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/tag.php:9
+msgid "Tagged"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:128
+msgid "Login / Join"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:132
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:168
+msgid "Search"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:191
+msgid "Breaking"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:274
+msgid "Featured"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:280
+msgid "Random"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:352
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:401
+msgid "Recent"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:540
+msgid "Read more"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:569
+msgid "Home"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:577
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:581
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:582
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:592
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:596
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:597
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:712
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:621
+msgid "Share On"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:726
+msgid "Comments"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:870
+msgid "Overall Score"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:925
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1178
+msgid "You have already voted"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:931
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1050
+msgid "Vote"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:933
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1052
+msgid "Votes"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:935
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1050
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1052
+msgid "Reader Rating"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1118
+msgid "Your Rating"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1376
+msgid "About The Author"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1485
+msgid "Related Posts"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1539
+msgid "No More Stories"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1805
+msgid "(Edit)"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:1809
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2212
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2216
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2229
+msgid "sub item"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2261
+msgid "Edit Menu Item"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2270
+msgid "URL"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2277
+msgid "Navigation Label"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2283
+msgid "Title Attribute"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2290
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2295
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2301
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2318
+msgid "Description"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2321
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2326
+msgid "Move"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2327
+msgid "Up one"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2328
+msgid "Down one"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2331
+msgid "To the top"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2338
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2351
+msgid "Remove"
+msgstr ""
+
+#: C:\wamp\www\valenti\wp-content\themes\codeone/library/core.php:2352
+msgid "Cancel"
+msgstr ""

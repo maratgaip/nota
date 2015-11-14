@@ -1,0 +1,214 @@
+/* Table of Content
+==================================================
+  #Reset CSS
+  #Clearfix
+  #Basic Styles
+  #Forms
+  #Grid */
+
+/* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+nav ul {
+  list-style: none;
+}
+
+
+/* Clearfix by Nicolas Gallagher
+================================================== */
+
+.clearfix:before,.row:before,
+.clearfix:after,.row:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after,.row:after { clear: both; }
+.clearfix,.row { *zoom: 1; }
+
+
+/* Basic Styles and Resets
+================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic; 
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* WordPress default stuff
+================================================== */
+
+.alignleft, img.alignleft, .alignleft img, .alignright img { float: left; }
+.alignright, img.alignright { float: right; }
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+.wp-caption-text { clear: both; }
+li.widget {list-style: none;}
+
+
+/* Forms
+================================================== */
+
+select,
+button,
+label,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] { 
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-size: 13px;
+  cursor:pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border-color:#888; 
+  outline:0
+}
+
+textarea{
+  min-height:50px;
+  overflow:auto
+}
+
+select:focus{ 
+  outline:thin dotted #333; 
+  outline:5px auto -webkit-focus-ring-color; 
+  outline-offset:-2px
+}
+
+select{
+  width: 100%; 
+  height:32px
+}
+
+input,
+textarea,
+select{
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 3px;
+  outline: 0;
+  display:block;
+  max-width:100%;
+  padding:6px 15px;
+  border:1px solid #ddd;
+  margin-bottom:15px;
+  background:transparent;
+  color:#808080;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { 
+  -webkit-appearance: none;
+  cursor: pointer;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+
+/* Grid
+================================================== */
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px; /* Change per design */
+  width: 90%; /* For responsive, 5% left and right of mobile phone screen. */
+}
+
+.column { margin-bottom: 1.5em; }
+
+
+@media (min-width: 601px) {
+
+  /* Column inside column */
+  .row .row { margin-left: -15px; margin-right: -15px; }
+  /* Column when not responsive */
+  .column { float: left; margin: 0; padding-left: 15px; padding-right: 15px; }
+
+  .column.flow-opposite { float: right; }
+
+  .column.one    { width: 8.33333%;}
+  .column.two    { width: 16.66667%;}
+  .column.three  { width: 25%;}
+  .column.four   { width: 33.33333%;}
+  .column.five   { width: 41.66667%;}
+  .column.six    { width: 50%;}
+  .column.seven  { width: 58.33333%;}
+  .column.eight  { width: 66.66667%;}
+  .column.nine   { width: 75%;}
+  .column.ten    { width: 83.33333%;}
+  .column.eleven { width: 91.66667%;}
+  .column.twelve { width: 100%;}
+
+}
+
+

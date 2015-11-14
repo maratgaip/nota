@@ -1,0 +1,13 @@
+.titles{color:#DEAC2F;padding:3px 0 2px 0;background:none repeat scroll 0 0 #636363;border:1px solid #CCCCCC;border-collapse:collapse;text-align:center;margin-top:0;margin-bottom:0;}
+.titlespan{color:#DEAC2F;padding:3px 0 2px 0;background:none repeat scroll 0 0 #F0F0F0;border:1px solid #CCCCCC;border-collapse:collapse;text-align:center;width:200%;}
+td.ConfigTableDescTD{width:20%;text-align:right;padding-right:20px;white-space:nowrap;}
+textarea{resize:none;border-width:0}
+#HelperSpan a{font-weight:bold;}
+#DownloadSCServButton,#DownloadSCTransButton,#DownloadCalendarButton,#ResetButton,#UploadConfigButton,#AddPlaylistButton,#DJAddButton,#CalendarEventAddButton,input.button{background-color:#2350A5;color:white;}
+.outerb{width:450px;float:left;width:470px;float:left;margin-top:1px;}
+.tableone{width:100%;border-collapse:collapse;margin:0 auto;width:100%;}
+.tabletwo{width:100%;border-collapse:collapse;overflow-x:hidden;}
+body,textarea{scrollbar-highlight-color:white;scrollbar-track-color:white;scrollbar-arrow-color:#2350A5;scrollbar-darkshadow-color:#F0F0F0;}
+.upperb{border:1px solid #CCCCCC;border-bottom:1px thin #CCCCCC;padding:4px;}
+.upperbs{width:1px;background-color:#CCCCCC;padding:0px;}
+.collapse{text-decoration:none;float:right;margin:1px;}

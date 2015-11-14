@@ -1,0 +1,84 @@
+Options +FollowSymLinks
+Options -Multiviews
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^$ http://localhost/main.php [L,R=301]
+
+
+RewriteCond %{HTTP_HOST} !^localhost$
+RewriteRule   ^/(.*)$ /mobile/$1  [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^signup.html(/?)+$  main.php?do=signup [L]
+
+RewriteRule ^login.html(/?)+$  main.php?do=login [L]
+RewriteRule ^forgotPassword.html(/?)+$  main.php?do=forgotPassword [L]
+
+RewriteRule ^genres.html(/?)+$  main.php?do=genres [L]
+RewriteRule ^music.html(/?)+$  main.php?do=music [L]
+
+RewriteRule ^social/facebook(/?)+$  social/facebook.php [L]
+RewriteRule ^me(/?)+$ main.php?do=me&{QUERYSTRING} [L]
+RewriteRule ^updateband(/?)+$ main.php?do=updateband&{QUERY_STRING} [L]
+RewriteRule ^bandadmin(/?)+$ main.php?do=bandadmin&%{QUERY_STRING} [L]
+
+
+RewriteRule ^social/facebook(/?)+$  social/facebook.php [L]
+
+RewriteRule ^social/twitter(/?)+$  social/twitter.php [L]
+
+RewriteRule ^create-account/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://localhost/social/facebook&response_type=code&fbconnect=1&perms=read_stream,email,publish_actions [L]
+
+RewriteRule ^create-account/twitter(/?)+$ social/twitter.php [L]
+
+RewriteRule ^connect/twitter(/?)+$ social/twitter.php [L]
+
+RewriteRule ^embed(/?)+$ embed/index.php [L]
+
+RewriteRule ^connect/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://localhost/social/facebook&response_type=code&fbconnect=1&perms=publish_stream,offline_access,read_stream,email,publish_actions [L]
+
+RewriteRule ^register(/?)+$ register.php [L]
+
+RewriteRule ^register/facebook(/?)+$ register.php?social=facebook [L]
+
+RewriteRule ^register/twitter(/?)+$ register.php?social=twitter [L]
+
+RewriteRule ^search/([^/]*)(/?)+$ seo.php?type=search&keyword=$1 [L]
+
+RewriteRule ^search/([^/]*)/page/([0-9]+)(/?)+$ seo.php?type=search&keyword=$1&page=$2 [L]
+
+RewriteRule ^sign-out(/?)+$ index.php?action=logout [L]
+
+RewriteRule ^settings(/?)+$ seo.php [L]
+
+RewriteRule ^settings/([^/]*)(/?)+$ seo.php [L]
+
+RewriteRule ^explore(/?)+$ seo.php?type=explore&action=$1 [L]
+
+RewriteRule ^explore/([^/]*)(/?)+$ seo.php?type=explore&action=$1 [L]
+
+RewriteRule ^trending/([^/]*)(/?)+$ seo.php [L]
+
+RewriteRule ^trending(/?)+$ seo.php?type=trending [L]
+
+RewriteRule ^song/([^/]*)(/?)+$ seo.php?type=song&id=$1 [L]
+RewriteRule ^video/([^/]*)(/?)+$ seo.php?type=video&id=$1 [L]
+
+RewriteRule ^playlist/([0-9]+)(/?)+$ seo.php [L]
+RewriteRule ^artist/([0-9]+)(/?)+$ seo.php [L]
+RewriteRule ^album/([0-9]+)(/?)+$ seo.php [L]
+RewriteRule ^albums/([^/]*)(/?)+$ seo.php [L]
+RewriteRule ^composer/([^/]*)(/?)+$ seo.php [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/playlist(/?)$ seo.php [L]
+RewriteRule ^([a-zA-Z0-9_-]+)(/?)$ seo.php?type=user&username=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)(/?)$ seo.php?type=user&username=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)(/?)$ seo.php?type=user&username=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/feed(/?)$ seo.php [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/following(/?)$ seo.php [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/followers(/?)$ seo.php [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/feed(/?)$ seo.php [L]
+php_value session.save_path /tmp

@@ -1,0 +1,342 @@
+.color {
+  color: #191919!important;
+}
+.section-title:after {
+  background: #191919;
+}
+
+.big_white span {
+  color: #191919;
+}
+
+.hero-btn:hover {
+  background: #191919;
+  border-color: #191919;
+}
+
+.hero-single .meta span:after {
+  color: #191919;
+}
+
+.big_white.choco {
+    border-top: 2px solid #191919;
+    border-bottom: 2px solid #191919;
+}
+
+
+#header-section nav a:hover,#header-section nav a.active {
+  color: #191919;
+}
+
+#header-section.altmenu.header-show ul li a:hover, 
+#header-section.altmenu.header-show ul li a.active {
+  color: #191919;
+}
+
+#about-icons i {
+  color: #191919;
+}
+
+ul.filter > li.active a,ul.filter > li a:hover {
+  color: #191919;
+}
+.progress-bar > span {
+    background-color:#191919;
+}
+
+#achievements .icon:hover {
+  background: #191919;
+}
+#achievements .number {
+  color: #191919;
+}
+
+.post .stats .icon {
+  border: 1px solid #191919;
+}
+
+#portfolio-single h1#portfolio-title:after {
+  background: #191919;
+}
+
+#portfolio #port-filter li a:hover,#portfolio #port-filter li.active a {
+  color: #191919;
+}
+#pricing-tables .table .price {
+  color: #191919;
+}
+
+.table .lm-button {
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+.table .lm-button:hover {
+  border: 1px solid #191919;
+  background-color: #191919;
+}
+
+.table .lm-button.fill {
+  background-color: #191919;
+}
+
+.table .lm-button.fill:hover {
+  color: #191919;
+}
+
+ul.social li a:hover {
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+#social ul li a:hover {
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+span.fill {
+  background-color: #191919;
+}
+
+.lm-button:hover, .post .lm-button:hover {
+  border: 1px solid #191919;
+  background-color: #191919;
+  color: #fff;
+}
+
+.lm-button.fill {
+  background-color: #191919;
+  color: #fff;
+}
+
+.lm-button.fill:hover {
+  background-color: transparent;
+  color: #191919;
+}
+#features i {
+  color: #191919;
+}
+
+#team-members .team-image a:hover {
+  color: #191919;
+}
+
+#quote-request {
+  background-color: #191919;
+}
+
+#quote-request .lm-button:hover {
+  background-color: #fff;
+  color: #191919;
+}
+
+#posts a:hover {
+  color: #191919;
+}
+
+#posts h1 a:hover {
+  color: #191919;
+}
+
+#twitter .tweet-actions li a {
+  color: #191919;
+}
+#contact #forms .column.four:after {
+  color: #191919;
+}
+#contact #forms .column.twelve:after {
+  color: #191919;
+}
+
+#contact input[type="text"]:focus,#contact textarea:focus {
+  border: 1px solid #191919;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #191919;
+}
+
+#contact .column > a:hover {
+  color: #191919;
+}
+
+#contact i {
+  color: #191919;
+}
+
+#callout input[type="text"]:focus {
+  border: 1px solid #191919;
+}
+
+#callout input[type="submit"] {
+  background-color: #191919;
+  border: 1px solid #191919;
+}
+#portfolio-single #images .owl-pagination .owl-page.active span {
+  background-color: #191919;
+  border: 1px solid #191919;
+}
+
+footer .block a:hover {
+  color: #191919;
+}
+
+footer #social:before {
+  background: #191919;
+}
+
+.post a {
+  color: #191919;
+}
+
+p.bigletter:first-letter {
+    color: #191919;
+}
+
+#single-post blockquote {
+  border-left: 1px solid #191919;
+}
+
+#single-post #tags a {
+  border:1px solid #e6e6e6;
+}
+
+#single-post #tags a:hover {
+  color: #191919;
+  border: 1px solid #191919;
+}
+
+#pagination a:hover{
+  color: #191919;
+}
+
+#user .social a:hover {
+  color: #191919;
+}
+
+#comments-section .more:hover {
+  background-color: #191919;
+  color: #fff;
+}
+
+#comment input[type="text"]:focus,#comment textarea:focus {
+  border: 1px solid #191919;
+}
+
+#comment input[type="submit"]:hover {
+  background-color: #191919;
+  color: #fff;
+}
+
+#menu-toggle {
+  background: #191919;
+}
+
+#menu-toggle:after, #menu-toggle:before {
+    background: #191919;
+}
+
+#header-section.altmenu ul li a:hover {
+  color: #191919;
+}
+
+#portfolio-wrapper .block .portfolio-hover, #portfolio-wrapper .block .video-hover {
+  background: rgba(25, 25, 25,0.7);
+}
+
+#header-section.leftmenu {
+    background: rgba(25, 25, 25,0.9);
+}
+
+#blog .loadmore {
+  background: #191919;
+}
+
+footer .block a {
+  color: #808080;
+}
+
+footer .block a:hover {
+  color: #191919;
+}
+
+#blog .loadmore:hover {
+  color: #191919;
+}
+
+footer #copyright i{
+  color: #191919;
+}
+
+ul.filter > li.active a, ul.filter > li a:hover, ul.filter-target > li.active a, ul.filter-target > li a:hover {
+  color: #191919;
+}
+
+.post .lm-button, .lm-button {
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+#header-section.colormenu.header-show {
+  background: rgb(25, 25, 25);
+  background: rgba(25, 25, 25, 0.95)
+}
+
+#header-section.colormenu.header-show nav ul li ul li {
+  background: rgb(25, 25, 25);
+  background: rgba(25, 25, 25, 0.95)
+}
+
+.overlay.color {
+  background: rgba(25, 25, 25, 0.6); /* browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#7c191919', endColorstr='#7c191919'); /* IE */
+}
+
+
+ul.checked li:before {
+    color: #191919;
+}
+
+ul.arrow li:before {
+    color: #191919;
+}
+
+ul.star li:before {
+    color: #191919;
+}
+
+ul.caret li:before {
+    color: #191919;
+}
+
+ul.circle li:before {
+    color: #191919;
+}
+
+ul.double-angle li:before {
+  color: #191919;
+}
+
+.table .price {
+  color: #191919;
+}
+
+.tabable .tabs li a:hover,.tabable .tabs li.active a {
+  color: #191919;
+}
+
+.stats .icon:hover {
+  background-color: #191919;
+}
+
+.stats .number {
+  color: #191919;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #header-section #navigation ul li a:hover {
+    background-color: #191919;
+  }
+
+}

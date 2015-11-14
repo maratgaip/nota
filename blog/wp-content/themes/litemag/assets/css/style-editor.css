@@ -1,0 +1,11 @@
+body {
+	color: #141412;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+html .mceContentBody{
+	font-size: 100%;
+}
+.circled{ border-radius: 500px!important; }

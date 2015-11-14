@@ -1,0 +1,377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Valenti\n"
+"POT-Creation-Date: 2014-03-05 15:49-0000\n"
+"PO-Revision-Date: 2014-04-03 15:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: Cubell\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _e;__;_;esc_html_e;_n:1,2;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:6
+msgid "Page not found"
+msgstr "Side ikke funnet"
+
+#: ../404.php:17
+msgid "Oops! The page you were looking for was not found."
+msgstr "Beklager! Siden du leter etter ble ikke funnet."
+
+#: ../archive.php:10
+msgid "Daily Archives"
+msgstr "Daglig arkiv"
+
+#: ../archive.php:15
+msgid "Monthly Archives"
+msgstr "Månedlig arkiv"
+
+#: ../archive.php:20
+msgid "Yearly Archives"
+msgstr "Årlig arkiv"
+
+#: ../author.php:14
+msgid "Author"
+msgstr "Forfatter"
+
+#: ../bbpress.php:15 ../buddypress.php:15
+msgid "Member"
+msgstr "Medlem"
+
+#: ../buddypress.php:19
+msgid "Group"
+msgstr "Gruppe"
+
+#: ../buddypress.php:24 ../buddypress.php:41 ../buddypress.php:46
+#: ../library/core.php:597 ../library/core.php:599
+msgid "Groups"
+msgstr "Grupper"
+
+#: ../buddypress.php:28
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: ../buddypress.php:32
+msgid "Forums"
+msgstr "Forum"
+
+#: ../buddypress.php:36 ../buddypress.php:53
+msgid "Activity"
+msgstr "Aktivitet"
+
+#: ../buddypress.php:41 ../buddypress.php:47
+msgid "Create a Group"
+msgstr "Opprett en gruppe"
+
+#: ../comments.php:11
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Denne artikkelen er passordbeskyttet. Tast inn passordet for å se "
+"kommentarer."
+
+#: ../comments.php:20
+msgid "No Responses"
+msgstr "Ingen kommentarer"
+
+#: ../comments.php:20
+msgid "One Response"
+msgstr "Èn kommentar"
+
+#: ../comments.php:20
+msgid "% Response"
+msgid_plural "% Responses"
+msgstr[0] "% Kommentar"
+msgstr[1] "% Kommentarer"
+
+#: ../comments.php:47
+msgid "Leave a Reply"
+msgstr "Legg igjen kommentar"
+
+#: ../comments.php:48
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Kommentèr %s"
+
+#: ../comments.php:49
+msgid "Cancel Reply"
+msgstr "Avbryt kommentar"
+
+#: ../comments.php:50
+msgid "Submit"
+msgstr "Send"
+
+#: ../comments.php:52
+msgid "Your email address will not be published."
+msgstr "Din e-post adresse blir ikke publisert"
+
+#: ../comments.php:53 ../library/core.php:861
+msgid "Comment"
+msgstr "Kommentar"
+
+#: ../comments.php:59
+#, php-format
+msgid ""
+"You must be <a href=\"%s\" data-reveal-id=\"cb-login-modal\">logged in</a> "
+"to post a comment."
+msgstr ""
+"Du må være <a href=\"%s\" data-reveal-id=\"cb-login-modal\">pålogget</a> for "
+"å legge til en kommentar."
+
+#: ../comments.php:65
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Logget på som <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logg ut av "
+"denne kontoen\">Logge ut?</a>"
+
+#: ../comments.php:75
+msgid "Name"
+msgstr "Navn"
+
+#: ../comments.php:81 ../library/core.php:1529 ../library/core.php:1572
+#: ../library/core.php:1606
+msgid "Email"
+msgstr "E-post"
+
+#: ../comments.php:88 ../library/core.php:1530 ../library/core.php:1573
+#: ../library/core.php:1607
+msgid "Website"
+msgstr "Hjemmeside"
+
+#: ../header.php:194 ../library/core.php:163 ../library/core.php:199
+msgid "Search"
+msgstr "Søk"
+
+#: ../page-full-width.php:32 ../page.php:52
+msgid "Tags:"
+msgstr "Stikkord:"
+
+#: ../search.php:9
+msgid "Search Results for:"
+msgstr "Søkeresultater for:"
+
+#: ../search.php:24
+msgid "Sorry, nothing found."
+msgstr "Beklager, ingenting ble funnet."
+
+#: ../search.php:27
+msgid "Please try searching again, but with different keywords."
+msgstr "Vennligst søk igjen med andre søkeord."
+
+#: ../tag.php:10
+msgid "Tagged"
+msgstr "Stikkord"
+
+#: ../library/core.php:153
+msgid "Login / Join"
+msgstr "Logg på / bli medlem"
+
+#: ../library/core.php:223
+msgid "Breaking"
+msgstr "Siste nytt"
+
+#: ../library/core.php:312
+msgid "Featured"
+msgstr "Fremhevet"
+
+#: ../library/core.php:318
+msgid "Random"
+msgstr "Tilfeldig"
+
+#: ../library/core.php:394 ../library/core.php:443
+msgid "Recent"
+msgstr "Nylig"
+
+#: ../library/core.php:535
+msgid "Read more"
+msgstr "Les mer"
+
+#: ../library/core.php:566
+msgid "Home"
+msgstr "Hjem"
+
+#: ../library/core.php:574 ../library/core.php:578 ../library/core.php:579
+#: ../library/core.php:645 ../library/core.php:649 ../library/core.php:650
+#: ../library/core.php:849
+#, php-format
+msgid "View all posts in %s"
+msgstr "Vis alle poster i %s"
+
+#: ../library/core.php:615 ../library/core.php:619
+msgid "Members"
+msgstr "Medlemmer"
+
+#: ../library/core.php:627
+msgid "Messages"
+msgstr "Meldinger"
+
+#: ../library/core.php:632
+msgid "Register"
+msgstr "Bli medlem"
+
+#: ../library/core.php:744
+msgid "Share On"
+msgstr "Del på"
+
+#: ../library/core.php:863
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: ../library/core.php:1044
+msgid "Overall Score"
+msgstr "Total vurdering"
+
+#: ../library/core.php:1102 ../library/core.php:1355
+msgid "You have already voted"
+msgstr "Du har allerede stemt"
+
+#: ../library/core.php:1108 ../library/core.php:1227
+msgid "Vote"
+msgstr "Stemme"
+
+#: ../library/core.php:1110 ../library/core.php:1229
+msgid "Votes"
+msgstr "Stemmer"
+
+#: ../library/core.php:1112 ../library/core.php:1227 ../library/core.php:1229
+msgid "Reader Rating"
+msgstr "Vurdering"
+
+#: ../library/core.php:1295
+msgid "Your Rating"
+msgstr "Din vurdering"
+
+#: ../library/core.php:1562
+msgid "About The Author"
+msgstr "Om forfatter"
+
+#: ../library/core.php:1619
+msgid "Topics Started"
+msgstr "Tråder startet"
+
+#: ../library/core.php:1623
+msgid "Replies Created"
+msgstr "Svar opprettet"
+
+#: ../library/core.php:1629
+msgid "Favorites"
+msgstr "Favoritter"
+
+#: ../library/core.php:1637
+msgid "Subscriptions"
+msgstr "Abonnenter"
+
+#: ../library/core.php:1642
+msgid "Edit"
+msgstr "Redigere"
+
+#: ../library/core.php:1755
+msgid "Related Posts"
+msgstr "Relaterte artikler"
+
+#: ../library/core.php:1820
+msgid "No More Stories"
+msgstr "Ingen flere saker"
+
+#: ../library/core.php:2208
+msgid "(Edit)"
+msgstr "(Redigere)"
+
+#: ../library/core.php:2212
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar venter godkjennelse."
+
+#: ../library/core.php:2733
+#, php-format
+msgid "%s (Invalid)"
+msgstr "%s (Ikke gyldig)"
+
+#: ../library/core.php:2737
+#, php-format
+msgid "%s (Pending)"
+msgstr "%s (Venter)"
+
+#: ../library/core.php:2750
+msgid "sub item"
+msgstr "under objekt"
+
+#: ../library/core.php:2782
+msgid "Edit Menu Item"
+msgstr "Redigere meny objekt"
+
+#: ../library/core.php:2791
+msgid "URL"
+msgstr "URL"
+
+#: ../library/core.php:2798
+msgid "Navigation Label"
+msgstr "Navigasjon merkenavn"
+
+#: ../library/core.php:2804
+msgid "Title Attribute"
+msgstr "Tittel atributt"
+
+#: ../library/core.php:2811
+msgid "Open link in a new window/tab"
+msgstr "Åpne link i nytt vindu/fane"
+
+#: ../library/core.php:2816
+msgid "CSS Classes (optional)"
+msgstr "CSS klasser (valgfritt)"
+
+#: ../library/core.php:2822
+msgid "Link Relationship (XFN)"
+msgstr "Link forhold (XFN)"
+
+#: ../library/core.php:2839
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../library/core.php:2842
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr "Beskrivelsen blir vist hvis meny i nåværende design støtter det."
+
+#: ../library/core.php:2847
+msgid "Move"
+msgstr "Flytt"
+
+#: ../library/core.php:2848
+msgid "Up one"
+msgstr "En opp"
+
+#: ../library/core.php:2849
+msgid "Down one"
+msgstr "En ned"
+
+#: ../library/core.php:2852
+msgid "To the top"
+msgstr "Til toppen"
+
+#: ../library/core.php:2859
+#, php-format
+msgid "Original: %s"
+msgstr "Orginal: %s"
+
+#: ../library/core.php:2872
+msgid "Remove"
+msgstr "Fjern"
+
+#: ../library/core.php:2873
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../library/core.php:3068
+msgid "Load More"
+msgstr "Last inn flere"
+
+#: ../library/core.php:3071 ../library/core.php:3080
+msgid "No more articles"
+msgstr "Ingen flere artikler"

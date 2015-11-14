@@ -1,0 +1,3 @@
+#Software: SHOUTcast
+#Version: 2.2.1.109
+#Fields: c-ip c-dns date time cs-uri-stem c-status cs(User-Agent) sc-bytes x-duration avgbandwidth

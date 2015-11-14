@@ -1,0 +1,170 @@
+body{
+
+}
+/* ================================================== 
+// Home Page
+// ================================================== */
+
+.home_header{
+	top:100px !important;
+	text-indent:-5000px;
+}
+.home_header_on{
+	top:45px !important;
+	text-indent:0px;
+}
+
+#top_tip{
+	position:absolute !important;
+	left:40%;
+	margin-left:-150px;
+}
+
+#home_feature_site{
+	margin-right:0;
+}
+#home_tumblr{
+	margin-right:0;
+}
+/* ================================================== 
+// General
+// ================================================== */
+#page_loader span{
+	display:none;
+}
+#page_loader{
+	position:relative;
+}
+#page_loader:before{
+	content:'loading';
+	display:block;
+	color:#525758;
+	font-size:12px;
+	height:12px;
+	line-height:12px;
+}
+#current_playlist.open {
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+#current_playlist_header {
+	border-top: #888E91 1px solid;
+	border-bottom: 1px solid black;
+}
+
+/* ================================================== 
+// left nav
+// ================================================== */
+#left_following{
+	width:212px;
+}
+#user_nav .left_row_you.selected {
+	background:#3D4042;
+}
+
+#user_nav .left_row_you:hover {
+	background:#313335;
+}
+/* ================================================== 
+// User Page / Tabs
+// ================================================== */
+#song_top{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E52E3133,endColorstr=#E52E3133);
+    zoom: 1;
+    border-bottom:1px solid #000;
+}
+.song_tabs {
+	border-bottom:1px solid #555);
+}
+.user_row_follow_button{
+	border:1px solid #eee;
+}
+/* ================================================== 
+// Trending
+// ================================================== */
+
+.trending_song_bg{
+	background-repeat:repeat;
+}
+#trending_top, .trending_song_info{
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
+	zoom:1;
+}
+.trending_rank, a.trending_song_title, a.trending_song_artist{
+	color:#fff;
+	letter-spacing:0;
+}
+
+/* ================================================== 
+// Explore
+// ================================================== */
+.explore_section_header {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+	zoom:1;
+}
+.explore_nav_item.active{
+	border-top: 1px solid #42A1FF;
+	border-bottom: 1px solid #001933;
+}
+#explore #item_rows{
+	border-top:1px solid #ccc;
+}
+
+.genre_txt{
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf000000,endColorstr=#bf000000);
+	zoom:1;
+}
+.explore_content_genre:hover .genre_txt {
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+	zoom:1;
+}
+#explore_content_album_of_week_coverart{
+	padding:0;
+	border:5px solid #fff;
+}
+.explore_content_mixtape_of_month_song{
+	border-bottom: 1px solid #333;	
+}
+
+.explore_content_mixtape_of_month_song:hover {
+	background: #2B3031;
+}
+
+/* ================================================== 
+// Song Page
+// ================================================== */
+.song_page_recent_loves_avatars span.song_page_love_username{
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+/* ================================================== 
+// Settings
+// ================================================== */
+#settings_top {
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc2E3133,endColorstr=#cc2E3133);
+    zoom: 1;
+    border-bottom:1px solid #000;
+}
+#find_friends_results{
+	width:755px;
+}
+#settings_profile_themes {
+	width:775px;
+}
+#settings_design_image_position_right_top_label{
+	margin-right:0;
+	padding-right:0 !important;
+}
+.settings_tab.selected {
+	background: #252728;
+	border: 1px solid black;
+	height:28px;
+}

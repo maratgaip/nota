@@ -1,0 +1,984 @@
+
+<style type="text/css">
+
+html {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#main {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 320px;
+	right: 10px;
+	bottom: 0px;
+	width: 450px;
+	overflow: auto;
+}
+
+#side {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 10px;
+	bottom: 0px;
+	width: 300px;
+	overflow: auto;
+}
+
+
+#sider {
+	padding: 0;
+	padding-right: 10px;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left:781px;
+	right: 10px;
+	bottom: 0px;
+	width: 260px;
+}
+
+</style>
+
+<body>
+<div id="side">
+	<div class="content">
+		<span id="SetupSpan" class="default" style="width:250px;height:auto;padding-left:15px;padding-right:15px;"><br>
+<div align="center" class="infh">Save Configurations</div>
+The save options allows saving of the entered settings to file so they can be used to run the DNAS server and / or Transcoder as required.
+<p align="center">
+<form method="GET" id="configs" action="configs">
+<input id="config" type="hidden" name="query" value=""/>
+<input id="DownloadSCServButton" value="DNAS" type="button"/>
+<input id="DownloadSCTransButton" value="Transcoder" type="button"/>
+<input id="DownloadCalendarButton" value="Calendar XML" type="button"/></form></p></span><br>
+
+<span style="width:250px;height:auto;padding-left:15px;padding-right:15px;" class="default" id="SetupSpan"><br>
+<div align="center" class="infh">Builder Settings</div>
+Use<input type="hidden" id="BuilderViewModeHidden" value="0">
+<label style="white-space:nowrap;"><input type="radio" checked="checked" value="0" id="BuilderViewModeSimpleRadio" name="BuilderViewModeRadio">Basic mode</label>&nbsp;
+<label style="white-space:nowrap;"><input type="radio" value="1" id="BuilderViewModeAdvancedRadio" name="BuilderViewModeRadio">Advanced mode</label>
+<p>
+for&nbsp;<select id="PlatformSelect"><option value="0">Linux/Unix</option><option selected="selected" value="1">Windows</option><option value="2">Macintosh</option></select> platforms.</p>
+<p align="left">
+<input type="checkbox" checked="checked" id="GenerateMinimalCheckBox">&nbsp;Generate simple configuration files<br>
+<input type="checkbox" checked="checked" id="TranscoderInheritCheckBox">&nbsp;Use the Transcoder Inherit mode</p>
+<hr><p align="center"><input type="button" value="Reset Configuration Builder" id="ResetButton"></p></span>
+</span><br>
+
+<span id="SetupSpan" class="default" style="width:250px;height:auto;padding-left:15px;padding-right:15px;"><br>
+<div align="center" class="infh">Preview Configurations</div>
+If saving does not work or to check what will be saved, select the required configuration file from the selection provided below.
+<br><br>View <select id="ConfigSelect"><option selected="selected" value="0">DNAS</option><option selected="selected" value="1">Transcoder</option><option selected="selected" value="2">Calender XML</option></select> configuration file:
+<p><textarea style="width:100%;display:block;" id="SCServLinesTextArea" readonly="readonly" wrap="off" cols="0" rows="10"></textarea>
+<textarea style="width:100%;display:none;" id="SCTransLinesTextArea" readonly="readonly" wrap="off" cols="0" rows="10"></textarea>
+<textarea style="width:100%;display:none;" id="SCCalendarLinesTextArea" readonly="readonly" wrap="off" cols="0" rows="10"></textarea></p>
+</span>
+<br><span style="width:250px;height:auto;padding-left:15px;padding-right:15px;" class="default" id="SetupSpan"><br>
+<div align="center" class="infh">Backup and Restore</div>
+Use the '<b>Backup</b>' button to download a copy of your current settings so you can modify all settings later without having to re-enter them.
+
+<br><br>Use the '<b>Restore</b>' button to load the backup.<br><p><input type="button" value="Backup" id="DownloadConfigHelpButton"><br><br><input type="file" defaultvalue="config_builder_settings.txt" id="UploadConfigFile" size="10" accept="text/plain"><input type="button" value="Restore" id="UploadConfigButton">
+	</div>
+</div>
+
+<div id="main">
+	<div class="content">
+		<table id="myScrollTable" class="tabletwo">
+
+<!--<tr>
+<td>
+<p class="titles">SHOUTcast Version<a class="collapse" onclick="return toggle(1)"><img border="0" alt="" src="collapse.png" id="1I">&nbsp;</a></p>
+<table id="1" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Mode</td>
+<td><select id="ModeSelect" style="width:136px;"><option selected="selected" value="2">SHOUTcast 2</option><option value="1">Legacy v1</option></select></td>
+</tr>
+</table>
+</td>
+</tr>-->
+
+<tr>
+<td>
+<p class="titles">Installation / Paths<a class="collapse" onclick="return toggle(2)"><img border="0" alt="" src="collapse.png" id="2I">&nbsp;</a></p>
+<table id="2" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">DNAS (sc_serv[.exe]) base path / folder</td>
+<td><input id="DNASBasePathInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder (sc_trans[.exe]) base path / folder</td>
+<td><input id="TranscoderBasePathInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS configuration file</td>
+<td><input id="DNASConfFileInput"/></td>
+</tr>
+<tr id="DNASConfigreWriteBlock">
+<td class="ConfigTableDescTD">Re-Write DNAS configuration on exit</td>
+<td><input id="DNASConfigreWriteCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder configuration file</td>
+<td><input id="TransConfFileInput"/></td>
+</tr>
+<tr id="TransConfigreWriteBlock">
+<td class="ConfigTableDescTD">Re-Write Transcoder configuration on exit</td>
+<td><input id="TransConfigreWriteCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Networking<a class="collapse" onclick="return toggle(3)"><img border="0" alt="" src="collapse.png" id="3I">&nbsp;</a></p>
+<table id="3" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Port base</td><td><input id="PortBaseInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder admin port</td>
+<td><input id="TransAdminPortInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">IP / Address of DNAS</td>
+<td><input id="DNASIPInput"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<table id="BindAddressBlock" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD">Robots.txt File</td>
+<td><input id="RobotsTxtInput"/></td>
+</tr>
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">Source bind address</td>
+<td><input id="SourceBindAddressInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Listeners bind address</td>
+<td><input id="DestinationBindAddressInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table id="DJPortsBlock" style="width:100%">
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">DJ port</td>
+<td><input id="DJPortInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ SC2 port</td>
+<td><input id="DJPort2Input"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="NameLookupsBlock">
+<td class="ConfigTableDescTD">DNS lookups</td>
+<td><input id="NameLookupsCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Passwords<a class="collapse" onclick="return toggle(4)"><img border="0" alt="" src="collapse.png" id="4I">&nbsp;</a></p>
+<table id="4" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Source Password</td>
+<td><input id="PasswordInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Admin password</td>
+<td><input id="AdminPasswordInput"/></td>
+</tr>
+<tr id="DJCipherInputBlock">
+<td class="ConfigTableDescTD">SC2 login cipher</td>
+<td><input id="DJCipherInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Broadcasting Details and Stream Metadata<a class="collapse" onclick="return toggle(5)"><img border="0" alt="" src="collapse.png" id="5I">&nbsp;</a></p>
+<table id="5" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Stream Title</td>
+<td><input id="StreamTitleInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Stream URL</td>
+<td><input id="StreamURLInput"/></td>
+</tr>
+<tr style="display:none;"><td><div><input id="StreamGenreInput"/></div></td></tr>
+<tr>
+<td class="ConfigTableDescTD">Primary Stream Genre</td>
+<td id="PrimaryStreamGenre"></td>
+</tr>
+<tr>
+<td style="display:none;" id="SecondaryStreamGenreText" class="ConfigTableDescTD">Secondary Stream Genre</td>
+<td id="SecondaryStreamGenre"></td>
+</tr>
+<!-- TODO -->
+<tr id="AIMInputBlock" style="display:none;">
+<td class="ConfigTableDescTD">Stream AIM</td>
+<td><input id="AIMInput"/></td>
+</tr>
+<tr id="IRCInputBlock" style="display:none;">
+<td class="ConfigTableDescTD">Stream IRC</td>
+<td><input id="IRCInput"/></td>
+</tr>
+<tr id="ICQInputBlock" style="display:none;">
+<td class="ConfigTableDescTD">Stream ICQ</td>
+<td><input id="ICQInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Use metadata</td>
+<td><input id="UseMetadataCheckBox" checked="checked" type="checkbox"/></td>
+</tr>
+<tr id="MetadataPatternBlock">
+<td colspan="2">
+<table style="width:100%">
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">Metadata pattern</td>
+<td><input id="MetadataPatternInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Display metadata pattern</td>
+<td><input id="DisplayMetadataPatternInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS title format</td>
+<td><input id="TitleFormatInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS URL format</td>
+<td><input id="URLFormatInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS public</td>
+<td><select style="width:136px;" id="DNASPublicSelect"id="DNASPublicSelect"><option selected="selected" value="default">Set by source</option><option value="never">Never</option><option value="always">Always</option></select></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder public</td>
+<td><input id="TransPublicCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Encoders, Targets, and Endpoints<a class="collapse" onclick="return toggle(6)"><img border="0" alt="" src="collapse.png" id="6I">&nbsp;</a></p>
+<table id="6" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Transcoder MP3 unlock name</td>
+<td><input id="MP3UnlockKeyNameInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder MP3 unlock code</td>
+<td><input id="MP3UnlockKeyCodeInput"/></td>
+</tr>
+<tr id="DefaultAuthHashTR">
+<td class="ConfigTableDescTD">Default authhash</td><td><input id="DefaultAuthHashInput"/></td>
+</tr>
+<tr id="NumOfEndPointsTR">
+<td class="ConfigTableDescTD">Number of endpoints</td>
+<td><input id="NumOfEndPointsInput"/></td>
+</tr>
+<tr>
+<td colspan="2"><span id="MultiPointSpan"></span></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Listener Behavior<a class="collapse" onclick="return toggle(7)"><img border="0" alt="" src="collapse.png" id="7I">&nbsp;</a></p>
+<table id="7" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Maximum listeners</td>
+<td><input id="MaxListenersInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Listener time limit</td>
+<td><input id="ListenerTimeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Disconnect clients on source drop</td>
+<td><input id="AutoDumpUsersCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Ban file</td>
+<td><input id="BanFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Reserved IP (RIP) file</td>
+<td><input id="RipFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Reserved IP (RIP) only</td>
+<td><input id="RipOnlyCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Transcoder Content<a class="collapse" onclick="return toggle(8)"><img border="0" alt="" src="collapse.png" id="8I">&nbsp;</a></p>
+<table id="8" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Playlist filename</td>
+<td><input id="PlaylistFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Shuffle</td>
+<td><input id="EnableShuffleCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Crossfade time</td>
+<td><input id="XFadeTimeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Crossfade threshold</td>
+<td><input id="XFadeThresholdInput"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<table id="PlaylistsBlock" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Priority playlists folder</td>
+<td><input id="PlaylistFolderInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Playlist archive folder</td>
+<td><input id="PlaylistArchiveFolderInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input id="AddPlaylistButton" type="button" value="Add Playlist"/>
+<input id="NumOfPlaylistsHidden" type="hidden"/>
+<span id="MultiPlaylistSpan"></span></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="DJsHeader">
+<p class="titles">DJs<a class="collapse" onclick="return toggle(9)"><img border="0" alt="" src="collapse.png" id="9I">&nbsp;</a></p>
+<table id="9" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="DJsTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Auto dump time</td>
+<td><input id="DJAutoDumpSourceTimeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ capture enable</td>
+<td><input id="DJCaptureEnableCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ capture path</td>
+<td><input id="DJBroadcastsPathInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ file pattern</td>
+<td><input id="DJFilePatternInput"/></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input id="DJAddButton" value="Add DJ" type="button"/>
+<input id="NumOfDJsHidden" type="hidden"/><span id="MultiDJSpan"></span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="CalendarHeader">
+<p class="titles">Calendar<a class="collapse" onclick="return toggle(10)"><img border="0" alt="" src="collapse.png" id="10I">&nbsp;</a></p>
+<table id="10" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="CalendarTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Calendar file</td>
+<td><input id="CalendarFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Enable calendar re-write</td>
+<td><input id="CalendarEnableRewriteCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input id="CalendarEventAddButton" value="Add Event" type="button"/>
+<input id="NumOfCalendarEventsHidden" type="hidden"/><span id="MultiCalendarSpan"></span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="LiveCaptureHeader">
+<p class="titles">Live Capture<a class="collapse" onclick="return toggle(11)"><img border="0" alt="" src="collapse.png" id="11I">&nbsp;</a></p>
+<table id="11" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="LiveCaptureTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Enable capture device</td><td><input id="EnableCaptureCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<table id="CapatureDeviceBlock" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Capture device name</td><td><input id="CaptureDeviceInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Capture input name</td><td><input id="CaptureInputInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Capture samplerate</td><td><input id="CaptureSampleRateInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Capture # of channels</td><td><input id="CaptureNumChannelsInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="IntroBackupHeader">
+<p class="titles">Intro / Backup Files<a class="collapse" onclick="return toggle(12)"><img border="0" alt="" src="collapse.png" id="12I">&nbsp;</a></p>
+<table id="12" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="IntroBackupTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">DNAS intro file</td>
+<td><input id="DNASIntroFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS backup file</td>
+<td><input id="DNASBackupFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS maximum intro / backup file size</td>
+<td><input id="MaxSpecialFileSizeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder backup file</td>
+<td><input id="ServerBackupFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder intro file</td>
+<td><input id="ServerIntroFileInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="ReplayGainHeader">
+<p class="titles">Replay Gain<a class="collapse" onclick="return toggle(13)"><img border="0" alt="" src="collapse.png" id="13I">&nbsp;</a></p>
+<table id="13" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="ReplayGainTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Apply Replay Gain</td>
+<td><input id="ApplyReplayGainCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Default Replay Gain</td>
+<td><input id="DefaultReplayGainInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ Replay Gain</td>
+<td><input id="DJReplayGainInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Capture Replay Gain</td>
+<td><input id="CaptureReplayGainInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Calculate Replay Gain</td>
+<td><input id="CalculateReplayGainCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Replay Gain temp folder</td>
+<td><input id="ReplayGainTempFolderInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Replay Gain run ahead</td>
+<td><input id="ReplayGainRunAheadInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Disable Replay Gain writing</td>
+<td><input id="ReplayGainDontWriteCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Enhance Replay Gain</td>
+<td><input id="EnhanceReplayGainInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Logging<a class="collapse" onclick="return toggle(14)"><img border="0" alt="" src="collapse.png" id="14I">&nbsp;</a></p>
+<table id="14" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Enable logging</td>
+<td><input id="EnableLoggingCheckBox" checked="checked" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Log to screen</td>
+<td><input id="ScreenlogCheckBox" checked="checked" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DNAS log filename</td>
+<td><input id="DNASLogFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder log filename</td>
+<td><input id="TransLogFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">W3C logging</td>
+<td><input id="W3CLoggingCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">W3C log filename</td>
+<td><input id="W3CLogFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Client connection logging</td>
+<td><input id="ClientConnectCheckBox" checked="checked" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">DNAS Debugging<a class="collapse" onclick="return toggle(15)"><img border="0" alt="" src="collapse.png" id="15I">&nbsp;</a></p>
+<table id="15" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table style="width:100%">
+<tr>
+<td align="center">
+<input id="DNASDebugModeHidden" type="hidden"/>
+<label><input name="DNASDebugModeRadio" id="DNASDebugModeNoneRadio" type="radio" value="0" checked="checked"/>None</label>&nbsp;
+<label><input name="DNASDebugModeRadio" id="DNASDebugModeAllRadio" type="radio" value="1"/>All</label>&nbsp;
+<label><input name="DNASDebugModeRadio" id="DNASDebugModeCustomRadio" type="radio" value="2"/>Custom</label>
+</td>
+</tr>
+</table>
+<table id="DNASDebugTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">YP1 connection</td>
+<td style="width:50%"><input id="YP1DebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP2 connection</td>
+<td><input id="YP2DebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 1 source</td>
+<td><input id="SHOUTcastSourceDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 2 source</td>
+<td><input id="UVOX2SourceDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 1 client connection(s)</td>
+<td><input id="SHOUTcast1ClientDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 2 client connection(s)</td>
+<td><input id="SHOUTcast2ClientDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 1 relay connection(s)</td>
+<td><input id="RelaySHOUTcastDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 2 relay connection(s)</td>
+<td><input id="RelayUVOXDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Common relay actions</td>
+<td><input id="RelayDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Stream data actions</td>
+<td><input id="StreamDataDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">HTTP style actions</td>
+<td><input id="HTTPStyleDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Statistics</td>
+<td><input id="StatsDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">MicroServer</td>
+<td><input id="MicroServerDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Thread runner</td>
+<td><input id="ThreadRunnerDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">RTMP client connection(s)</td>
+<td><input id="RTMPClientDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Web client connection(s)</td>
+<td><input id="WebClientDebugCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p class="titles">Transcoder Debugging<a class="collapse" onclick="return toggle(16)"><img border="0" alt="" src="collapse.png" id="16I">&nbsp;</a></p>
+<table id="16" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table style="width:100%">
+<tr>
+<td align="center">
+<input id="TransDebugModeHidden" type="hidden"/>
+<label><input name="TransDebugModeRadio" id="TransDebugModeNoneRadio" type="radio" checked="checked" value="0"/>None</label>&nbsp;
+<label><input name="TransDebugModeRadio" id="TransDebugModeAllRadio" type="radio" checked="checked" value="1"/>All</label>&nbsp;
+<label><input name="TransDebugModeRadio" id="TransDebugModeCustomRadio" type="radio" checked="checked" value="2"/>Custom</label>
+</td>
+</tr>
+</table>
+<table id="TransDebugTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Shuffle</td>
+<td style="width:50%"><input id="ShuffleDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 1 broadcast(s)</td>
+<td><input id="SHOUTcastDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">SHOUTcast 2 broadcast(s)</td>
+<td><input id="UVOXDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Replay Gain</td>
+<td><input id="GainDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Playlist</td>
+<td><input id="PlaylistDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">MP3 encoder</td>
+<td><input id="MP3EncDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">MP3 decoder</td>
+<td><input id="MP3DecDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Resampler</td>
+<td><input id="ResamplerDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Replay Gain calculator</td>
+<td><input id="RGCalcDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">API</td>
+<td><input id="APIDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Calendar</td>
+<td><input id="CalendarDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Capture</td>
+<td><input id="CaptureDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">DJ</td>
+<td><input id="DJDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Flash policy</td>
+<td><input id="FlashPolicyServerDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">File converter</td>
+<td><input id="FileConverterDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Source relay</td>
+<td><input id="SourceRelayDebugCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Source &amp; endpoint manager</td>
+<td><input id="SourceAndEndpointManagerDebugCheckBox" type="checkbox"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="VUImagesHeader">
+<p class="titles">VU Images<a class="collapse" onclick="return toggle(17)"><img border="0" alt="" src="collapse.png" id="17I">&nbsp;</a></p>
+<table id="17" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="VUImagesTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">VU image directory</td>
+<td><input id="VUImageDirectoryInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">VU image suffix</td>
+<td><input id="VUImageSuffixInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">VU image mimetype</td>
+<td><input id="VUImageMimeTypeInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="DNASAdminThemeHeader">
+<p class="titles">DNAS Administation Page Themeing<a class="collapse" onclick="return toggle(18)"><img border="0" alt="" src="collapse.png" id="18I">&nbsp;</a></p>
+<table id="18" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="DNASAdminThemeTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">CSS page theme</td>
+<td><input id="DNASAdminPageThemeInput"/></td>
+</tr>
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">Favourite icon file</td>
+<td><input id="DNASAdminPageFavIconInput"/></td>
+</tr>
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">Favourite icon mimetype</td>
+<td><input id="DNASAdminPageFavIconMimeTypeInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="FlashPolicyHeader">
+<p class="titles">Flash Policy / Crossdomain<a class="collapse" onclick="return toggle(19)"><img border="0" alt="" src="collapse.png" id="19I">&nbsp;</a></p>
+<table id="19" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="FlashPolicyTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD">DNAS Flash policy port</td>
+<td><input id="DNASFlashPolicyServerPortInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">DNAS Flash policy file</td>
+<td><input id="DNASFlashPolicyFileInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder Flash policy port</td>
+<td><input id="FlashPolicyServerPortInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Transcoder Flash policy file</td>
+<td><input id="FlashPolicyFileInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="YPHeader">
+<p class="titles">YP<a class="collapse" onclick="return toggle(20)"><img border="0" alt="" src="collapse.png" id="20I">&nbsp;</a></p>
+<table id="20" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="YPTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">YP address</td>
+<td><input id="YPAddrInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP port</td>
+<td><input id="YPPortInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP path</td>
+<td><input id="YPPathInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP timeout</td>
+<td><input id="YPTimeoutInput"/></td>
+</tr>
+<tr>
+<td>
+<!-- TODO -->
+<table id="YPTableBlock" style="width:100%;display:none">
+<tr>
+<td style="width:50%" class="ConfigTableDescTD">YP max retries</td>
+<td><input id="YPMaxRetriesInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP report interval</td>
+<td><input id="YPReportIntervalInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">YP min report interval</td>
+<td><input id="YPMinReportIntervalInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Metadata interval</td>
+<td><input id="MetaIntervalInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id="MiscellaneousHeader">
+<p class="titles">Miscellaneous<a class="collapse" onclick="return toggle(21)"><img border="0" alt="" src="collapse.png" id="21I">&nbsp;</a></p>
+<table id="21" style="width:100%;margin:12px 0 12px 0;">
+<tr>
+<td>
+<table id="MiscellaneousTable" style="width:100%">
+<tr>
+<td class="ConfigTableDescTD" style="width:50%">Disable <b>stats?sid=#</b> access</td>
+<td><input id="HideStatsCheckBox" type="checkbox"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Song history</td>
+<td><input id="SongHistoryInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Max header line size</td>
+<td><input id="MaxHeaderLineSizeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Max header line count</td>
+<td><input id="MaxHeaderLineCountInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Buffer type</td>
+<td><select style="width:136px;" id="BufferTypeSelect"><option selected="selected" value="0">Fixed</option><option value="1">Adaptive</option></select></td>
+</tr>
+<tr id="AdaptiveBufferSizeTR">
+<td class="ConfigTableDescTD">Adaptive buffer size</td>
+<td><input id="AdaptiveBufferSizeInput"/></td>
+</tr>
+<tr id="FixedBufferSizeTR">
+<td class="ConfigTableDescTD">Fixed buffer size</td>
+<td><input id="FixedBufferSizeInput"/></td>
+</tr>
+<tr>
+<td class="ConfigTableDescTD">Buffer hard limit</td>
+<td><input id="BufferHardLimitInput"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+	</div>
+</div>
+
+<div id="sider">
+	<div class="content">
+		<span style="padding:0 15px;" class="default" id="HelperSpan"><br>
+<div class="infh" align="center">Help / Additional Information</div>
+Select an option or move your mouse over it to get additional information about that option.<br><br>
+Changes made in the options pane (to the left) appear in the 'Generated Configurations' at the bottom of this page where you can then download the configuration files or copy + paste the configuration settings into a new or existing configuration files.<br><br>
+</span>
+	</div>
+</div>
+</body>
+</html>

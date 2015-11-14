@@ -1,0 +1,334 @@
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* General Demo Style */
+body {
+	font-family: 'Myriad Pro','Arial', 'Trebuchet MS', sans-serif;
+	background: #000;
+	font-weight: 300;
+	font-size: 14px;
+	color: #eee;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+
+.container {
+	position: relative;
+}
+.clear{
+	clear:both;
+}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+		}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.container { width : 750px;}
+		#Subscribe {width : 380px !important ;}
+		#countdown {width : 320px !important ; }
+		ul#countdown li{width:70px !important;}
+		.email {width:200px !important;}
+		.submit {width:130px !important;}
+		
+		}
+	
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {	
+	
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.container { width : 420px;	text-align : center;}
+		#Subscribe {width : 400px !important ; text-align:center !important; margin-right:40px !important; }
+		#countdown {width : 400px !important ; text-align:center !important; }
+		ul#countdown li{width:80px !important;}
+		.email {width:200px !important;}
+		.submit {width:130px !important;}
+
+		.footerleft {	text-align : center !important;	}
+		.footerright {	display : inline-table;	}
+		.header h1 {	font-size : 24px;	line-height : 22px;	margin-top : 10%;	}
+		.header p {	font-size : 16px;line-height : 19px;}
+		.header logo {text-align : center;max-width : 100%;	margin : 30px auto 20px;}
+}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.container {width : 320px; text-align : center;	}
+		
+		#Subscribe {width : 300px !important ; text-align:center !important; margin-right:10px !important; }
+		#countdown {width : 300px !important ; text-align:center !important; }
+		ul#countdown li{width:70px !important;}
+		.email {width:200px !important;}
+		.submit {width:90px !important;}
+		
+		.footerleft {text-align : center;}
+		.socials li {text-align : center !important ;padding-right : 40px;}
+		.header h1 {font-size : 24px;line-height : 22px;margin-top : 10%;}
+		.header p {	font-size : 16px; line-height : 19px;}
+		.header logo {text-align : center;max-width : 100%;	margin : 30px auto 20px;}
+		.Counter { padding-top:20px !important; text-align : center; margin:auto;}
+		}
+
+/* ---- Countdown timer ---- */
+		.Counter {
+			text-indent:10px;
+			padding-top:20px;
+			height:auto;
+			background:url(../images/black.png);
+			padding-bottom:10px;
+
+		}
+		
+		#countdown{
+			width:340px;
+			float:left;
+		}
+		
+		ul#countdown li {
+			display : inline-block;
+			width : 80px;
+			text-align : center;
+			padding-right : 20px;
+		}
+		ul#countdown li span {
+			font-size : 2em;
+			font-weight : bold;
+			color : #fff;
+			height : 120px;
+			position : relative;
+		}
+		ul#countdown li .t {
+			color : #C00;
+			text-transform : uppercase;
+		
+			font-weight : 700;
+		}
+		
+		ul{
+			margin-bottom:0px;
+		}
+
+
+/* ---- Subscribe form---- */
+
+		#Subscribe {
+			float:right;
+			width:420px;
+			text-align:right;
+			height : 100%;
+			margin-right:20px;
+		}
+			.email {
+				padding: 15px;
+				float:right;
+				width: 250px;
+				height: 30px;
+				background: #f3f3f3;
+				border: 0;
+				box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+				-webkit-appearance: none;
+				font-family:Arial;
+				font-size: 13px;
+		}
+		.email:focus {
+			outline : 0;
+			
+			box-shadow : 0 3px 0 0 rgba(0, 0, 0, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+			-webkit-appearance: none;
+		}
+		.submit {
+			width : 148px;
+			height : 30px;
+			margin-right:90px;	
+			background :#C00;
+			border : 0;
+			float:right;
+			font-family:Arial;
+			font-size : 14px;
+			color : #fff;
+			cursor : pointer;
+			
+			
+			
+		}
+		.submit:hover {
+			box-shadow : 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 -20px 30px 0 rgba(255, 255, 255, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+			-webkit-appearance: none;
+		}
+		.submit:active {
+			box-shadow : 0 3px 17px 3px rgba(0, 0, 0, 0.2) inset, 0 -20px 30px 0 rgba(255, 255, 255, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+			-webkit-appearance: none;
+		}
+		
+body{
+	overflow:hidden;
+}
+.ri-grid{
+	margin: -20px auto 0px;
+	position: relative;
+	height: auto;
+	overflow:hidden;
+	opacity:0.8;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #000;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+		
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot@iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+
+

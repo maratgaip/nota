@@ -1,0 +1,107 @@
+# Copyright 2012 Go Daddy Operating Company, LLC. All Rights Reserved.
+<IfModule mod_mime.c>
+
+	# Text
+	AddType text/css .css
+	AddType application/x-javascript .js
+	AddType text/html .html .htm
+	AddType text/richtext .rtf .rtx
+	AddType text/plain .txt
+	AddType text/xml .xml
+
+	# Image
+	AddType image/gif .gif
+	AddType image/x-icon .ico
+	AddType image/jpeg .jpg .jpeg .jpe
+	AddType image/png .png
+	AddType image/svg+xml .svg .svgz
+
+	# Video
+	AddType video/asf .asf .asx .wax .wmv .wmx
+	AddType video/avi .avi
+	AddType video/quicktime .mov .qt
+	AddType video/mp4 .mp4 .m4v
+	AddType video/mpeg .mpeg .mpg .mpe
+
+	# PDF
+	AddType application/pdf .pdf
+
+	# Flash
+	AddType application/x-shockwave-flash .swf
+
+	# Font
+	AddType application/x-font-ttf .ttf .ttc
+	AddType application/vnd.ms-fontobject .eot
+	AddType application/x-font-otf .otf
+
+	# Audio
+	AddType audio/mpeg .mp3 .m4a
+	AddType audio/ogg .ogg
+	AddType audio/wav .wav
+	AddType audio/wma .wma
+
+	# Zip/Tar
+	AddType application/x-tar .tar
+	AddType application/x-gzip .gz .gzip
+	AddType application/zip .zip
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+
+	# Text
+	ExpiresByType text/css A31536000
+	ExpiresByType application/x-javascript A31536000
+	ExpiresByType text/html A3600
+	ExpiresByType text/richtext A3600
+	ExpiresByType text/plain A3600
+	ExpiresByType text/xml A3600
+
+	# Image
+	ExpiresByType image/gif A31536000
+	ExpiresByType image/x-icon A31536000
+	ExpiresByType image/jpeg A31536000
+	ExpiresByType image/png A31536000
+	ExpiresByType image/svg+xml A31536000
+
+	# Video
+	ExpiresByType video/asf A31536000
+	ExpiresByType video/avi A31536000
+	ExpiresByType video/quicktime A31536000
+	ExpiresByType video/mp4 A31536000
+	ExpiresByType video/mpeg A31536000
+
+	# PDF
+	ExpiresByType application/pdf A31536000
+
+	# Flash
+	ExpiresByType application/x-shockwave-flash A31536000
+
+	# Font
+	ExpiresByType application/x-font-ttf A31536000
+	ExpiresByType application/vnd.ms-fontobject A31536000
+	ExpiresByType application/x-font-otf A31536000
+
+	# Audio
+	ExpiresByType audio/mpeg A31536000
+	ExpiresByType audio/ogg A31536000
+	ExpiresByType audio/wav A31536000
+	ExpiresByType audio/wma A31536000
+
+	# Zip/Tar
+	ExpiresByType application/x-tar A31536000
+	ExpiresByType application/x-gzip A31536000
+	ExpiresByType application/zip A31536000
+</IfModule>
+<FilesMatch "\.(?i:css|js|htm|html|rtf|rtx|txt|xml|gif|ico|jpg|jpeg|jpe|png|svg|svgz|asf|asx|wax|wmv|wmx|avi|mov|qt|mp4|m4v|mpeg|mpg|mpe|pdf|swf|ttf|ttc|eot|otf|mp3|m4a|ogg|wav|wma|tar|gz|gzip|zip)$">
+	<IfModule mod_headers.c>
+		Header set Pragma "public"
+		Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+		Header unset ETag
+	</IfModule>
+</FilesMatch>
+<FilesMatch "\.(?i:css|js|gif|ico|jpg|jpeg|jpe|png|pdf|swf|ttf|ttc|eot|otf)$">
+    <IfModule mod_headers.c>
+		Header unset Set-Cookie
+	</IfModule>
+</FilesMatch>

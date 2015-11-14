@@ -1,0 +1,716 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Content v.1.0\n"
+"POT-Creation-Date: 2013-06-21 13:53-0000\n"
+"PO-Revision-Date: 2013-07-15 20:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: Erdem Arslan <erdemsaid@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"Language: Türkçe\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:31
+msgid "Older Comments"
+msgstr "Eski Yorumlar"
+
+#: comments.php:32
+msgid "Newer Comments"
+msgstr "Yeni Yorumlar"
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr "Yorumlama kapalıdır."
+
+#: functions.php:95 inc/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr "Gerekli Eklentileri Kur"
+
+#: functions.php:96 inc/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr "Eklentileri Kur"
+
+#: functions.php:97 inc/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Kurulan Eklenti: %s"
+
+#: functions.php:98
+msgid "Something went wrong with the plugin API."
+msgstr "Eklenti API ile ilgili birşeyler yanlış gitti."
+
+#: functions.php:109 inc/class-tgm-plugin-activation.php:178
+#: inc/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr "Gerekli Eklenti Kurulumlarına Geri Dön"
+
+#: functions.php:110 inc/class-tgm-plugin-activation.php:179
+#: inc/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr "Eklenti başarıyla aktifleştirildi."
+
+#: functions.php:111
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Tüm eklentiler başarıyla kuruldu ve aktifleştirildi. %s"
+
+#: functions.php:258
+msgid "Previous Page"
+msgstr "Önceki Sayfa"
+
+#: functions.php:272
+msgid "Next Page"
+msgstr "Sonraki Sayfa"
+
+#: functions.php:327
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:327 functions.php:353
+msgid "(Edit)"
+msgstr "(Düzenle)"
+
+#: functions.php:337
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: functions.php:340
+msgid "Author"
+msgstr "Yazar"
+
+#: functions.php:344
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz onay bekliyor."
+
+#: header.php:29
+#, php-format
+msgid "Page %s"
+msgstr "%s"
+
+#: index.php:42
+msgid "Post not found"
+msgstr "Yazı bulunamadı"
+
+#: options.php:32
+msgid "Image"
+msgstr "Resim"
+
+#: options.php:33
+msgid "Pattern"
+msgstr "Desen"
+
+#: options.php:34
+msgid "Solid Color"
+msgstr "Solid Reng"
+
+#: options.php:45 inc/theme-options/options-framework.php:173
+#: inc/theme-options/options-framework.php:388
+msgid "Theme Options"
+msgstr "Tema Seçenekleri"
+
+#: options.php:49
+msgid "Background"
+msgstr "Arkaplan"
+
+#: options.php:50
+msgid "What kind of background do you want?"
+msgstr "Ne çeşit arkaplan istiyorsunuz?"
+
+#: options.php:57
+msgid "Background Image"
+msgstr "Arkaplan Resmi"
+
+#: options.php:58
+msgid "Upload your background image here."
+msgstr "Arkaplan resminizi buradan yükleyin."
+
+#: options.php:65
+msgid "Show stripe overlay"
+msgstr "Şerit Kaplamayı Göster"
+
+#: options.php:66
+msgid ""
+"Uncheck this to remove the stripe overlay that covers the background image"
+msgstr "Arkaplan resmindeki şerit kaplamayı kaldırmak için işareti kaldırın"
+
+#: options.php:96
+msgid "Upload Pattern"
+msgstr "Desen Yükle"
+
+#: options.php:97
+msgid ""
+"Upload a new pattern here. If this feature is used it will overwrite the "
+"selection above."
+msgstr ""
+"Yeni bir desen yükleyin. Bu özellik kullanıldığında yukarıdaki seçimin "
+"üzerine yazılır."
+
+#: options.php:103
+msgid "Background Color"
+msgstr "Arkaplan Rengi"
+
+#: options.php:104
+msgid "Select the background color"
+msgstr "Arkaplan rengi seçin"
+
+#: options.php:111
+msgid "Logo"
+msgstr "Logo"
+
+#: options.php:112
+msgid ""
+"Upload your logo here. Remove the image to show the name of the website in "
+"text instead."
+msgstr ""
+"Logonuzu buradan yükleyin. Resmi kaldırısanız websitenizin ismi metin olarak "
+"gözükür."
+
+#: options.php:117
+msgid "Facebook App Id"
+msgstr "Facebook App Id"
+
+#: options.php:118
+msgid ""
+"Insert you Facebook app id here. If you don't have one for your webpage you "
+"can create it <a target=\"_blank\" href=\"https://developers.facebook.com/"
+"apps\">here</a>"
+msgstr ""
+"Facebook App ID yi buraya ekleyin. Eğer App ID niz yoksa birtane almak için "
+"<a target=\"_blank\" href=\"https://developers.facebook.com/apps\">buraya</"
+"a> tıklayınız."
+
+#: options.php:123
+msgid "Enable Facebook comments for posts"
+msgstr "Yazılarda Facebook Yorumlarını Aktifleştir"
+
+#: options.php:124
+msgid ""
+"Check this to use Facebook comments instead of regular wordpress comments "
+"for posts. Requires a Facebook app id in the field above."
+msgstr ""
+"Wordpress yorumları yerine Facebook yorumlarını kullanmak istiyorsanız "
+"işaretleyiniz. Facebook APP ID gereklidir."
+
+#: options.php:130
+msgid "Show search in header"
+msgstr "Başlıkta Arama kutusunu göster"
+
+#: options.php:131
+msgid "Uncheck this to remove the search input from the header"
+msgstr "Başlıktaki arama kutusunu kaldırmak için işareti kaldırın"
+
+#: options.php:137
+msgid "Disable Sticky Header"
+msgstr "Yapışkan Başlığı Kapat"
+
+#: options.php:138
+msgid ""
+"Check this to disable the sticky header feature. (The header won't stay "
+"fixed at the top of the window when you scroll down)"
+msgstr ""
+"Yapışkan başlığı kapatmak için işaretleyiniz. (Sayfa kaydırıldığında başlık "
+"sabit durmaz)"
+
+#: options.php:144
+msgid "Disable Responsive CSS"
+msgstr "Uyumluluk Modunu Kapat"
+
+#: options.php:145
+msgid ""
+"Check this to disable responsive css. Responsive css enable the webpage to "
+"adapt to every screen size allowing mobile users to browse the website more "
+"easily."
+msgstr ""
+"Uyumluluk görünümünü (responsive css) kapatmak için işaretleyin. Uyumluluk "
+"görünümü (responsive css) web sitesini tüm ekran boyutları için uyarlar ve "
+"mobil görünümlerde kullanıcıların daha rahat gezinmelerini sağlar."
+
+#: options.php:151
+msgid "Disable share buttons in the post footer"
+msgstr "Paylaşım Butonlarını Kapat"
+
+#: options.php:152
+msgid ""
+"Check this to remove \"Share story\" and all the share buttons in the posts "
+"footer."
+msgstr ""
+"\"Yazıyı Paylaş\" ve paylaşım düğmelerini yazının altından kaldırmak için "
+"işaretleyin."
+
+#: options.php:170
+msgid "Footer text"
+msgstr "Footer metni"
+
+#: options.php:171
+msgid "{year} will be replaced with the current year"
+msgstr "{year} Geçerli yıl ile değiştirilir."
+
+#: options.php:177
+msgid "Google Analytics"
+msgstr "Google Analitik"
+
+#: options.php:178
+msgid ""
+"Add your Google Analytics tracking code here. Google Analytics is a free web "
+"analytics service more info here: <a href=\"http://www.google.com/analytics/"
+"\">Google Analytics</a>"
+msgstr ""
+"Google Analitik izleme kodunuzu buraya ekleyin. Google Analitik bedava web "
+"izleme servisidir ve <a href=\"http://www.google.com/analytics/\">buraya</a> "
+"tıklayarak daha fazla bilgi alabilirsiniz."
+
+#: options.php:186
+msgid "Colors & Fonts"
+msgstr "Renkler & Fontlar"
+
+#: options.php:191
+msgid "Heading font"
+msgstr "Başlık Fontu"
+
+#: options.php:192
+msgid "Select a font type for all heading"
+msgstr "Tüm başlıklar için font türü seçin"
+
+#: options.php:198
+msgid "Main font"
+msgstr "Ana Font"
+
+#: options.php:199
+msgid "Select a font type for normal text"
+msgstr "Normal metinler için font türü seçin"
+
+#: options.php:205
+msgid "Top Header Color"
+msgstr "Üst Başlık Rengi"
+
+#: options.php:206
+msgid "Select the color for the top header that includes the menu and logo"
+msgstr "Menü ve logo içeren her üst başlık için renk seçin"
+
+#: options.php:212
+msgid "Post Header Color"
+msgstr "Yazı Başlık Rengi"
+
+#: options.php:213
+msgid "Select the color for the top header of each post"
+msgstr "Her yazının üst başlığı için renk seçin"
+
+#: options.php:219
+msgid "Widget Header Color"
+msgstr "Widget Başlık Rengi"
+
+#: options.php:220
+msgid "Select the default color for the top header of each widget"
+msgstr "Her widget başlığı için varsayılan renk seçin"
+
+#: options.php:226
+msgid "Footer Color"
+msgstr "Footer Rengi"
+
+#: options.php:227
+msgid "Select the default color for the footer"
+msgstr "Footer için varsayılan rengi seçin"
+
+#: page-left-sidebar.php:32 page-single-column.php:28 page.php:40
+#: single.php:39
+msgid "Page not found"
+msgstr "Sayfa bulunamadı"
+
+#: sidebar.php:11
+msgid "Archives"
+msgstr "Arşiv"
+
+#: sidebar.php:18
+msgid "Meta"
+msgstr "Meta"
+
+#: single.php:23
+msgid "Older"
+msgstr "Eski"
+
+#: single.php:24
+msgid "Newer"
+msgstr "Yeni"
+
+#: inc/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr "Birşeyler yanlış gitti."
+
+#: inc/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tüm eklentiler kuruldu ve aktifleştirildi. %1$s"
+
+#: inc/class-tgm-plugin-activation.php:517
+#: inc/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr "Kontrol Paneline Geri Dön"
+
+#: inc/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "Eklenti başarıyla aktifleştirildi: %s."
+
+#: inc/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr "Uyarıyı Kapat"
+
+#: inc/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr "Harici Link"
+
+#: inc/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr "Özel Depo"
+
+#: inc/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr "Hazır Paket"
+
+#: inc/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr "WordPress Deposu"
+
+#: inc/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr "Gerekli"
+
+#: inc/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr "Önerilen"
+
+#: inc/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr "Kurulmadı"
+
+#: inc/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr "Kurulum tamamlandı fakat aktifleştirilmedi."
+
+#: inc/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Eklenti yüklenmedi ve aktifleştirilmedi <a href=\"%1$s\" title=\"Kontrol "
+"paneline dön\">Kontrol paneline dön</a>"
+
+#: inc/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr "Eklenti"
+
+#: inc/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr "Kaynak"
+
+#: inc/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr "Tür"
+
+#: inc/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr "Durum"
+
+#: inc/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr "Kur"
+
+#: inc/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr "Aktifleştir"
+
+#: inc/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr "Kurulum paketi uygun değil."
+
+#: inc/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Kurulum paketi şuradan indiriliyor: <span class=\"code\">%s</span>&#8230;"
+
+#: inc/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr "Paket Açılıyor&#8230;"
+
+#: inc/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr "Eklenti kuruluyor&#8230;"
+
+#: inc/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr "Eklenti kurulamadı."
+
+#: inc/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr "Eklenti başarıyla kuruldu."
+
+#: inc/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr "Eklenti aktifleştirilemedi."
+
+#: inc/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Kurulum ve aktifleştirme işlemleri başladı. Bazı sunucularda bu uzun "
+"sürebilir, lütfen sabırlı olun."
+
+#: inc/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s başarıyla kuruldu ve aktifleştirildi."
+
+#: inc/class-tgm-plugin-activation.php:1956
+#: inc/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr "Detayları Göster"
+
+#: inc/class-tgm-plugin-activation.php:1956
+#: inc/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr "Detayları Gizle"
+
+#: inc/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr "Tüm kurulum ve aktifleştirmeler tamamlandı."
+
+#: inc/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Kurulan ve aktifleştirilen Eklenti: %1$s (%2$d/%3$d)"
+
+#: inc/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Kurulum işlemi başladı. Bazı sunucularda bu uzun sürebilir, lütfen sabırlı "
+"olun."
+
+#: inc/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "%1$s kurulurken bir hata meydana geldi: <strong>%2$s</strong>."
+
+#: inc/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "%1$s kurulumu başarısız oldu."
+
+#: inc/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s başarıyla kuruldu."
+
+#: inc/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr "Tüm kurulumlar tamamlandı."
+
+#: inc/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Eklenti Kuruluyor: %1$s (%2$d/%3$d)"
+
+#: inc/meta-bottom.php:16
+msgid "Share story"
+msgstr "Yazıyı Paylaş"
+
+#: inc/meta-top.php:9
+msgid "View all posts in"
+msgstr "Tüm yazılara bak"
+
+#: inc/mailchimp/subscribe.php:25
+msgid "No email address provided"
+msgstr "Email adresi sağlanamadı"
+
+#: inc/mailchimp/subscribe.php:29
+msgid "Email address is invalid"
+msgstr "Email adresi geçersiz"
+
+#: inc/post-format/content-audio.php:19 inc/post-format/content-gallery.php:32
+#: inc/post-format/content-link.php:16 inc/post-format/content-video.php:32
+#: inc/post-format/content.php:27 inc/post-format/single-audio.php:19
+#: inc/post-format/single-gallery.php:29 inc/post-format/single-video.php:18
+#: inc/post-format/single.php:28
+msgid "Pages:"
+msgstr "Sayfalar:"
+
+#: inc/post-format/content-gallery.php:30 inc/post-format/content-link.php:15
+#: inc/post-format/content-video.php:31 inc/post-format/content.php:26
+#: inc/post-format/single.php:26
+msgid "Continue reading..."
+msgstr "Okumaya devam..."
+
+#: inc/theme-options/options-framework.php:204
+msgid "Clear"
+msgstr "Temizle"
+
+#: inc/theme-options/options-framework.php:205
+msgid "Default"
+msgstr "Varsayılan"
+
+#: inc/theme-options/options-framework.php:206
+msgid "Select Color"
+msgstr "Renk Seçin"
+
+#: inc/theme-options/options-framework.php:252
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "Sıfırlamak için Tamam a tıklayınız. Tüm tema ayarları sıfırlanır."
+
+#: inc/theme-options/options-framework.php:284
+msgid "Default options restored."
+msgstr "Varsayılan seçenekler geri yüklendi."
+
+#: inc/theme-options/options-framework.php:338
+msgid "Options saved."
+msgstr "Seçenekler kaydedildi."
+
+#: inc/theme-options/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr "Dosya seçilmedi"
+
+#: inc/theme-options/options-media-uploader.php:54
+#: inc/theme-options/options-media-uploader.php:111
+msgid "Upload"
+msgstr "Yükle"
+
+#: inc/theme-options/options-media-uploader.php:56
+#: inc/theme-options/options-media-uploader.php:112
+msgid "Remove"
+msgstr "Kaldır"
+
+#: inc/theme-options/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Tam medya desteği için Wordpress sürümünüzü yükseltin."
+
+#: inc/theme-options/options-media-uploader.php:83
+msgid "View File"
+msgstr "Dosyaya Bak"
+
+#: inc/theme-options/options-sanitize.php:232
+msgid "No Repeat"
+msgstr "Tekrar Yok"
+
+#: inc/theme-options/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr "Yatay Tekrar"
+
+#: inc/theme-options/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr "Dikey Tekrar"
+
+#: inc/theme-options/options-sanitize.php:235
+msgid "Repeat All"
+msgstr "Hepsini Tekrarla"
+
+#: inc/theme-options/options-sanitize.php:248
+msgid "Top Left"
+msgstr "Üst Sol"
+
+#: inc/theme-options/options-sanitize.php:249
+msgid "Top Center"
+msgstr "Üst Orta"
+
+#: inc/theme-options/options-sanitize.php:250
+msgid "Top Right"
+msgstr "Üst Sağ"
+
+#: inc/theme-options/options-sanitize.php:251
+msgid "Middle Left"
+msgstr "Orta Sol"
+
+#: inc/theme-options/options-sanitize.php:252
+msgid "Middle Center"
+msgstr "Orta Orta"
+
+#: inc/theme-options/options-sanitize.php:253
+msgid "Middle Right"
+msgstr "Orta Sağ"
+
+#: inc/theme-options/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr "Alt Sol"
+
+#: inc/theme-options/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr "Alt Orta"
+
+#: inc/theme-options/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr "Alt Sağ"
+
+#: inc/theme-options/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr "Normal Kaydır"
+
+#: inc/theme-options/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr "Sabit Yer"
+
+#: inc/theme-options/options-sanitize.php:344
+msgid "Normal"
+msgstr "Normal"
+
+#: inc/theme-options/options-sanitize.php:345
+msgid "Italic"
+msgstr "İtalik"
+
+#: inc/theme-options/options-sanitize.php:346
+msgid "Bold"
+msgstr "Kalın"
+
+#: inc/theme-options/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr "Kalın Eğik"
+
+#: inc/widgets/bl_instagram.php:123
+msgid "Followers"
+msgstr "Takipçiler"
+
+#: inc/widgets/bl_instagram.php:127
+msgid "Following"
+msgstr "Takip Edilen"
+
+#: inc/widgets/bl_instagram.php:131
+msgid "Images"
+msgstr "Resimler"
+
+#: inc/widgets/bl_newsletter.php:118
+msgid "Email address"
+msgstr "Email adresi"
+
+#: inc/widgets/bl_newsletter.php:119
+msgid "Subscribe!"
+msgstr "Katıl!"
+
+#: inc/widgets/bl_newsletter.php:123
+msgid "Thank you for subscribing!"
+msgstr "Katıldığınız için teşekkürler!"
+
+#: inc/widgets/bl_tabs.php:78
+msgid "Posts"
+msgstr "Yazılar"
+
+#: inc/widgets/bl_tabs.php:79
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: inc/widgets/bl_tabs.php:80
+msgid "Tags"
+msgstr "Etiketler"
+
+#: inc/widgets/widgets.php:19
+msgid "Footer Widgets"
+msgstr "Footer Bileşenleri"
+
+#: inc/widgets/widgets.php:21
+msgid "These are widgets for the Footer."
+msgstr "Bunlar Footer için eklentidir."

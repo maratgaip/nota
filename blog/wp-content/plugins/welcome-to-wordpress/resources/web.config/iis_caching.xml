@@ -1,0 +1,12 @@
+<!-- Copyright 2012 Go Daddy Operating Company, LLC. All Rights Reserved. -->
+<caching>
+	<profiles>
+		<add extension=".jpg"  policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".css"  policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".js"   policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".jpeg" policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".gif"  policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".png"  policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+		<add extension=".ico"  policy="CacheForTimePeriod" duration="00:01:00" varyByHeaders="Accept-Language" />
+	</profiles>
+</caching>

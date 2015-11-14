@@ -1,0 +1,139 @@
+/*
+  Images for non-hd displays, so, just regular images
+  Included for every device with devicePixelRatio === 1
+  also included for all devices that doesn't have devicePixelRatio (like, WP7)
+*/
+
+/* Main Menu */
+.menu #nav-user-profile {
+  background-image: url(/img/icon-profile.png);
+}
+.menu #nav-user-collection {
+  background-image: url(/img/icon-collection.png);
+}
+.menu #nav-user-favorites {
+  background-image: url(/img/icon-favorites.png);
+}
+.menu #nav-user-playlists {
+  background-image: url(/img/icon-playlists.png);
+}
+.menu #nav-user-following {
+  background-image: url(/img/icon-following.png);
+}
+
+/* list header icons */
+.list-header .list-header-play-now:after  {
+  background-image: url(/img/list-header-play-now.png);
+}
+.list-header .list-header-sort:after  {
+  background-image: url(/img/list-header-sort.png);
+}
+
+/* context menu */
+.context-menu .play-now  {
+  background-image: url(/img/context-play-now.png);
+}
+.context-menu .play-next {
+  background-image: url(/img/context-play-next.png);
+}
+.context-menu .play-last {
+  background-image: url(/img/context-play-last.png);
+}
+.context-menu .favorite  {
+  background-image: url(/img/context-favorite.png);
+}
+.context-menu .collection {
+  background-image: url(/img/context-collection.png);
+}
+.context-menu .offline {
+  background-image: url(/img/context-offline.png);
+}
+.list-row .context-menu-button:after {
+  background-image: url(/img/context-menu-down.png);
+}
+.list-row .context-menu-button.active:after {
+  background-image: url(/img/context-menu-up.png);
+}
+
+/* popover (queue header, basically) */
+.popover .popover-header .popover-switch-queue span {
+  background-image: url(/img/now-playing.png);
+}
+.popover .popover-header .popover-switch-nowplaying span {
+  background-image: url(/img/queue.png);
+}
+
+/* queue player */
+.queue-actions li.queue-actions-prev {
+  background-image: url(/img/queue-actions-prev.png);
+}
+.queue-actions li.queue-actions-paused,
+.little-queue .little-queue-state.paused {
+  background-image: url(/img/queue-actions-play.png);
+}
+.queue-actions li.queue-actions-playing,
+.little-queue .little-queue-state.playing {
+  background-image: url(/img/queue-actions-pause.png);
+}
+.queue-actions li.queue-actions-next {
+  background-image: url(/img/queue-actions-next.png);
+}
+
+/* queue top actions bar */
+.queue-list-actions .queue-list-action-ordered {
+  background-image: url(/img/queue-list-shuffle.png);
+}
+.queue-list-actions .queue-list-action-norepeat {
+  background-image: url(/img/queue-list-repeat.png);
+}
+.queue-list-actions .queue-list-action-edit {
+  background-image: url(/img/queue-list-edit.png);
+}
+.queue-list-actions .queue-list-action-clear {
+  background-image: url(/img/queue-list-clear.png);
+}
+
+/* queue song list and context menu button */
+.queue-song-list .song-row .song-row-remove {
+  background-image: url(/img/queue-song-row-remove.png);
+}
+.queue-song-list .song-row .queue-song-row-move-up:after {
+  background-image: url(/img/queue-list-up.png);
+}
+.queue-song-list .song-row .queue-song-row-move-down:after {
+  background-image: url(/img/queue-list-down.png);
+}
+
+/* now playing */
+.progressbar .progressbar-progress .progressbar-scrubber {
+  background-image: url(/img/scrubber.png);
+}
+
+/* search */
+.search .input-reduce {
+  background-image: url(/img/searchbar-icon.png);
+}
+
+/* pin to home */
+#ios-pin {
+  background-image: url(/img/app-icon.png);
+}
+
+/* ads */
+#ads #close-ad span {
+  background-image: url(/img/close-ad.png);
+}
+
+/*
+  Group spinner.gif's in the one place, reduces base64'ed footprint
+  These needs to be at the end, otherwise 'background' declaration would override 'background-image'
+  Also, we override queue actions here (and probably something else)
+*/
+#loading,
+.little-queue .little-queue-state.loading,
+.list-counts .list-counts-loading,
+.badge-loading,
+.list-loading p,
+.queue-actions li.queue-actions-loading {
+  background-image: url(/img/spinner.gif);
+}
