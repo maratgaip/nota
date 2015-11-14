@@ -70,7 +70,7 @@ if( ! $oauth_token ) {
 		print '
 			<html>
 			<head>
-			    <title>Kiandastream Signup with Facebook or Twitter</title>
+			    <title>Nota Signup with Facebook or Twitter</title>
 			    <script>
 					window.opener.SettingsConnections.Add.render(' . json_encode($json) . ');
 			       window.close();
@@ -132,7 +132,7 @@ if( ! $oauth_token ) {
 				print '
 				<html>
 				    <head>
-				        <title>Kiandastream sign in</title>
+				        <title>Nota sign in</title>
 				        <script>
 				            window.opener.CreateAccount.AlreadyLoggedIn(' . json_encode($json) . ');
 				            window.close();
@@ -169,7 +169,7 @@ if( ! $oauth_token ) {
                       print '
 				<html>
                                      <head>
-				        <title>Kiandastream sign up</title>
+				        <title>Nota sign up</title>
 				        <script language="Javascript" type="text/javascript">
                                     if(window.opener != null && !window.opener.closed)
                                        {

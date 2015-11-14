@@ -53,7 +53,7 @@ $_TIME = time();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kiandastream Mobile</title>
+    <title>Nota Mobile</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
@@ -118,7 +118,7 @@ $_TIME = time();
         <div class="topbar">
             <div id="page-header" class="black-bar">
                 <a class="button header-left menu"></a>
-                <span class="page-title">Kiandastream</span>
+                <span class="page-title">Nota</span>
                 <a href="/#!/login" id="header-login" class="button header-right header-login">Login</a>
             </div>
         </div>

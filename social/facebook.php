@@ -60,7 +60,7 @@ if ($oauth_token) {
         print '
 			<html>
 			<head>
-			    <title>Kiandastream Signup with Facebook or Twitter</title>
+			    <title>Nota Signup with Facebook or Twitter</title>
 			    <script>
 					window.opener.SettingsConnections.Add.render(' . json_encode($json) . ');
 			       window.close();
@@ -124,7 +124,7 @@ if ($oauth_token) {
                 print '
 				<html>
 				    <head>
-				        <title>Kiandastream sign in</title>
+				        <title>Nota sign in</title>
 				        <script>
 				            window.opener.CreateAccount.AlreadyLoggedIn(' . json_encode($json) . ');
 				            window.close();
@@ -148,7 +148,7 @@ if ($oauth_token) {
             print '
 			<html>
 			<head>
-			    <title>Kiandastream Signup with Facebook or Twitter</title>
+			    <title>Nota Signup with Facebook or Twitter</title>
 			    <script>
 			        window.opener.CreateAccount.Service.listener({"response": {"service": {"info": {"website": null, "bio": "' . $user->bio . '", "is_default_profile_image": false, "name": "' . $user->name . '", "pic": "https:\/\/graph.facebook.com\/' . $user->id . '\/picture?type=large", "username": "' . $user->username . '", "location": "' . $user->location->name . '", "lookup_id": "' . $user->id . '", "service_username": "' . $user->username . '", "email": "' . $user->email . '"}, "social": "facebook"}}, "success": true});
 			        window.close();

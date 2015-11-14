@@ -116,7 +116,7 @@ if($logged) {
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>KiandaStream - Master Control Panel</title>
+<title>Nota - Master Control Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -192,7 +192,7 @@ HTML;
       <hr>
     <div id="footer" style="text-align:center">
       <div class="container">
-        <p class="muted credit" style="text-align:center;">Copyright &copy; 2014 KiandaStream</a></p>
+        <p class="muted credit" style="text-align:center;">Copyright &copy; 2015 Nota</a></p>
       </div>
     </div>
     </div>
@@ -344,7 +344,7 @@ echo <<<HTML
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Sign in &middot; KiandaStream Master Panel</title>
+    <title>Sign in &middot; Nota Master Panel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">

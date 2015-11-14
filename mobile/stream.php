@@ -16,6 +16,6 @@
 
 $song_id = trim(intval($_REQUEST['streamKey']));
 
-header("Location: http://kiandastream.com//static/songs/" . $song_id . ".mp3");
+header("Location: http://nota.kg//static/songs/" . $song_id . ".mp3");
 
 ?>

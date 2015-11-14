@@ -88,7 +88,7 @@ $ajax = <<<HTML
 <script language="javascript" type="text/javascript">
 var player_root = '{$config['siteurl']}';
 var genre_list = [{$genre_list}];
-var mail_contact = 'info@kiandastream.com';
+var mail_contact = 'info@nota.kg';
 
 </script>
 HTML;
@@ -164,7 +164,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
  // <![CDATA[  
     var mobile = (/iphone|ipod|android|blackberry|mini|windows (ce|phone)|palm/i.test(navigator.userAgent.toLowerCase()));  
     if (mobile) {  
-        document.location = "http://mobile.kiandastream.com";  
+        document.location = "http://mobile.nota.kg";  
     } // ]]>
 </script>
 
@@ -189,7 +189,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
 
 
 <div id="altContent">
-	<h1>Kiandastream is the best way to listening and sharing the music.</h1>
+	<h1>Nota is the best way to listening and sharing the music.</h1>
 	<h2>Collection million songs.</h2>
 	<noscript>
 	<ul class="links">
@@ -202,7 +202,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
 		<li><a href="{$config['siteurl']}explore">Explore</a></li>
 	</ul>
 </div>
-<div id="top"> <a id="logo" href="/"><span class="left_row_icon"></span>kianda</a>
+<div id="top"> <a id="logo" href="/"><span class="left_row_icon"></span>nota</a>
 	<div id="top_right"></div>
 	<div id="top_search">
 		<form id="top_search_form">
@@ -326,7 +326,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
 
 
 <div id="tooltip_display"></div>
-<div id="top_right_dropdown" class="display_none"><a href="/settings" class="top_right_dropdown_link">Settings</a> <a class="top_right_dropdown_link" onclick="ChangeLanguage.Build('en'); return false;">English</a> <a onclick="ChangeLanguage.Build('pr'); return false;" class="top_right_dropdown_link">Portuguese</a> <a href="/settings/social" class="top_right_dropdown_link">Social</a> <a href="http://kiandastream.com//terms.html" target="_blank" class="top_right_dropdown_link">Terms/Privacy</a> <a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Logout</a> </div>
+<div id="top_right_dropdown" class="display_none"><a href="/settings" class="top_right_dropdown_link">Settings</a> <a class="top_right_dropdown_link" onclick="ChangeLanguage.Build('en'); return false;">English</a> <a onclick="ChangeLanguage.Build('pr'); return false;" class="top_right_dropdown_link">Portuguese</a> <a href="/settings/social" class="top_right_dropdown_link">Social</a> <a href="http://nota.kg//terms.html" target="_blank" class="top_right_dropdown_link">Terms/Privacy</a> <a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Logout</a> </div>
 <div id="full_cover" class="display_none"></div>
 <div id="tutorial_container" class="display_none"></div>
 <script>loggedInUser = null;userBackground = {};</script>
@@ -358,7 +358,7 @@ clicky_site_ids.push(100742469);
 })("woopra");
 
 woopra.config({
-    domain: 'kiandastream.com'
+    domain: 'nota.kg'
 });
 
 woopra.identify({
@@ -377,7 +377,7 @@ woopra.track();
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48948428-1', 'kiandastream.com');
+  ga('create', 'UA-48948428-1', 'nota.kg');
   ga('send', 'pageview');
 
 </script>
@@ -502,7 +502,7 @@ $ajax = <<<HTML
 <script language="javascript" type="text/javascript">
 var player_root = '{$config['siteurl']}';
 var genre_list = [{$genre_list}];
-var mail_contact = 'info@kiandastream.com';
+var mail_contact = 'info@nota.kg';
 
 </script>
 HTML;
@@ -578,7 +578,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
  // <![CDATA[  
     var mobile = (/iphone|ipod|android|blackberry|mini|windows (ce|phone)|palm/i.test(navigator.userAgent.toLowerCase()));  
     if (mobile) {  
-        document.location = "http://mobile.kiandastream.com";  
+        document.location = "http://mobile.nota.kg";  
     } // ]]>
 </script>
 
@@ -603,7 +603,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
 
 
 <div id="altContent">
-	<h1>Kiandastream is the best way to listening and sharing the music.</h1>
+	<h1>Notas is the best way to listening and sharing the music.</h1>
 	<h2>Collection million songs.</h2>
 	<noscript>
 	<ul class="links">
@@ -740,7 +740,7 @@ var FRAGMENT = 'None';var _gaq = _gaq || [];
 
 
 <div id="tooltip_display"></div>
-<div id="top_right_dropdown" class="display_none"><a href="/settings" class="top_right_dropdown_link">Settings</a> <a class="top_right_dropdown_link" onclick="ChangeLanguage.Build('en'); return false;">English</a> <a onclick="ChangeLanguage.Build('pr'); return false;" class="top_right_dropdown_link">Portuguese</a> <a href="/settings/social" class="top_right_dropdown_link">Social</a> <a href="http://kiandastream.com/terms.html" target="_blank" class="top_right_dropdown_link">Terms/Privacy</a> <a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Logout</a> </div>
+<div id="top_right_dropdown" class="display_none"><a href="/settings" class="top_right_dropdown_link">Settings</a> <a class="top_right_dropdown_link" onclick="ChangeLanguage.Build('en'); return false;">English</a> <a onclick="ChangeLanguage.Build('pr'); return false;" class="top_right_dropdown_link">Portuguese</a> <a href="/settings/social" class="top_right_dropdown_link">Social</a> <a href="http://nota.kg/terms.html" target="_blank" class="top_right_dropdown_link">Terms/Privacy</a> <a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Logout</a> </div>
 <div id="full_cover" class="display_none"></div>
 <div id="tutorial_container" class="display_none"></div>
 <script>loggedInUser = null;userBackground = {};</script>
@@ -772,7 +772,7 @@ clicky_site_ids.push(100742469);
 })("woopra");
 
 woopra.config({
-    domain: 'kiandastream.com'
+    domain: 'nota.kg'
 });
 
 woopra.identify({
@@ -791,7 +791,7 @@ woopra.track();
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48948428-1', 'kiandastream.com');
+  ga('create', 'UA-48948428-1', 'nota.kg');
   ga('send', 'pageview');
 
 </script>

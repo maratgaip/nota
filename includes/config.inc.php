@@ -14,9 +14,9 @@ $config = array (
 
 'charset' => "UTF-8",
 
-'webdesc' => "KiandaStream - A musica que nos une. O melhor lugar para entrar musica Angolana de qualidade. Todos os teus artistas favoritos estao aqui. Crie playlists, love as musicas e muito mais.",
+'webdesc' => "Nota - A musica que nos une. O melhor lugar para entrar musica Angolana de qualidade. Todos os teus artistas favoritos estao aqui. Crie playlists, love as musicas e muito mais.",
 
-'keywords' => "music,musica,angolana,melhor sitio de musica angolana,artistas angolanos,musicas angolanas,angolan artists,angolan music, musica angolana, musica angolana download, kiandastream",
+'keywords' => "music,musica,angolana,melhor sitio de musica angolana,artistas angolanos,musicas angolanas,angolan artists,angolan music, musica angolana, musica angolana download, Nota",
 
 'analytics' => "",
 
@@ -42,11 +42,11 @@ $config = array (
 
 'trending_page' => "Music trending",
 
-'trending_page_descr' => "See what is trending on Kiandastream",
+'trending_page_descr' => "See what is trending on Nota",
 
 'top_week_page' => "Top song in the day",
 
-'top_week_page_descr' => "See what songs is most played on Kiandastream today",
+'top_week_page_descr' => "See what songs is most played on Nota today",
 
 'latest_love_page' => "Latest loved songs",
 
@@ -58,11 +58,11 @@ $config = array (
 
 'song_page_title' => "%name% by %artist%",
 
-'song_page_descr' => "Listen %name% by %artist% on KiandaStream",
+'song_page_descr' => "Listen %name% by %artist% on Nota",
 
 'search_page_title' => "Search: %keyword%",
 
-'search_page_descr' => "Search: %keyword% on Kiandastream",
+'search_page_descr' => "Search: %keyword% on Nota",
 
 );
 
