@@ -63,6 +63,7 @@ function clear_cache($cache_area = false) {
 	}
 }
 function set_cookie($name, $value, $expires) {
+
 	if( $expires ) {	
 		$expires = time() + ($expires * 86400);
 	} else {	
@@ -70,8 +71,9 @@ function set_cookie($name, $value, $expires) {
 	}
 	if( PHP_VERSION < 5.2 ) {	
 		setcookie( $name, $value, $expires, "/", DOMAIN . "; HttpOnly" );
-	} else {	
-		setcookie( $name, $value, $expires, "/", DOMAIN, NULL, TRUE );	
+	} else {
+		setcookie( $name, $value, $expires, "/");
+		//setcookie( $name, $value, $expires, "/", DOMAIN, NULL, TRUE );
 	}
 }
 

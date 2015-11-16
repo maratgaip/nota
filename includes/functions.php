@@ -661,7 +661,7 @@ $domain_cookie = "." . implode (".", $domain_cookie);
 define( 'DOMAIN', $domain_cookie );
 
 function set_cookie($name, $value, $expires) {
-	
+
 	if( $expires ) {
 		
 		$expires = time() + ($expires * 86400);
