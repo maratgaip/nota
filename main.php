@@ -1,8 +1,6 @@
 <?php
 
 @session_start ();
-echo $_SERVER["SCRIPT_FILENAME"];
-
 
 @ob_start ();
 
@@ -217,29 +215,27 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 			<div id="left">
 				<div id="user_nav"> 
 					<br />
-		            
-		            <div class="left_row_text left_row_discover left_row_discover_browse collectsnow" data-translate-text="left_browse">Browse</div>
-                              
+		                                          
 		            <nav>
 		            	<ul id="navigation_left">
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/trending" data-translate-text="left_trending"> Trending</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/newrelease" data-translate-text="left_newreleases"> New Releases</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/explore/top-of-the-week" data-translate-text="left_explore"> Explore</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/artists" data-translate-text="left_artists"> Artists</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/albums" data-translate-text="left_albums"> Albums</a></li>
-                                         <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/radio" data-translate-text="left_radio">Radio</a></li> 
-		                    <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/settings/social" data-translate-text="left_findfriends"> Find Friends</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/trending" data-translate-text="left_trending"> Популярное</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/newrelease" data-translate-text="left_newreleases"> Новое</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/explore/top-of-the-week" data-translate-text="left_explore"> Сборники</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/artists" data-translate-text="left_artists"> Артисты</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/albums" data-translate-text="left_albums"> Альбомы</a></li>
+                                         <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/radio" data-translate-text="left_radio">Радио</a></li>
+		                    <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/settings/social" data-translate-text="left_findfriends"> Поиск Друзей</a></li>
 						</ul>
 		            </nav>
 		            
 		            <div class="left_row_text spp"></div>
 
-		            <div class="left_row_text left_row_discover left_row_discover_playlist collectsnow" data-translate-text="left_playlists">Playlists</div>
+		            <div class="left_row_text left_row_discover left_row_discover_playlist collectsnow" data-translate-text="left_playlists">Сборники</div>
 
 		            
 		            	<ul id="navigation_left_playlist">
-		            		<li class="left_row_custom left_row_text left_row_text2 nnnn"><a id="create_playlist_click" data-translate-text="left_createnew"><i class="icon-list-add"></i> Create New</a></li>
-		            		<li class="left_row_custom left_row_text left_row_text2 nnnn"><a id="playlist_click" href="/playlist" > Playlist</a></li>
+		            		<li class="left_row_custom left_row_text left_row_text2 nnnn"><a id="create_playlist_click" data-translate-text="left_createnew"><i class="icon-list-add"></i> Создать Сборник</a></li>
+		            		<li class="left_row_custom left_row_text left_row_text2 nnnn"><a id="playlist_click" href="/playlist" > Сборник</a></li>
 		            		
 						</ul>
 		            
