@@ -128,15 +128,23 @@ $lang = array(
 	"left_findfriends" => "Find Friends",
 	"left_playlists" => "Playlist",
 	"left_createnew" => "Create New",
-        "left-release" => "New Releases",
-        "left_overall" => "OVERALL" ,
-        "left_favourite" => "Favourite",
-        "left_unlike" => "Unlike",
-        "left_like" => "Like",
-        "left_totallike" =>"Total Likes",
-        "left_best" => "The Best",
-        "left_radio" => "Radio",
+	"left-release" => "New Releases",
+	"left_overall" => "OVERALL" ,
+	"left_favourite" => "Favourite",
+	"left_unlike" => "Unlike",
+	"left_like" => "Like",
+	"left_totallike" =>"Total Likes",
+	"left_best" => "The Best",
+	"left_radio" => "Radio",
+	"login_title" => "Login",
+	"login_account" => "Account:",
+	"login_password" => "Password:",
+	"create_account_title" => "Create Account",
+	"create_account_button" => "Create Account",
+	"login_lost_password" => "Lost password?",
+	"login_password_input" => "<input type=\"text\" id=\"sign_in_username\" name=\"username\" class=\"large_input_text\" placeholder=\"Username\" />",
+	"login_become_member" => "Become a member? <strong>Join Nota now!</strong>",
+
 
 );
-
 ?>
