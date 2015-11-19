@@ -9925,7 +9925,7 @@ transition:0, background-color .1s ease-out
 .picblurr{
     width:100%;
     height:95px;
-    background:url(http://kiandastream.com//assets/images/bbb1.jpg);
+    background:url(/assets/images/bbb1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display:block;

@@ -57,10 +57,10 @@ $_TIME = time();
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-    <meta property="og:title"  name="title" content="Kiandastream Mobile">
-    <meta property="og:url" content="http://mobile.kiandastream.com">
-    <meta property="og:image" content="http://mobile.kiandastream.com/">
-    <meta property="og:site_name" content="Kiandastream Mobile">
+    <meta property="og:title"  name="title" content="Nota Mobile">
+    <meta property="og:url" content="http://mobile.nota.kg">
+    <meta property="og:image" content="http://mobile.nota.kg/">
+    <meta property="og:site_name" content="Nota Mobile">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="website">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -108,8 +108,8 @@ $_TIME = time();
         </ul>
         <div class="menu menu-bottom">
             <div id="terms">
-                <a href="http://mobile.kiandastream.com/privacy.html" target="_blank">Privacy</a>
-                <a href="http://mobile.kiandastream.com/terms.html" target="_blank">Terms</a>
+                <a href="http://mobile.nota.kg/privacy.html" target="_blank">Privacy</a>
+                <a href="http://mobile.nota.kg/terms.html" target="_blank">Terms</a>
             </div>
         </div>
     </div>
@@ -146,8 +146,8 @@ $_TIME = time();
     <!-- <div id="ads"><div id="ad"></div><a id="close-ad"><span>Close Ad</span></a></div> 
 
     <div id="ios-pin">
-        <h3>Kiandastream on your finger</h3>
-        <p>Want quick and easy access to Kiandastream webapp? Touch below to pin it to your homescreen. Tap anywhere to close this notification.</p>
+        <h3>Nota on your finger</h3>
+        <p>Want quick and easy access to Nota webapp? Touch below to pin it to your homescreen. Tap anywhere to close this notification.</p>
     </div>
 -->
     <div id="hide-audio"></div>

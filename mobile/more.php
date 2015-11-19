@@ -471,7 +471,7 @@ WHERE vass_songs.id = '$token'" );
 	$row ['ts'] = 1336467213;
 	$row ['isMobile'] = false;
 	$row ['streamServerID'] = 2;
-	$row ['ip'] = "mobile.kiandastream.com";
+	$row ['ip'] = "mobile.nota.kg";
 	$result = $row;
 	
 	$buffer = json_build ( $session, $version, $prefetchEnabled, $result );

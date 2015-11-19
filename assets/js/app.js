@@ -3995,7 +3995,7 @@ ShareArtistBox.Twitter = {
     tweet: function() {
 
 
-        return "Listening artist of " + ShareArtistBox.Artist[0] + " on #KiandaStream - http://" + location.host + "/artist/" + ShareArtistBox.Artist[1]
+        return "Listening artist of " + ShareArtistBox.Artist[0] + " on #Nota - http://" + location.host + "/artist/" + ShareArtistBox.Artist[1]
     },
     click: function(b) {
         if (ShareArtistBox.Service.selected != "twitter") {
@@ -4082,7 +4082,7 @@ ShareArtistBox.Connect = {
             jQuery(".create_account_oauth").bind("click", ShareArtistBox.Connect.click)
         } else {
             jQuery("#share_box_bottom").empty();
-            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this artist! <br />First you must connect with ' + Utils.Capitalize(ShareArtistBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://kiandastream.com" target="_blank">Go to KiandaStream</a><div class="clear"></div>')
+            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this artist! <br />First you must connect with ' + Utils.Capitalize(ShareArtistBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://nota.kg" target="_blank">Go to Nota</a><div class="clear"></div>')
         }
     },
     click: function() {
@@ -4181,7 +4181,7 @@ ShareAlbumBox.Twitter = {
     tweet: function() {
 
 
-        return "Listening album  " + ShareAlbumBox.Album[0] + " of artist " + ShareAlbumBox.Album[2] + " on #KiandaStream - http://" + location.host + "/album/" + ShareAlbumBox.Album[1]
+        return "Listening album  " + ShareAlbumBox.Album[0] + " of artist " + ShareAlbumBox.Album[2] + " on #Nota - http://" + location.host + "/album/" + ShareAlbumBox.Album[1]
     },
     click: function(b) {
         if (ShareAlbumBox.Service.selected != "twitter") {
@@ -4268,7 +4268,7 @@ ShareAlbumBox.Connect = {
             jQuery(".create_account_oauth").bind("click", ShareAlbumBox.Connect.click)
         } else {
             jQuery("#share_box_bottom").empty();
-            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this album! <br />First you must connect with ' + Utils.Capitalize(ShareAlbumBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://kiandastream.com" target="_blank">Go to KiandaStream</a><div class="clear"></div>')
+            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this album! <br />First you must connect with ' + Utils.Capitalize(ShareAlbumBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://nota.kg" target="_blank">Go to Nota</a><div class="clear"></div>')
         }
     },
     click: function() {
@@ -4609,7 +4609,6 @@ SignIn.Change = function(a) {
     }
     if (a.href == "sign-out") {
         location.href = "sign-out"
-        //location.href = "http://kiandastream.com/landing.php";
     }
 };
 SignIn.Show = function() {
@@ -4709,7 +4708,6 @@ SignIn.SignedIn = function(a) {
         type: "lalaNeedHistoryChange",
         href: SignIn.LastHistory
     })
-    //window.location.replace("http://kiandastream.com/indexb.php");
     location.reload();
 };
 SignIn.PasswordForget = {
@@ -4758,11 +4756,9 @@ SignIn.Service = {
         window.open("/create-account/" + a);
 
 //        location.reload();
-        //window.location.replace("http://kiandastream.com/indexb.php");
     }
 };
 jQuery("#sign_out_link").bind("click", function() {
-    //window.location.href = "http://kiandastream.com/landing.php";
     Storage.Remove("queue");
     Storage.Remove("queueNumber");
     Storage.Remove("LeftSelect.ShowPlaying.section")
@@ -6133,7 +6129,7 @@ ShareBox.Twitter = {
         if (Utils.HasValue(ShareBox.Song.artist)) {
             a = " by " + ShareBox.Song.artist
         }
-        return "Listening to " + ShareBox.Song.title + a + " on #KiandaStream - http://" + location.host + "/song/" + ShareBox.Song.id
+        return "Listening to " + ShareBox.Song.title + a + " on #Nota - http://" + location.host + "/song/" + ShareBox.Song.id
     },
     click: function(b) {
         if (ShareBox.Service.selected != "twitter") {
@@ -6220,7 +6216,7 @@ ShareBox.Connect = {
             jQuery(".create_account_oauth").bind("click", ShareBox.Connect.click)
         } else {
             jQuery("#share_box_bottom").empty();
-            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this song! <br />First you must connect with ' + Utils.Capitalize(ShareBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://kiandastream.com" target="_blank">Go to KiandaStream</a><div class="clear"></div>')
+            jQuery("#share_box_middle").html('<div id="add_service_modal_middle"><div id="add_service_text">Thanks for sharing this song! <br />First you must connect with ' + Utils.Capitalize(ShareBox.Service.selected) + '.</div><a id="add_service_lala_link" class="modal_bottom_button generic_button" href="http://nota.kg" target="_blank">Go to Nota</a><div class="clear"></div>')
         }
     },
     click: function() {
@@ -9763,7 +9759,7 @@ var TutorialView = Backbone.View.extend({
     events: {
         "click #tutorial_close": "onCloseClicked"
     },
-    titles: ["Your Profile", "See What's Trending", "Explore KiandaStream", "Get Social", "Make KiandaStream Yours", "Turn KiandaStream Up", "Thanks again and enjoy KiandaStream!"],
+    titles: ["Your Profile", "See What's Trending", "Explore Nota", "Get Social", "Make Nota Yours", "Turn Nota Up", "Thanks again and enjoy Nota!"],
     images: ["tutorial-profile.png", "tutorial-trending.png", "tutorial-explore.png", "tutorial-social.png", "tutorial-customize.png", "tutorial-extensions.png"],
     initialize: function(a) {
         _.extend(this, a);

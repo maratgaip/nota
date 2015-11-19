@@ -1016,7 +1016,7 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
     left: 251px;
     right: 150px;
     height: 0;
-    background:url(http://kiandastream.com//assets/images/bbb2.jpg);
+    background:url(/assets/images/bbb2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display:block;
@@ -1046,7 +1046,7 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
 #blurredplayer_effect{
     width:100%;
     height:95px;
-    background-image:url(http://kiandastream.com//blog/wp-content/uploads/2014/04/bg.jpg);
+    background-image:url(/assets/images/bbb2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display:block;
