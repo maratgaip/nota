@@ -213,9 +213,7 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		</div>
 		<div id="middle">
 			<div id="left">
-				<div id="user_nav"> 
-					<br />
-		                                          
+				<div id="user_nav">
 		            <nav>
 		            	<ul id="navigation_left">
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/trending" data-translate-text="left_trending"> Популярное</a></li>
