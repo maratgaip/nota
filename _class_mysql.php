@@ -27,21 +27,21 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 					} else {
 						return false;
 					}
-				} 
+				}
 				$this->mysql_version = mysqli_get_server_info($this->db_id);
 				if(!defined('COLLATE'))
-				{ 
+				{
 					define ("COLLATE", "cp1251");
 				}
 				mysqli_query($this->db_id, "SET NAMES '" . COLLATE . "'");
 				return true;
 			}
-			
+
 			function query($query, $show_error=true)
 			{
 				$time_before = $this->get_real_time();
 				if(!$this->db_id) $this->connect(MYSQLDBUSER, MYSQLDBPASS, MYSQLDBNAME, MYSQLHOST);
-				
+
 				if(!($this->query_id = mysqli_query($this->db_id, $query) )) {
 					$this->mysql_error = mysqli_error($this->db_id);
 					$this->mysql_error_num = mysqli_errno($this->db_id);
@@ -49,17 +49,17 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 						$this->display_error($this->mysql_error, $this->mysql_error_num, $query);
 					}
 				}
-					
+
 				$this->MySQL_time_taken += $this->get_real_time() - $time_before;
-				
-		//			$this->query_list[] = array( 'time'  => ($this->get_real_time() - $time_before), 
+
+		//			$this->query_list[] = array( 'time'  => ($this->get_real_time() - $time_before),
 		//										 'query' => $query,
 		//										 'num'   => (count($this->query_list) + 1));
-				
+
 				$this->query_num ++;
 				return $this->query_id;
 			}
-			
+
 			function get_row($query_id = '')
 			{
 				if ($query_id == '') $query_id = $this->query_id;
@@ -70,32 +70,32 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 				if ($query_id == '') $query_id = $this->query_id;
 				return mysqli_fetch_array($query_id);
 			}
-			
+
 			function super_query($query, $multi = false)
 			{
 				if(!$multi) {
 					$this->query($query);
 					$data = $this->get_row();
-					$this->free();			
+					$this->free();
 					return $data;
 				} else {
 					$this->query($query);
-					
+
 					$rows = array();
 					while($row = $this->get_row()) {
 						$rows[] = $row;
 					}
-					$this->free();			
+					$this->free();
 					return $rows;
 				}
 			}
-			
+
 			function num_rows($query_id = '')
 			{
 				if ($query_id == '') $query_id = $this->query_id;
 				return mysqli_num_rows($query_id);
 			}
-			
+
 			function insert_id()
 			{
 				return mysqli_insert_id($this->db_id);
@@ -106,14 +106,14 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 				{
 		            $fields[] = $field;
 				}
-				
+
 				return $fields;
 		   	}
 			function safesql( $source )
 			{
 				if ($this->db_id) return mysqli_real_escape_string ($this->db_id, $source);
 				else return addslashes($source);
-				
+
 			}
 			function free( $query_id = '' )
 			{
@@ -128,7 +128,7 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 			{
 				list($seconds, $microSeconds) = explode(' ', microtime());
 				return ((float)$seconds + (float)$microSeconds);
-			}	
+			}
 			function display_error($error, $error_num, $query = '')
 			{
 				if($query) {
@@ -136,7 +136,7 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 					$query = preg_replace("/([0-9a-f]){32}/", "********************************", $query); // Hides all hashes
 					$query_str = "$query";
 				}
-				
+
 				$sqlerror="<table cellpadding=\"0\" cellspacing=\4\" class=\"smallgrey\" border=\"0\" align=\"center\">\n";
 				$sqlerror.="<tr><td class=\"smallorange\"><font size=4><B><U>".$error."</U></B></td></tr>\n";
 				$sqlerror.="<tr><td height=\"10\"></td></tr>\n";
@@ -175,7 +175,7 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 				'.$sqlerror.'
 				</body>
 				</html>';
-				
+
 				exit();
 			}
 		}
@@ -195,7 +195,7 @@ else
 			var $mysql_extend = "MySQL";
 			var $MySQL_time_taken = 0;
 			var $query_id = false;
-			
+
 			function connect($db_user, $db_pass, $db_name, $db_location = 'localhost', $show_error=1)
 			{
 				if(!$this->db_id = @mysql_connect($db_location, $db_user, $db_pass)) {
@@ -204,7 +204,7 @@ else
 					} else {
 						return false;
 					}
-				} 
+				}
 				if(!@mysql_select_db($db_name, $this->db_id)) {
 					if($show_error == 1) {
 						$this->display_error(mysql_error(), mysql_errno());
@@ -214,19 +214,19 @@ else
 				}
 				$this->mysql_version = mysql_get_server_info();
 				if(!defined('COLLATE'))
-				{ 
+				{
 					define ("COLLATE", "cp1251");
 				}
 				if (version_compare($this->mysql_version, '4.1', ">=")) mysql_query("/*!40101 SET NAMES '" . COLLATE . "' */");
 				$this->connected = true;
 				return true;
 			}
-			
+
 			function query($query, $show_error=true)
 			{
 				$time_before = $this->get_real_time();
 				if(!$this->connected) $this->connect(MYSQLDBUSER, MYSQLDBPASS, MYSQLDBNAME, MYSQLHOST);
-				
+
 				if(!($this->query_id = mysql_query($query, $this->db_id) )) {
 					$this->mysql_error = mysql_error();
 					$this->mysql_error_num = mysql_errno();
@@ -234,16 +234,16 @@ else
 						$this->display_error($this->mysql_error, $this->mysql_error_num, $query);
 					}
 				}
-					
+
 				$this->MySQL_time_taken += $this->get_real_time() - $time_before;
-				
-		//			$this->query_list[] = array( 'time'  => ($this->get_real_time() - $time_before), 
+
+		//			$this->query_list[] = array( 'time'  => ($this->get_real_time() - $time_before),
 		//										 'query' => $query,
 		//										 'num'   => (count($this->query_list) + 1));
 				$this->query_num ++;
 				return $this->query_id;
 			}
-			
+
 			function get_row($query_id = '')
 			{
 				if ($query_id == '') $query_id = $this->query_id;
@@ -254,33 +254,33 @@ else
 				if ($query_id == '') $query_id = $this->query_id;
 				return mysql_fetch_array($query_id);
 			}
-			
-			
+
+
 			function super_query($query, $multi = false)
 			{
 				if(!$multi) {
 					$this->query($query);
 					$data = $this->get_row();
-					$this->free();			
+					$this->free();
 					return $data;
 				} else {
 					$this->query($query);
-					
+
 					$rows = array();
 					while($row = $this->get_row()) {
 						$rows[] = $row;
 					}
-					$this->free();			
+					$this->free();
 					return $rows;
 				}
 			}
-			
+
 			function num_rows($query_id = '')
 			{
 				if ($query_id == '') $query_id = $this->query_id;
 				return mysql_num_rows($query_id);
 			}
-			
+
 			function insert_id()
 			{
 				return mysql_insert_id($this->db_id);
@@ -291,7 +291,7 @@ else
 				{
 		            $fields[] = $field;
 				}
-				
+
 				return $fields;
 		   	}
 			function safesql( $source )
@@ -312,7 +312,7 @@ else
 			{
 				list($seconds, $microSeconds) = explode(' ', microtime());
 				return ((float)$seconds + (float)$microSeconds);
-			}	
+			}
 			function display_error($error, $error_num, $query = '')
 			{
 				if($query) {
@@ -320,7 +320,7 @@ else
 					$query = preg_replace("/([0-9a-f]){32}/", "********************************", $query); // Hides all hashes
 					$query_str = "$query";
 				}
-				
+
 				$sqlerror="<table cellpadding=\"0\" cellspacing=\4\" class=\"smallgrey\" border=\"0\" align=\"center\">\n";
 				$sqlerror.="<tr><td class=\"smallorange\"><font size=4><B><U>".$error."</U></B></td></tr>\n";
 				$sqlerror.="<tr><td height=\"10\"></td></tr>\n";
@@ -359,7 +359,7 @@ else
 				'.$sqlerror.'
 				</body>
 				</html>';
-				
+
 				exit();
 			}
 		}

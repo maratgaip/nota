@@ -144,6 +144,16 @@ $lang = array(
 	"login_lost_password" => "Lost password?",
 	"login_password_input" => "<input type=\"text\" id=\"sign_in_username\" name=\"username\" class=\"large_input_text\" placeholder=\"Username\" />",
 	"login_become_member" => "Become a member? <strong>Join Nota now!</strong>",
+	"search_placeholder" => "<input type=\"text\" id=\"top_search_input\" placeholder=\"Search\" />",
+	"forgot_password_message" => "Enter your email address",
+	"forgot_password_button" => "Restore password",
+	"back_login" => "Go back <strong>Login</strong>",
+	"username" => "Username;",
+	"password" => "Password:",
+	"privacy_policy" => "Privacy Policy:",
+	"and_text" => "and",
+	"terms_conditions" => "Nota Terms and Conditions of Use",
+	"terms_text" => "by checking this box you agree to the",
 
 
 );

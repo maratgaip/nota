@@ -145,6 +145,16 @@ $lang = array(
 	"login_lost_password" => "Забыли пароль?",
 	"login_password_input" => "<input type=\"text\" id=\"sign_in_username\" name=\"username\" class=\"large_input_text\" placeholder=\"Логин\" />",
 	"login_become_member" => "<strong>Регистрация</strong>",
+	"search_placeholder" => "<input type=\"text\" id=\"top_search_input\" placeholder=\"Поиск\" />",
+	"forgot_password_message" => "Пожалуйста, укажите e-mail, который Вы использовали для входа на сайт.",
+	"forgot_password_button" => "Восстановить",
+	"back_login" => "Логин",
+	"username" => "Логин",
+	"password" => "Пароль",
+	"privacy_policy" => "Правила пользованием",
+	"and_text" => "и с",
+	"terms_conditions" => "Лицензионным соглашением",
+	"terms_text" => "Нажимая кнопку вы соглашаетесь с",
 
 
 );

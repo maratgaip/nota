@@ -442,7 +442,7 @@ min-width: 34px;
 	width:168px;
 	cursor: pointer;
 }
-.queue_to_playlist_dropdown_link:last-of-type, queue_to_new_playlist_dropdown_link:last-of-type{
+.queue_to_playlist_dropdown_link:last-of-type, .queue_to_new_playlist_dropdown_link:last-of-type{
     border-radius:0 0 4px 4px;
 }
 .queue_to_playlist_dropdown_link:hover, .queue_to_new_playlist_dropdown_link:hover {
@@ -5636,6 +5636,7 @@ font-weight: bold;
     font-size: 12px;
     color: #777777;
     margin-top: 10px;
+    text-align: center;
 }
 #sign_in_simple_box {
     position: relative;

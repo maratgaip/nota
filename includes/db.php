@@ -4,11 +4,14 @@ define ("MYSQLHOST", "localhost");
 
 define ("MYSQLDBNAME", "notadb");
 
-//define ("MYSQLDBUSER", "notadb");
 define ("MYSQLDBUSER", "root");
 
+// mysql info for local
 define ("MYSQLDBPASS", "");
-//define ("MYSQLDBPASS", "Menb@rchyn5313");
+
+// mysql info for server in KG
+//define ("MYSQLDBPASS", "Not@db");
+
 
 define ("COLLATE", "utf8");
 

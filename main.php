@@ -205,8 +205,8 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		<div id="top"> <a id="logo" href="/"><span class="left_row_icon"></span>Nota</a>
 			<div id="top_right"></div>
 			<div id="top_search">
-				<form id="top_search_form">
-					<input type="text" id="top_search_input" placeholder="Search" />
+				<form id="top_search_form" data-translate-text="search_placeholder">
+					<input type="text" id="top_search_input" placeholder="Поиск" />
 				</form>
 			</div>
 			<div id="top_tip" class="top_tip_hidden"></div>
