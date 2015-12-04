@@ -121,7 +121,7 @@ a{
 	float: left;
 }
 textarea.large_input_text {
-	width:323px;
+	width:300px;
     padding: 5px 10px;
 }
 .large_input_text:focus {
@@ -4431,18 +4431,18 @@ font-weight: bold;
 }
 .settings_profile_label {
     float: left;
-    width: 75px;
+    width: 120px;
     font-size: 13px;
     text-align: right;
-    margin: 5px 15px 0;
-	color:#555;
-	text-shadow:0 1px 0 #fff;
+    margin: 7px 10px 0 0;
+    color: #555;
+    text-shadow: 0 1px 0 #fff;
 } 
 .settings_profile_description {
    	color: #777777;
     clear: both;
     font-size: 12px;
-    margin: 10px 0 0 105px;
+    margin: 10px 0 0 120px;
 	width:220px;
 	padding: 10px 10px 5px;
 }

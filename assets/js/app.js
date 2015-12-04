@@ -3675,9 +3675,9 @@ FollowUser.Follow = {
             if (a.status_code == 200) {
                 jQuery(this).addClass("following");
                 jQuery(this).removeClass("follow");
-                jQuery(this).text("Following");
+                jQuery(this).text("Подписаны");
                 jQuery(window).trigger({
-                    type: "lalaUserFollow",
+                    type: "UserFollow",
                     user: a.user
                 })
             } else {
