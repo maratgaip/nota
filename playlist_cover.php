@@ -122,7 +122,7 @@ echo <<<HTML
             <form enctype="multipart/form-data" action="" method="post" id="file_form" >
                 <div id="settings_profile_avatar_choose" class="generic_button">
                     <input type="file" id="settings_profile_avatar_choose_input" name="avatar" />
-                     Change Image
+                     Изменить фотографию
                 </div>
                 <div id="settings_profile_avatar_filename" class="display_none">filename</div>
                 <div class="clear"></div> 

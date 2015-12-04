@@ -42,7 +42,7 @@ if ( extension_loaded('mysqli') AND version_compare("5.0.5", phpversion(), "!=")
 			{
 				$time_before = $this->get_real_time();
 				if(!$this->db_id) $this->connect(MYSQLDBUSER, MYSQLDBPASS, MYSQLDBNAME, MYSQLHOST);
-				
+
 				if(!($this->query_id = mysqli_query($this->db_id, $query) )) {
 					$this->mysql_error = mysqli_error($this->db_id);
 					$this->mysql_error_num = mysqli_errno($this->db_id);

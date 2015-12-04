@@ -4962,7 +4962,7 @@ font-weight: bold;
 #find_friends_results .user_row_follow_button{
 	float:none;
 	margin: 15px auto 2px;
-	width: 60px;
+	width: 80px;
 }
 #find_friends_results .user_row_follow_button.follow{
 	width: 45px;

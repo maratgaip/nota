@@ -332,7 +332,10 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 
 
 		<div id="tooltip_display"></div>
-		<div id="top_right_dropdown" class="display_none"><a href="/settings" class="top_right_dropdown_link">Settings</a> <a class="top_right_dropdown_link" onclick="ChangeLanguage.Build('en'); return false;">English</a> <a onclick="ChangeLanguage.Build('ru'); return false;" class="top_right_dropdown_link">Русский </a> <a href="/settings/social" class="top_right_dropdown_link">Social</a> <a href="http://localhost//terms.html" target="_blank" class="top_right_dropdown_link">Terms/Privacy</a><a href="/country" class="top_right_dropdown_link">Select country</a><a id="Default_country" class="top_right_dropdown_link">Default Country</a> <a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Logout</a> </div>
+		<div id="top_right_dropdown" class="display_none">
+			<a href="/settings" class="top_right_dropdown_link">Настройки</a>
+		 	<a href="/sign-out" class="top_right_dropdown_link" id="sign_out_link">Выйти</a>
+		</div>
 		<div id="full_cover" class="display_none"></div>
 		<div id="tutorial_container" class="display_none"></div>
 		<script>loggedInUser = null;userBackground = {};</script>
@@ -340,7 +343,7 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		<script type="text/javascript" src="/assets/js/templates.js?{$thistime}"></script>
 		<script type="text/javascript" src="/assets/js/app.js?{$thistime}"></script>
 		<script type="text/javascript" src="/assets/js/bootstrap-tour-standalone.min.js"></script>
-		<script type="text/javascript" src="/assets/js/snowfall.jquery.js"></script>
+		<!--<script type="text/javascript" src="/assets/js/snowfall.jquery.js"></script>-->
 		<script type="text/javascript" src="/assets/js/style.js?{$thistime}"></script>
 
 		<div style="margin-left: -250px; width: 500px;" class="modal_box display_none" id="lyrics_box">

@@ -6704,7 +6704,7 @@ SettingsFriends.Tastemakers = {
         jQuery("#find_friends_results").empty();
         if (b.success == true) {
             var c = Utils.Shuffle(b.json.following).slice(0, 5);
-            jQuery("#settings_friends_header").text("These folks know music. Follow them and you will find the musical gems.");
+            jQuery("#settings_friends_header").text("Эти люди знают толк  в музыке. Подпишитесь на них и вы найдете 'клад музыки'.");
             SettingsFriends.BuildFriends(c);
             SettingsConnections.Build()
         }
