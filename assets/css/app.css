@@ -104,7 +104,7 @@ a{
 
 }
 .large_input_text {
-	width: 190px;
+	width: 220px;
 	height:28px;
 	background:#fff;
 	border:1px solid #c4c4c4;
@@ -2137,7 +2137,7 @@ font-family: Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	position: relative;
 	color: #3C3F40;
-	background:#E5E5E5;
+	background:#ccc;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
@@ -2146,25 +2146,6 @@ font-family: Helvetica,Arial,sans-serif;
 	background: url(../images/follow-button-icons.png) no-repeat 0 0;
 	left: 5px;
 	top: 6px;
-}
-.user_row_follow_button.following:hover, .user_row_follow_button.follow:hover {
-	-webkit-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0f8fa), to(#e1ebed)) !important;
-}
-.user_row_follow_button:active {
-	-webkit-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6eef0), to(#c2cacc)) !important;
-}
-.user_row_follow_button.following {
-	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
-	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
-	color: #666;
-	background: transparent;
 }
 .user_row_follow_button.following.button_icon:before{background-position: -50px 0;}
 .user_row_follow_button.following.button_icon:hover:before{background-position: -100px 0;}
@@ -4443,7 +4424,7 @@ font-weight: bold;
     clear: both;
     font-size: 12px;
     margin: 10px 0 0 120px;
-	width:220px;
+	width:250px;
 	padding: 10px 10px 5px;
 }
 #settings_profile_avatar {
@@ -4707,22 +4688,16 @@ font-weight: bold;
 	width: 25px;
 	height: 22px;
 	left: 5px;
-	top: 8px;
+	top: 4px;
 	content: '';
 	position:absolute;
 }
 .connection_login .connection_login_button{
-	text-indent: 28px;
-	text-shadow: 0 -1px 0 rgba(0,0,0, .7);
-	font-size:14px;
-	float:left;
-	color:#fff;
-   	width:110px;
-	height:35px;
-    line-height: 35px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    text-indent: 25px;
+    float: left;
+    color: #333;
+    width: 110px;
+    height: 35px;
 }
 #twitter_logo {
 	background: url(../images/twitter_logo.png) no-repeat;
@@ -4882,7 +4857,6 @@ font-weight: bold;
 	height: 40px;
 	margin-bottom: 10px;
 	float: right;
-    width: 312px;
 }
 #find_friends_text{
 	float: left;
@@ -4965,7 +4939,7 @@ font-weight: bold;
 	width: 80px;
 }
 #find_friends_results .user_row_follow_button.follow{
-	width: 45px;
+	width: 85px;
 }
 #find_friends_none {
     margin: 30px 0 20px 0;
@@ -5782,18 +5756,6 @@ font-weight: bold;
 	background: url(../images/follow-button-icons.png) no-repeat 0 0;
 	left: 5px;
 	top: 6px;
-}
-.user_row_list_follow_button.following:hover, .user_row_follow_button.follow:hover {
-	-webkit-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0f8fa), to(#e1ebed)) !important;
-}
-.user_row_list_follow_button:active {
-	-webkit-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-	box-shadow: 0 1px 0 1px rgba(255, 255, 255, .12), 0 1px 0 rgba(255, 255, 255, .35) inset, 0 0 0 1px rgba(0, 0, 0, .3);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6eef0), to(#c2cacc)) !important;
 }
 .user_row_list_follow_button.following {
 	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);

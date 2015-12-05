@@ -315,7 +315,7 @@ width: 760px;
     -moz-box-shadow: none;
     box-shadow: none;
     color: #666;
-    background: #C5C5C5;
+    background: #999;
 }
 
 
@@ -1536,7 +1536,6 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
 }
 
 .explore_nav_item{
-
     text-shadow: none;
     text-transform: none;
     font-size: 17px;

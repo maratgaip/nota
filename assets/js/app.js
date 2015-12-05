@@ -3714,7 +3714,7 @@ FollowUser.UnFollow = {
             if (a.status_code == 200) {
                 jQuery(this).addClass("follow");
                 jQuery(this).removeClass("following");
-                jQuery(this).text("Follow");
+                jQuery(this).text("Подпишитесь");
                 jQuery(window).trigger({
                     type: "lalaUserUnFollow",
                     user: a.user
@@ -6417,12 +6417,12 @@ SettingsConnections.Build = function() {
 SettingsConnections.Services = {
     twitter: {
         url: "http://twitter.com",
-        description: "to tweet out songs and find friends."
+        description: "чтобы твитить песни и найти друзей."
     }
     ,
     facebook: {
         url: "http://facebook.com",
-        description: "to post songs to your wall and find friends."
+        description: "чтобы делиться песнями на стене и найти друзей."
     }
 };
 SettingsConnections.Get = {
@@ -7189,7 +7189,7 @@ var SettingsNotificationsView = Backbone.View.extend({
             for (var i = 0; i < genre_list.length; i++) {
                 trending_list += '<li class="trending_list_item trending_list_' + genre_list[i].replace(' ', '_') + '"><a href="/trending/' + genre_list[i].replace(' ', '+') + '">' + genre_list[i] + '</a></li>';
             }
-            $(this.el).prepend('<div id="trending_top"><div id="trending_selector"><div id="trending_list" class=""><ul id="trending_list_tags"><li class="trending_list_item trending_list_overall"><a href="/trending/">OVERALL</a></li> ' + trending_list + ' </ul></div></div><div id="trending_play_all_button"></div><div><span>Trending</span> / <span id="trending_selected_input_wrapper"><span id="trending_selected"></span><input id="trending_selector_input" type="text" disabled></span></div></div<div id="trending_song_list"></div>');
+            $(this.el).prepend('<div id="trending_top"><div id="trending_selector"><div id="trending_list" class=""><ul id="trending_list_tags"><li class="trending_list_item trending_list_overall"><a href="/trending/">ОБЩЕЕ</a></li> ' + trending_list + ' </ul></div></div><div id="trending_play_all_button"></div><div><span>Популярное</span> / <span id="trending_selected_input_wrapper"><span id="trending_selected"></span><input id="trending_selector_input" type="text" disabled></span></div></div<div id="trending_song_list"></div>');
             Utils.ShowLoading("#trending_song_list");
             var i = location.href.lastIndexOf("trending");
             var j = location.href.substring(i + 9);
@@ -7201,7 +7201,7 @@ var SettingsNotificationsView = Backbone.View.extend({
             if (j) {
                 $("#trending_selector_input").val(j);
             } else {
-                $("#trending_selector_input").val("OVERALL");
+                $("#trending_selector_input").val("Общее");
             }
             this.songs.bind("reset", this.render);
             this.songs.fetch();
@@ -7535,7 +7535,7 @@ var SettingsNotificationsView = Backbone.View.extend({
             Utils.HideSections("#song_list");
             $("#right").css("background", "#141318");
             $(this.el).html('<div id="trending_song_list"></div>');
-            $(this.el).prepend('<div id="trending_top"><div id="trending_play_all_button"></div>New Release</div>');
+            $(this.el).prepend('<div id="trending_top"><div id="trending_play_all_button"></div>Новые песни</div>');
             Utils.ShowLoading("#trending_song_list");
             this.songs = new TrendingSongCollection({
                 results: 19,
