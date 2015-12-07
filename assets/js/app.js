@@ -6662,7 +6662,7 @@ SettingsFriends.MaybeFriends = {
             var a = c.json.users.length;
             if (a > 0) {
                 jQuery("#find_friends_results").empty();
-                jQuery("#settings_friends_header").text("Friend suggestions");
+                //jQuery("#settings_friends_header").text("Friend suggestions");
                 SettingsFriends.BuildFriends(c.json.users);
                 SettingsConnections.Build()
             } else {
@@ -6704,7 +6704,7 @@ SettingsFriends.Tastemakers = {
         jQuery("#find_friends_results").empty();
         if (b.success == true) {
             var c = Utils.Shuffle(b.json.following).slice(0, 5);
-            jQuery("#settings_friends_header").text("Эти люди знают толк  в музыке. Подпишитесь на них и вы найдете 'клад музыки'.");
+            jQuery("#settings_friends_header").text("Эти люди знают толк  в музыке. Подпишитесь на них.");
             SettingsFriends.BuildFriends(c);
             SettingsConnections.Build()
         }
@@ -10021,7 +10021,7 @@ UserList.MaybeFriends = {
         if (c.success == true) {
             var a = c.json.users.length;
             jQuery("#find_friends_results").empty();
-            jQuery("#settings_friends_header").text("Friend suggestions");
+            //jQuery("#settings_friends_header").text("Friend suggestions");
             UserList.BuildFriends(c.json.users);
         }
     }
