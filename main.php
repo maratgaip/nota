@@ -161,11 +161,11 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		</script>
 
 		<script type="text/javascript">
-		 // <![CDATA[
+		  <![CDATA[
 		    var mobile = (/iphone|ipod|android|blackberry|mini|windows (ce|phone)|palm/i.test(navigator.userAgent.toLowerCase()));  
 		    if (mobile) {  
 		        document.location = "http://localhost/main.php";
-		    }//  ]]>
+		    }  ]]>
 		</script>
 
 		</head>
