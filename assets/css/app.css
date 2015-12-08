@@ -244,10 +244,10 @@ textarea.large_input_text {
     z-index:3600;
 }
 #logo {
-    background-image: url(../images/logoxmas.png);
+    background-image: url(../images/logo.png);
 	background-position: 41px 8px;
 	background-repeat: no-repeat;
-	background-size: 165px;
+	background-size: 45px;
 	width: 115px;
     height: 45px;
     float: left;

@@ -138,41 +138,41 @@ echo <<<HTML
 					</table>
 				</div>
 				<div id="music" class="tab-pane fade">
-					<h3>Music Site</h3>
+					<h3>Музыка</h3>
 					<table class="table">
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Info</th>
+								<th>Инфо</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Total artists</td>
+								<td>Испольнители</td>
 								<td>{$total_artist}</td>
 							</tr>
 							<tr>
-								<td>Total albums</td>
+								<td>Альбомы</td>
 								<td>{$total_album}</td>
 							</tr>
 							<tr>
-								<td>Total songs</td>
+								<td>Песни</td>
 								<td>{$total_song}</td>
 							</tr>
 							<tr>
-								<td>Total genres</td>
+								<td>Жанры</td>
 								<td>{$total_genre}</td>
 							</tr>
 							<tr>
-								<td>Total members</td>
+								<td>Люди</td>
 								<td>{$total_user}</td>
 							</tr>
 							<tr>
-								<td>Total songs loved</td>
+								<td>Избранное песни</td>
 								<td>{$total_loved}</td>
 							</tr>
 							<tr>
-								<td>Total songs played</td>
+								<td>Все проигранные песни</td>
 								<td>{$total_played}</td>
 							</tr>
 						</tbody>

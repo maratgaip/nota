@@ -219,7 +219,7 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/trending" data-translate-text="left_trending"> Популярное</a></li>
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/newrelease" data-translate-text="left_newreleases"> Новое</a></li>
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/explore/top-of-the-week" data-translate-text="left_explore"> Сборники</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/artists" data-translate-text="left_artists"> Артисты</a></li>
+		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/artists" data-translate-text="left_artists"> Исполнители</a></li>
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/albums" data-translate-text="left_albums"> Альбомы</a></li>
                                          <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/radio" data-translate-text="left_radio">Радио</a></li>
 		                    <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/settings/social" data-translate-text="left_findfriends"> Поиск Друзей</a></li>
@@ -250,13 +250,13 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 			<!-- end right -->
 			<div id="current_playlist">
 						<div id="current_playlist_header">
-							<div id="current_playlist_clear">Clear Queue</div>
-							<div id="current_playlist_save">Save As Playlist ...</div>
-                                                        <div id="history_songs">Music History</div>
-                                                        <div id="to_queue">To_queue</div>
+							<div id="current_playlist_clear">Очистить очередь</div>
+							<div id="current_playlist_save">Сохранить как плейлист ...</div>
+                                                        <div id="history_songs">История</div>
+                                                        <div id="to_queue">В очередь</div>
 							<div id="current_playlist_close"></div>
 							<div id="queue_to_playlist_dropdown" class="display_none">
-								<li class="queue_to_new_playlist_dropdown_link" data-playlist-id="NEW"><span>Create playlist</span></li>
+								<li class="queue_to_new_playlist_dropdown_link" data-playlist-id="NEW"><span>Создать плейлист</span></li>
 								{$playlists_queue}
 							</div>
 						</div>
@@ -314,11 +314,11 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 					<div id="display_time_total"></div>
 				</div> 
                                 <a class="Download_songs hide_when_stopped display_none tooltip" tooltip="Download"><i class="icon icon-download"></i></a>
-                               	<div id="current_song_lyrics_icon" class="hide_when_stopped display_none tooltip" tooltip="View lyrics"></div>
-				<div id="current_song_love_icon" class="hide_when_stopped display_none tooltip" tooltip="Love this song"></div>
-				<div id="current_song_share_icon" class="hide_when_stopped display_none tooltip" tooltip="Share this song"></div>
+                               	<div id="current_song_lyrics_icon" class="hide_when_stopped display_none tooltip" tooltip="Посмотрите текст песни"></div>
+				<div id="current_song_love_icon" class="hide_when_stopped display_none tooltip" tooltip="Мне нравится"></div>
+				<div id="current_song_share_icon" class="hide_when_stopped display_none tooltip" tooltip="Поделиться этой песней"></div>
 			</div>
-			<div id="playlist_button" tooltip="Open or close Queue" class="tooltip"></div>
+			<div id="playlist_button" tooltip="Открыть или закрыть очередь" class="tooltip"></div>
 			<div id="shuffle_button" tooltip="Shuffe" class="tooltip"></div>
 			<div class="mainblurr collectsnow">
 				<div class="currentartpic"></div>
@@ -355,8 +355,8 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 
 		<div id="dropdown-1" class="dropdown dropdown-tip">
 			<ul class="dropdown-menu" id="all_playlist_menu">
-				<li id="create_playlist_click"><span>Create Playlist</span></li>
-				<li id="add_to_queue_click"><span>Add to Queue</span></li>
+				<li id="create_playlist_click"><span>Создать плейлист</span></li>
+				<li id="add_to_queue_click"><span>Добавить в очередь</span></li>
 				<li class="dropdown-divider"></li>
 				{$playlists}
 			</ul>

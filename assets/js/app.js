@@ -8324,7 +8324,7 @@ ExploreTopList.BuildList = function(f) {
             })
         }
     } else {
-        d = '<div id="error_message">No albums found.</div>'
+        d = '<div id="error_message">У вас нет ни одного альбома.</div>'
     }
     jQuery("#site_rows").html(d)
 };
@@ -8714,7 +8714,7 @@ ArtistAllAlbum.BuildList = function(f) {
             })
         }
     } else {
-        d = '<div class="search_song_none_found">No album found</div>'
+        d = '<div class="search_song_none_found">У вас нет ни одного альбома</div>'
     }
     $("#artist_albums").html(d)
 };
@@ -8810,7 +8810,7 @@ ArtistSimilar.BuildList = function(f) {
             })
         }
     } else {
-        d = '<div class="search_song_none_found">No artist found</div>'
+        d = '<div class="search_song_none_found">У вас нет ни одного исполнителя</div>'
     }
     $("#artist_similar").html(d)
 };
@@ -9872,7 +9872,7 @@ if (typeof (TopTips) == "undefined") {
 }
 TopTips.Interval = 30000;
 TopTips.Position = 0;
-TopTips.Tips = ['<strong>Tip:</strong> Make yourself at home <a id="top_tip_link" href="/settings/design">settings -> theme</a>', '<strong>Tip:</strong> Login with your social ID <a id="top_tip_link" href="/settings/social">settings -> social</a>', '<strong>Tip:</strong> See the <a id="top_tip_link" href="/explore/top-of-the-week">top songs of the week</a>', '<strong>Tip:</strong> See the <a id="top_tip_link" href="/explore/latest"> the latest ♥ed songs</a>'];
+TopTips.Tips = ['<strong>Подсказка:</strong> Настройте <a id="top_tip_link" href="/settings/design">тему профиля</a> под себя', '<strong>Подсказка:</strong> Войдите с помощью вашего аккаунта в <a id="top_tip_link" href="/settings/social">социальной сети </a>', '<strong>Подсказка:</strong> Посмотрите <a id="top_tip_link" href="/explore/top-of-the-week">лучшие песни за неделю </a>', '<strong>Подсказка:</strong> Посмотрите <a id="top_tip_link" href="/explore/latest">последние избранное песни за неделю </a>'];
 TopTips.Next = function() {
     if (TopTips.Position < TopTips.Tips.length - 1) {
         TopTips.Position++
