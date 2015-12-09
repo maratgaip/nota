@@ -82,7 +82,7 @@ if($logged){
 	}
 }
 
-if(!$_COOKIE['lang']) $_COOKIE['lang'] = "en";
+if(!$_COOKIE['lang']) $_COOKIE['lang'] = "ru";
 $ajax = <<<HTML
 <script language="javascript" type="text/javascript">
 var player_root = '{$config['siteurl']}';
@@ -313,13 +313,13 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 					<div id="display_seek_thumb"></div>
 					<div id="display_time_total"></div>
 				</div> 
-                                <a class="Download_songs hide_when_stopped display_none tooltip" tooltip="Download"><i class="icon icon-download"></i></a>
+                                <a class="Download_songs hide_when_stopped display_none tooltip" tooltip="Загрузить"><i class="icon icon-download"></i></a>
                                	<div id="current_song_lyrics_icon" class="hide_when_stopped display_none tooltip" tooltip="Посмотрите текст песни"></div>
 				<div id="current_song_love_icon" class="hide_when_stopped display_none tooltip" tooltip="Мне нравится"></div>
 				<div id="current_song_share_icon" class="hide_when_stopped display_none tooltip" tooltip="Поделиться этой песней"></div>
 			</div>
 			<div id="playlist_button" tooltip="Открыть или закрыть очередь" class="tooltip"></div>
-			<div id="shuffle_button" tooltip="Shuffe" class="tooltip"></div>
+			<div id="shuffle_button" tooltip="Перемешать" class="tooltip"></div>
 			<div class="mainblurr collectsnow">
 				<div class="currentartpic"></div>
 			</div>

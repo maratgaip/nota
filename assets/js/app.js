@@ -6990,7 +6990,7 @@ SettingsAccount.Button = {
 //                alert("test");
                 jQuery('#pdmessage').show();
                 jQuery('#pdmessage').css('color', 'green');
-                jQuery('#pdmessage').html("Changed successfully");
+                jQuery('#pdmessage').html("Изменено успешно");
 
 //                alert("Changed successfully");
                 jQuery("#settings_account_save_green_check1").addClass("green_check");
@@ -8391,19 +8391,18 @@ var SOTDView = Backbone.View.extend({
     },
     render: function() {
         Utils.ShowLoading("#item_rows");
-
         var i = location.href.lastIndexOf("top-of-");
         var j = location.href.substring(i + 7);
         if (j == "the-week")
-            $(".explore_header").html("Top Tracks Of The Week");
+            $(".explore_header").text("Топ Неделю");
         else if (j == "the-day")
-            $(".explore_header").html("Top Tracks Of The Day");
+            $(".explore_header").text("Топ День");
         else if (j == "the-month")
-            $(".explore_header").html("Top Tracks Of The Month");
+            $(".explore_header").text("Топ Месяц");
         else if (j == "all-time")
-            $(".explore_header").html("Top Tracks Of All Time");
+            $(".explore_header").text("Топ Все");
         else if (j == "the-year")
-            $(".explore_header").html("Top Tracks Of This Year");
+            $(".explore_header").text("Топ Год");
         var a = new SOTDSongsView({
             show_user: false,
             date: j
