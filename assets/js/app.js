@@ -1,7 +1,7 @@
 var Song = Backbone.Model.extend({
     defaults: {
         position: 0,
-        title: "Unknown TitleMarat",
+        title: "Unknown Title",
         artist: "Unknown Artist",
         listened: null
     },
