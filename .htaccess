@@ -30,7 +30,7 @@ RewriteRule ^social/facebook(/?)+$  social/facebook.php [L]
 
 RewriteRule ^social/twitter(/?)+$  social/twitter.php [L]
 
-RewriteRule ^create-account/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://127.0.0.1/social/facebook&response_type=code&fbconnect=1&perms=read_stream,email,publish_actions [L]
+RewriteRule ^create-account/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://nota.kg/social/facebook&response_type=code&fbconnect=1&perms=read_stream,email,publish_actions [L]
 
 RewriteRule ^create-account/twitter(/?)+$ social/twitter.php [L]
 
@@ -38,7 +38,7 @@ RewriteRule ^connect/twitter(/?)+$ social/twitter.php [L]
 
 RewriteRule ^embed(/?)+$ embed/ [L]
 
-RewriteRule ^connect/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://127.0.0.1/social/facebook&response_type=code&fbconnect=1&perms=publish_stream,offline_access,read_stream,email,publish_actions [L]
+RewriteRule ^connect/facebook(/?)+$ https://www.facebook.com/dialog/permissions.request?app_id=1630936557186073&display=page&next=http://nota.kg/social/facebook&response_type=code&fbconnect=1&perms=publish_stream,offline_access,read_stream,email,publish_actions [L]
 
 RewriteRule ^register(/?)+$ register.php [L]
 

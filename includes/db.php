@@ -1,10 +1,10 @@
 <?PHP
 
 // for localhost
-define ("MYSQLHOST", "127.0.0.1");
+//define ("MYSQLHOST", "127.0.0.1");
 
 //for server
-//define ("MYSQLHOST", "localhost");
+define ("MYSQLHOST", "localhost");
 
 define ("MYSQLDBNAME", "notadb");
 

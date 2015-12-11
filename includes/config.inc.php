@@ -12,7 +12,7 @@ $config = array (
 
 'sitetitle' => "Nota",
 
-'siteurl' => "http://127.0.0.1/",
+'siteurl' => "http://nota.kg/",
 
 'charset' => "UTF-8",
 
