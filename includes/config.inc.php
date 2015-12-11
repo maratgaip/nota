@@ -2,6 +2,8 @@
 
 //Configurations
 
+// siteurl for localhost is '127.0.0.1' but for server u need to change to 'localhost'
+
 $config = array (
 
 'LICENSE' => "5C6EA-0DB07-FFE68",
@@ -10,7 +12,7 @@ $config = array (
 
 'sitetitle' => "Nota",
 
-'siteurl' => "http://localhost/",
+'siteurl' => "http://127.0.0.1/",
 
 'charset' => "UTF-8",
 

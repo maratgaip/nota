@@ -1,16 +1,16 @@
 <?PHP
 
-define ("MYSQLHOST", "localhost");
+// for localhost
+define ("MYSQLHOST", "127.0.0.1");
+
+//for server
+//define ("MYSQLHOST", "localhost");
 
 define ("MYSQLDBNAME", "notadb");
 
 define ("MYSQLDBUSER", "root");
 
-// mysql info for local
-define ("MYSQLDBPASS", "");
-
-// mysql info for server in KG
-//define ("MYSQLDBPASS", "Not@db");
+define ("MYSQLDBPASS", "Not@db");
 
 
 define ("COLLATE", "utf8");
