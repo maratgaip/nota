@@ -36,7 +36,7 @@ $config = array (
 
 'album_week' => "86",
 
-'site_icon' => "http://localhost//favicon.ico",
+'site_icon' => "/favicon.ico",
 
 'facebook_icon' => "",
 

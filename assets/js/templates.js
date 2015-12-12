@@ -422,11 +422,92 @@ window.Templates['common_songs'] = _.template(
             '<br class="clear" />' +
         '<% if (others_count > 0){ %>' +
         '<% if (song.show_user_in_others == false){ %>' +
-            '<a href="/song/<%= song.id %>" class="song_row_recent_loves_text"><em><%= others_count %></em> <%= others_count  == 1 ? \'love\' : \'loves\' %></a>         <% } else { %>             <a href="/song/<%= song.id %>" class="song_row_recent_loves_text"><em><%= others_count %></em> more <%= others_count  == 1 ? \'love\' : \'loves\' %></a>         <% } %>     <% } %>        </div>  </div><% if (song.user_love != null){ %><% if (Utils.HasValue(song.user_love.comment) == true){ %>    <div class="song_row_comment"><%= Utils.trimString(song.user_love.comment, 95) %></div><% } %><% } %>');
-window.Templates['common_users'] = _.template('<div class="user_row <%= !(position % 2 == 0) %>">    <div class="user_row_avatar">        <a href="/<%= user.username %>" style="background-image:url(<%= user.image.medium %>)" class="user_row_avatar_link">            <% if (Utils.HasValue(user.following_on) == true){ %>            <span class="user_following_on <%= user.following_on %>"></span>            <% } %>        </a>    </div>    <div class="user_row_info">        <div class="user_row_username">            <a href="/<%= user.username %>"><%= user.username %></a>        <% if (Utils.HasValue(user.name) == true){ %>            <span class="user_row_name"><%= user.name %></span>        <% } %>        </div>    <% if (Utils.HasValue(user.bio) == true){ %>        <div class="user_row_bio"><%= user.bio %></div>    <% } %><% if (loggedInUser && loggedInUser.username != user.username){ %>    <% if (user.viewer_following == true){ %>        <div class="user_row_follow_button follow_button following button_icon"            username="<%= user.username %>" data-translate-text="common_users_following">Подписаны</div>    <% } else { %>        <div class="user_row_follow_button follow_button follow button_icon"            username="<%= user.username %>" data-translate-text="common_users_follow">Подпишитесь</div>    <% } %><% } %>    </div></div>');
-window.Templates['composer_header'] = _.template('<div id="song_top">  <div class="song_top_avatar"> <img src="'+player_root+'static/composers/<%= id %>_medium.jpg" width="75" height="75" id="playlist_top_cover_img" /> </div>  <div class="song_top_text">    <div id="song_top_username" class="playlist_page_title">      <div id="playlist_name"><%= name %></div>    </div>    <div class="playlist_top_bio" id="playlist_descr" data-translate-text="composer_header_info">This is artist information, feel free to browse</div>    <div class="song_top_play_all button_icon" data-translate-text="composer_header_playall">Play All</div>  </div></div><div id="artist_albums"></div><div id="item_rows"></div>');
-window.Templates['create_account'] = _.template('<div id="create_account_box" class="modal_box">    <div class="modal_close_button" id="create_account_close_button"></div>    <div class="modal_top" data-translate-text="create_account_title">Регистрация</div>    <div id="create_account_box_middle" class="modal_middle">        <form id="create_account_form" action="" method="post" onsubmit="return false;">            <div class="create_account_input_div">                <label class="create_account_label" for="create_account_username" data-translate-text="username">Логин:</label>                <input type="text" id="create_account_username" class="large_input_text" />                <div class="clear"></div>            </div>            <div class="create_account_input_div">                <label class="create_account_label" for="create_account_email">Email:</label>                <input type="text" id="create_account_email" class="large_input_text" />                <div class="clear"></div>            </div>            <div class="create_account_input_div">                <label class="create_account_label" for="create_account_password" data-translate-text="password">Пароль:</label>                <input type="password" id="create_account_password" class="large_input_text" />                <div class="clear"></div>            </div>                   <div class="create_account_input_div">                <input type="checkbox" id="create_check_terms" name="termconditions" value="YES" />            <small data-translate-text="terms_text">Нажимая кнопку вы соглашаетесь с </small> <small> <a target="_blank" href="http://nota.kg//terms.html"  data-translate-text="terms_conditions">Пользовательского соглашения</a></small> <small  data-translate-text="and_text"> и </small> <small><a target="_blank" href="http://nota.kg//privacy.html"  data-translate-text="privacy_policy">с Политикой о конфиденциальности.</a>  </small>              <div class="clear"></div>            </div>                     <input type="submit" class="hidden" />        </form>        <div class="input_message" id="create_account_message"></div>    <div class="modal_bottom_button generic_button" id="create_account_button" data-translate-text="create_account_button">Регистрация</div>    <br class="clear" />    <div id="create_account_oauth">   <div class="create_account_oauth button_icon create_account_facebook" service="facebook">Facebook</div>   <div class="create_account_oauth button_icon create_account_twitter" service="twitter">Twitter</div>      <br class="clear" /> </br>  </div>    </div></div>');
-window.Templates['create_account_find_friends'] = _.template('<div class="modal_close_button" id="create_account_close_button"></div><% if (has_profile == true){ %><div class="modal_top">Find Friends to Follow</div><div id="create_account_box_middle" class="modal_middle">    <div id="find_friends_results" class="display_none find_friends_middle"></div>  <div class="modal_bottom_button generic_button" id="create_account_continue_button">Continue</div><% } else { %><div class="modal_top">Welcome to Nota!</div><div id="create_account_box_middle" class="modal_middle">    <div id="create_account_success_title">Find your friends</div>    <div id="create_account_box_connections_instructions">Connect your social networks to quickly find friends already using Nota</div>    <div id="create_account_box_connections">      <div class="create_account_oauth button_icon create_account_facebook" service="facebook">Connect Facebook</div>      <div class="create_account_oauth button_icon create_account_twitter" service="twitter">Connect Twitter</div>    </div>  <div class="input_message display_none" id="create_account_message"></div>    <div id="find_friends_results" class="display_none find_friends_middle"></div><% } %>  <div class="create_account_later">I\'ll do this later</div></div>');
+            '<a href="/song/<%= song.id %>" class="song_row_recent_loves_text">' +
+                '<em><%= others_count %></em>' +
+                '<%= others_count  == 1 ? \'love\' : \'loves\' %>' +
+            '</a><% } else { %>' +
+            '<a href="/song/<%= song.id %>" class="song_row_recent_loves_text"><em><%= others_count %></em> more <%= others_count  == 1 ? \'love\' : \'loves\' %></a>' +
+            '<% } %><% } %>' +
+        '</div>' +
+    '</div>' +
+    '<% if (song.user_love != null){ %><% if (Utils.HasValue(song.user_love.comment) == true){ %>' +
+    '<div class="song_row_comment"><%= Utils.trimString(song.user_love.comment, 95) %></div><% } %><% } %>');
+window.Templates['common_users'] = _.template(
+    '<div class="user_row <%= !(position % 2 == 0) %>">' +
+        '<div class="user_row_avatar">' +
+            '<a href="/<%= user.username %>" style="background-image:url(<%= user.image.medium %>)" class="user_row_avatar_link">' +
+                '<% if (Utils.HasValue(user.following_on) == true){ %><span class="user_following_on <%= user.following_on %>"></span><% } %>' +
+            '</a>' +
+        '</div>' +
+        '<div class="user_row_info">' +
+            '<div class="user_row_username">' +
+                '<a href="/<%= user.username %>"><%= user.username %></a>' +
+                '<% if (Utils.HasValue(user.name) == true){ %><span class="user_row_name"><%= user.name %></span><% } %>' +
+            '</div><% if (Utils.HasValue(user.bio) == true){ %>' +
+            '<div class="user_row_bio"><%= user.bio %></div><% } %><% if (loggedInUser && loggedInUser.username != user.username){ %><% if (user.viewer_following == true){ %>' +
+            '<div class="user_row_follow_button follow_button following button_icon" username="<%= user.username %>" data-translate-text="common_users_following">Подписаны</div><% } else { %>' +
+            '<div class="user_row_follow_button follow_button follow button_icon" username="<%= user.username %>" data-translate-text="common_users_follow">Подпишитесь</div><% } %><% } %>' +
+        '</div>' +
+    '</div>');
+window.Templates['composer_header'] = _.template(
+    '<div id="song_top">' +
+        '<div class="song_top_avatar">' +
+            '<img src="'+player_root+'static/composers/<%= id %>_medium.jpg" width="75" height="75" id="playlist_top_cover_img" />' +
+        '</div>' +
+        '<div class="song_top_text">' +
+            '<div id="song_top_username" class="playlist_page_title">' +
+                '<div id="playlist_name"><%= name %></div>' +
+            '</div>' +
+            '<div class="playlist_top_bio" id="playlist_descr" data-translate-text="composer_header_info">This is artist information, feel free to browse</div>' +
+            '<div class="song_top_play_all button_icon" data-translate-text="composer_header_playall">Play All</div>' +
+        '</div>' +
+    '</div>' +
+    '<div id="artist_albums"></div>' +
+    '<div id="item_rows"></div>');
+
+window.Templates['create_account'] = _.template(
+    '<div id="create_account_box" class="modal_box">' +
+        '<div class="modal_close_button" id="create_account_close_button"></div>' +
+        '<div class="modal_top" data-translate-text="create_account_title">Регистрация</div>' +
+        '<div id="create_account_box_middle" class="modal_middle">' +
+            '<form id="create_account_form" action="" method="post" onsubmit="return false;">' +
+                '<div class="create_account_input_div">' +
+                    '<label class="create_account_label" for="create_account_username" data-translate-text="username">Логин:</label>' +
+                    '<input type="text" id="create_account_username" class="large_input_text" />' +
+                    '<div class="clear"></div>' +
+                '</div>' +
+                '<div class="create_account_input_div">' +
+                   '<label class="create_account_label" for="create_account_email">Email:</label>' +
+                    '<input type="text" id="create_account_email" class="large_input_text" />' +
+                    '<div class="clear"></div>' +
+                '</div>' +
+                '<div class="create_account_input_div">' +
+                    '<label class="create_account_label" for="create_account_password" data-translate-text="password">Пароль:</label>' +
+                    '<input type="password" id="create_account_password" class="large_input_text" />' +
+                    '<div class="clear"></div>' +
+                '</div>' +
+                '<div class="create_account_input_div">' +
+                    '<input type="checkbox" id="create_check_terms" name="termconditions" value="YES" />' +
+                    '<small data-translate-text="terms_text">Нажимая кнопку вы соглашаетесь с </small>' +
+                    '<small> <a target="_blank" href="http://nota.kg//terms.html"  data-translate-text="terms_conditions">Пользовательского соглашения</a></small>' +
+                    '<small  data-translate-text="and_text"> и </small> ' +
+                    '<small><a target="_blank" href="http://nota.kg//privacy.html"  data-translate-text="privacy_policy">с Политикой о конфиденциальности.</a></small>' +
+                    '<div class="clear"></div>' +
+                '</div>' +
+                '<input type="submit" class="hidden" />' +
+            '</form>' +
+            '<div class="input_message" id="create_account_message"></div>' +
+            '<div class="modal_bottom_button generic_button" id="create_account_button" data-translate-text="create_account_button">Регистрация</div>' +
+            '<br class="clear" />' +
+            '<div id="create_account_oauth">' +
+                '<div class="create_account_oauth button_icon create_account_facebook" service="facebook">Facebook</div>' +
+                '<div class="create_account_oauth button_icon create_account_twitter" service="twitter">Twitter</div>' +
+                '<br class="clear" /> </br>' +
+            '</div>' +
+        '</div>' +
+    '</div>');
+window.Templates['create_account_find_friends'] = _.template(
+    '<div class="modal_close_button" id="create_account_close_button"></div><% if (has_profile == true){ %><div class="modal_top">Find Friends to Follow</div><div id="create_account_box_middle" class="modal_middle">    <div id="find_friends_results" class="display_none find_friends_middle"></div>  <div class="modal_bottom_button generic_button" id="create_account_continue_button">Continue</div><% } else { %><div class="modal_top">Welcome to Nota!</div><div id="create_account_box_middle" class="modal_middle">    <div id="create_account_success_title">Find your friends</div>    <div id="create_account_box_connections_instructions">Connect your social networks to quickly find friends already using Nota</div>    <div id="create_account_box_connections">      <div class="create_account_oauth button_icon create_account_facebook" service="facebook">Connect Facebook</div>      <div class="create_account_oauth button_icon create_account_twitter" service="twitter">Connect Twitter</div>    </div>  <div class="input_message display_none" id="create_account_message"></div>    <div id="find_friends_results" class="display_none find_friends_middle"></div><% } %>  <div class="create_account_later">I\'ll do this later</div></div>');
 window.Templates['create_account_finished'] = _.template('<div class="modal_close_button" id="create_account_close_button"></div><div class="modal_top">That\'s it!</div><div id="create_account_box_middle" class="modal_middle">    <div id="create_account_success_title">Now go play some music!</div>  <div class="modal_bottom_button generic_button" id="create_account_continue_button">Go!</div>  <br class="clear" /></div>');
 window.Templates['create_account_pre_populated'] = _.template('<div class="modal_close_button" id="create_account_close_button"></div><div class="modal_top" data-translate-text="create_account_button">Регистрация</div><div id="create_account_box_middle" class="modal_middle">    <div id="create_account_success">Вы успешно зарегистрировались!</div>    <div id="create_account_user_info">    <% if (service_info.is_default_profile_image == false){ %>        <div id="create_account_avatar" style="background-image: url(<%= service_info.pic %>);"></div>    <% } else { %>        <div id="create_account_avatar" style="background-image: url(' + player_root + 'static/users/avatar_medium_default.png);"></div>    <% } %>        <div id="create_account_name"><%= service_info.name %></div>        <div id="create_account_location"><%= service_info.location %></div>        <br class="clear" />        </div>        <div id="create_account_success">Завершите свой профиль</div>    <form id="create_account_form" action="" method="post">        <div class="create_account_input_div">            <label class="create_account_label" for="create_account_username" data-translate-text="username">Логин:</label>            <input type="text" id="create_account_username" class="large_input_text" value="<%= service_info.username %>" />            <div class="clear"></div>        </div>        <div class="create_account_input_div">            <label class="create_account_label" for="create_account_email">Email:</label>            <input type="text" id="create_account_email" class="large_input_text" value="<%= service_info.email %>" />            <div class="clear"></div>        </div>        <div class="create_account_input_div">            <label class="create_account_label" for="create_account_password" data-translate-text="password">Пароль:</label>            <input type="password" id="create_account_password" class="large_input_text" />            <div class="clear"></div>        </div>   <div class="create_account_input_div">                <input type="checkbox" id="create_check_terms" name="termconditions" value="YES" />            <small data-translate-text="terms_text">Нажимая кнопку вы соглашаетесь с </small>  <a target="_blank" href="http://nota.kg//terms.html"  data-translate-text="terms_conditions">Лицензионным соглашением</a> <small  data-translate-text="and_text"> и </small> <a target="_blank" href="http://nota.kg//privacy.html"  data-translate-text="privacy_policy">с Правила пользованием</a>                <div class="clear"></div>            </div>      <input type="submit" class="hidden" />    </form>    <div class="input_message" id="create_account_message"></div>  <div class="modal_bottom_button generic_button" id="create_account_button">Continue</div>  <br class="clear" /></div>');
 window.Templates['create_account_welcome'] = _.template('<div class="modal_close_button" id="create_account_close_button"></div><div class="modal_top">Welcome to Nota!</div><div id="create_account_box_middle" class="modal_middle">    <div id="create_account_success_title">What do you like to do now?</div>  <div class="modal_bottom_button generic_button create_account_success_next" href="settings/social">Find friends</div>  <div class="modal_bottom_button generic_button create_account_success_next" href="trending">Listen to Great Music!</div>  <br class="clear" /></div>');
