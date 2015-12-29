@@ -1369,7 +1369,7 @@ color: #fff;
     background: none repeat scroll 0 0 #FFFFFF;
 border-radius: 0 0 5px 5px;
 margin: 2px auto auto;
-height: 250px;
+height: 150px;
 overflow: hidden;
 padding: 11px;
 width: 760px;
@@ -1663,7 +1663,6 @@ padding: 0 8px;
     z-index: 14;
     height: auto;
 	position:relative;
-	min-height: 135px;
 }
 
 .feed .song_row{
