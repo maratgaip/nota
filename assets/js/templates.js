@@ -367,7 +367,7 @@ window.Templates['common_songs'] = _.template(
             '</a>' +
         '</div>' +
     '<% } %>' +
-    '<div class="song_row_cover_art" style="<%= Utils.GetCoverArt(song.image.small, \'75x75\', song.artist_id) %>">' +
+    '<div class="song_row_cover_art" style="background-image:<%= Utils.GetCoverArt(song.image.small, \'75x75\', song.artist_id) %>">' +
         '<div class="song_row_play_button song_view_play_button"></div>' +
         '<img src="' + player_root + '/assets/images/glare_75x75.png" width="75" height="75">' +
     '</div>' +
