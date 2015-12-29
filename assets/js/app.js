@@ -3174,14 +3174,16 @@ BottomDisplay.ShowText = function(a) {
     jQuery("#display_domain").attr("href", a.source)
 };
 BottomDisplay.ShowCoverArt = function(a) {
+    console.log("aa",a)
     jQuery(".currentartpic").css("background", "");
-    jQuery(".currentartpic").css("background", Utils.CoverArt(a.image.extralarge, 45));
+    jQuery(".currentartpic").css("background-image", Utils.CoverArt(a.image.extralarge, 45, a.artist_id));
     jQuery(".currentartpic").css("background-size", "cover");
     jQuery(".currentartpic").css("background-position", "10px");
     jQuery(".currentartpic").css("-webkit-filter", "blur(35px)");
     jQuery(".currentartpic").css("filter", "url('#svgBlur')");
     jQuery("#display_coverart").css("background", "");
-    jQuery("#display_coverart").css("background", Utils.CoverArt(a.image.small, 45));
+    //jQuery("#display_coverart").css("background-image", Utils.CoverArt(a.image.small, 45, a.artist_id));
+    jQuery("#display_coverart").css("background-image", "url(/static/artists/"+ a.artist_id+"_large.jpg)");
     jQuery("#display_coverart").css("background-size", "cover");
     jQuery("#display_coverart_user").addClass("display_none");
 

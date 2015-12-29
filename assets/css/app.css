@@ -3947,12 +3947,9 @@ font-weight: bold;
     background-size: 40px 40px;
     width:40px;
     height:40px;
-    -moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.35) inset;
-	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.35) inset;
-	box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.35) inset;
+    -moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
 	top: 4px;
 	left: 4px;
 }
