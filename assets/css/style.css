@@ -885,7 +885,7 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
     position: absolute;
     width:75px;
     height:75px;
-    background-size:auto;
+    background-size:75px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
