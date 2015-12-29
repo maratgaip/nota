@@ -544,10 +544,6 @@ min-width: 34px;
 
 .left_row:hover {
     background: #242424;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.25), 0 -1px 0 rgba(0,0,0,.55) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.25), 0 -1px 0 rgba(0,0,0,.55) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.25), 0 -1px 0 rgba(0,0,0,.55) inset;
-
 }
 .left_row:active {
 
@@ -576,14 +572,7 @@ min-width: 34px;
 	background:rgba(0,0,0,.15);
 	margin-right:0;
 }
-#user_nav .left_row_you:hover {
-	background:rgba(0,0,0,.25);
-	border-top:1px solid rgba(0,0,0,.3);
-	border-bottom: 1px solid #2A2B2D;
-	-webkit-box-shadow:0 -1px 0 rgba(255,255,255,.1);
-	-moz-box-shadow:0 -1px 0 rgba(255,255,255,.1);
-	box-shadow:0 -1px 0 rgba(255,255,255,.1);
-}
+
 #user_nav .left_row_you.selected {
 	background:rgba(0,0,0,.35);
 	border-top:1px solid rgba(0,0,0,.3);
@@ -708,8 +697,9 @@ min-width: 34px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background:url(../images/left_row_icons.png) no-repeat 2px -120px;
+	background:url(../images/left_row_icons.png) no-repeat 1px;
 	margin: 9px 10px 0 12px;
+    background-size: 25px;
 }
 
 #user_nav .left_row_you{
@@ -725,17 +715,7 @@ min-width: 34px;
 	color:#fff;
 }
 
-.left_row_you:hover #left_row_logged_in_user_icon{background-position:-48px -120px}
-.left_row_you.selected #left_row_logged_in_user_icon{background-position:-148px -120px}
-.left_row_you #left_row_trending_icon{background-position:2px 0}
-.left_row_you:hover #left_row_trending_icon{background-position:-48px 0}
-.left_row_you.selected #left_row_trending_icon{background-position:-148px 0}
-.left_row_you #left_row_explore_icon{background-position:2px -40px;}
-.left_row_you:hover #left_row_explore_icon{background-position:-48px -40px;}
-.left_row_you.selected #left_row_explore_icon{background-position:-148px -40px;}
-.left_row_you #left_row_sites_icon{background-position:2px -80px;}
-.left_row_you:hover #left_row_sites_icon{background-position:-48px -80px;}
-.left_row_you.selected #left_row_sites_icon{background-position:-148px -80px;}
+
 
 .left_row_icon img {
 	border: none;
