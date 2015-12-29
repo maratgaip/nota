@@ -220,8 +220,7 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/newrelease" data-translate-text="left_newreleases"> Новое</a></li>
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/explore/top-of-the-week" data-translate-text="left_explore"> Сборники</a></li>
 		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/artists" data-translate-text="left_artists"> Исполнители</a></li>
-		            		<li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/albums" data-translate-text="left_albums"> Альбомы</a></li>
-                                         <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/radio" data-translate-text="left_radio">Радио</a></li>
+							 <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/radio" data-translate-text="left_radio">Радио</a></li>
 		                    <li><a class="left_row_custom left_row_text left_row_text2 nnnn" href="/settings/social" data-translate-text="left_findfriends"> Поиск Друзей</a></li>
 						</ul>
 		            </nav>
