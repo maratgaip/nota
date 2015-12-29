@@ -604,24 +604,27 @@ Utils.get_cookie = function(name) {
 }
 
 Utils.GetCoverArt = function(img, size, artist_id){
-	console.log(artist_id)
-    var bgNum = Math.ceil(Math.random()*DEFAULT_COVERART_NUM);
+	console.log("lan", artist_id)
+	return "url(/static/artists/"+artist_id+"_large.jpg)";
+	/*
+	var bgNum = Math.ceil(Math.random()*DEFAULT_COVERART_NUM);
     try {
         if (img == null || img == ''){
             return "url(" + player_root + "assets/images/album-bg-"+bgNum+".png);";
         } else {
-/*
+
             if (img.indexOf('ecx.images-amazon.com') != -1){
                 img = img.replace('SL75', 'SL'+size);
             }
             return 'background : url('+img+'); background : url('+img+'), url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png); background-size: cover;';
-*/
-			return "url(/static/artists/"+artist_id+"_large.jpg);";
+
+			//return "url(/static/artists/"+artist_id+"_large.jpg);";
 
 		}
     } catch(e){
 		return "url(/static/artists/"+artist_id+"_large.jpg);";
     }
+	*/
 }
 Utils.CoverArt = function(img, size, artist_id){
 	/*
