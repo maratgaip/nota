@@ -214,6 +214,34 @@ window.Templates['artists_head'] = _.template(
                     '<li><a class="browse_letters" href="/artists/Y"><strong>Y</strong></a></li>' +
                     '<li><a class="browse_letters" href="/artists/Z"><strong>Z</strong></a></li>' +
                 '</ul>' +
+                '<ul class="album_letters_list">' +
+                    '<li><a class="browse_letters" href="/artists/А"><strong>А</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Б"><strong>Б</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/В"><strong>В</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Г"><strong>Г</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Д"><strong>Д</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ж"><strong>Ж</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/З"><strong>З</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/И"><strong>И</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/К"><strong>К</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Л"><strong>Л</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/М"><strong>М</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Н"><strong>Н</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/О"><strong>О</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/П"><strong>П</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Р"><strong>Р</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/С"><strong>С</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Т"><strong>Т</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/У"><strong>У</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ф"><strong>Ф</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Х"><strong>Х</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ч"><strong>Ч</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ш"><strong>Ш</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ы"><strong>Ы</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Э"><strong>Э</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Ю"><strong>Ю</strong></a></li>' +
+                    '<li><a class="browse_letters" href="/artists/Я"><strong>Я</strong></a></li>' +
+                '</ul>' +
             '</div>' +
         '</div>' +
         '<div class="featured" id="site_rows">' +

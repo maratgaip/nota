@@ -9287,24 +9287,8 @@ font-family: Novecentowide-DemiBold,Helvetica,Arial,sans-serif;
 	background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #sites_header {
-	height:59px;
-	line-height:35px;
 	width:100%;
-	overflow:hidden;
 	background-color:#f6f6f7;
 	background-image:-moz-linear-gradient(top, #fafafa, #f0f1f2);
 	background-image:-ms-linear-gradient(top, #fafafa, #f0f1f2);
@@ -9358,7 +9342,7 @@ transition:0, width .1s ease-out
 	width:88px
 }
 #site_rows {
-	padding:20px 0;
+	padding:0;
 	margin:0 auto;
 	width:1120px;
 zoom:1
@@ -10256,7 +10240,7 @@ transition:0, background-color .1s ease-out
 
 .album_letters_list{
 	list-style: none outside none;
-	width: 100%;
+    padding-bottom: 10px;
 }
 .album_letters_list li{
 	float: left;
