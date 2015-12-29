@@ -616,7 +616,7 @@ Utils.GetCoverArt = function(img, size, artist_id){
             }
             return 'background : url('+img+'); background : url('+img+'), url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png); background-size: cover;';
 */
-			return "background-image: url(/static/artists/"+artist_id+"_large.jpg);";
+			return "background: url(/static/artists/"+artist_id+"_large.jpg);";
 
 		}
     } catch(e){
@@ -624,19 +624,20 @@ Utils.GetCoverArt = function(img, size, artist_id){
     }
 }
 Utils.CoverArt = function(img, size, artist_id){
-	console.log("aa",artist_id)
+	/*
     var bgNum = Math.ceil(Math.random()*DEFAULT_COVERART_NUM);
     if (img == null || img == ''){
         return 'url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png)';
     } else {
-		/*
+
         if (img.indexOf('ecx.images-amazon.com') != -1){
             img = img.replace('SL75', 'SL'+size);
         }
         return 'url('+img+'), url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png)';
-        */
-		return "background-image: url(/static/artists/"+artist_id+"_large.jpg);";
+
 	}
+	 */
+	return "url(/static/artists/"+artist_id+"_large.jpg);";
 }
 Utils.GetCoverArtIE = function(img, size){
     if (img == null || img == ''){
