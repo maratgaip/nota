@@ -623,16 +623,20 @@ Utils.GetCoverArt = function(img, size, artist_id){
 		return "background-image: url(/static/artists/"+artist_id+"_large.jpg);";
     }
 }
-Utils.CoverArt = function(img, size){
+Utils.CoverArt = function(img, size, artist_id){
+	console.log("aa",artist_id)
     var bgNum = Math.ceil(Math.random()*DEFAULT_COVERART_NUM);
     if (img == null || img == ''){
         return 'url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png)';
     } else {
+		/*
         if (img.indexOf('ecx.images-amazon.com') != -1){
             img = img.replace('SL75', 'SL'+size);
         }
         return 'url('+img+'), url(' + player_root + '/assets/images/album-bg-'+bgNum+'.png)';
-    }
+        */
+		return "background-image: url(/static/artists/"+artist_id+"_large.jpg);";
+	}
 }
 Utils.GetCoverArtIE = function(img, size){
     if (img == null || img == ''){
