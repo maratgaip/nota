@@ -1422,7 +1422,6 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
 }
 
 #user_nav .left_row_you:hover{
-
     border-top: none;
     border-bottom: none;
 }
@@ -1431,7 +1430,6 @@ nav a.left_row_custom.left_row_text.left_row_text2.nnnn:hover{
 #explore_content_album_of_week_coverart{
     background-position: 0;
 }
-
 
 .song_row a:hover{ text-decoration:underline; color: #d83523;}
 
