@@ -1023,8 +1023,34 @@ elseif ($type == "me") {
 	header ( 'Cache-Control: no-cache, must-revalidate' );
 	
 	header ( 'Content-type: application/json' );
-	
-	print json_encode ( $result );
+
+	//print json_encode ( $result );
+
+/* Namba Search started */
+
+echo file_get_contents('http://namba.kg/#!/search/mp3/' . $qtxt);
+$stringData = file_get_contents("http://namba.kg/api/?service=home&action=search&type=mp3&query=" . $qtxt . "&page=1&sort=desc&country_id=0&city_id=0");
+$data = json_decode($stringData);
+//$data->{'mp3Files'} = "songs";
+
+$object = (object) array(
+'songs'   => $data->mp3Files,
+'server' => $data->filesBackend,
+'query'  => $data->query
+);
+
+ob_end_clean();
+print json_encode($data);
+
+/* Namba Search finished */
+
+/* Super.kg Search started */
+
+echo file_get_contents('api/search.php?pg=1&q=' . $qtxt);
+
+/* Super.kg Search finished */
+
+
 } elseif ($type == "love") {
 	
 	if (! $logged) {

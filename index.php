@@ -1,5 +1,4 @@
 <?php
-
 @session_start ();
 
 @ob_start ();
@@ -186,7 +185,7 @@ $mydatar1 = substr($mydatar1, 0, ( strLen( $mydatar1 ) ) );
 		        <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
 		    </filter>
 		</svg>
-           
+
 
 		<div id="altContent">
 			<h1>Nota is the best way to listening and sharing the music.</h1>

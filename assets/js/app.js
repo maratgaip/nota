@@ -3151,7 +3151,6 @@ BottomDisplay.Lyrics = {
     }
 };
 BottomDisplay.ShowText = function(a) {
-    //console.log(a);
     jQuery("#display_song").html("");
     jQuery("#display_song").removeAttr("href");
     jQuery("#display_artist").html("");
@@ -3174,7 +3173,6 @@ BottomDisplay.ShowText = function(a) {
     jQuery("#display_domain").attr("href", a.source)
 };
 BottomDisplay.ShowCoverArt = function(a) {
-    console.log("aa",a)
     jQuery(".currentartpic").css("background", "");
     jQuery(".currentartpic").css("background-image", Utils.CoverArt(a.image.extralarge, 45, a.artist_id));
     jQuery(".currentartpic").css("background-size", "cover");
@@ -10297,6 +10295,7 @@ var ArtistDetailsView = Backbone.View.extend({
         })
     },
     render: function() {
+        console.log("ssssge")
         $(this.el).html(this.template(this.model.toJSON()));
         $("#right").scrollTop(0);
         var artist_id_tab = this.artist_id;

@@ -47,142 +47,142 @@ $page = $db->safesql( $_REQUEST['page'] );
 if( ! $page) $page = 1;
 
 if ($type == 'explore'){
-	
+
 	if ( !$action || $action == 'top-of-the-week' ){
-		
+
 		$top_week = $db->query("SELECT COUNT(*) AS count, song_id FROM vass_analz WHERE `time` > '" . date( "Y-m-d", (time() - 7*24*3600) ) . "' GROUP BY song_id ORDER by count DESC LIMIT 0,200");
-		
+
 		while($top = $db->get_row($top_week)){
-			
+
 			if($top['song_id']) {
-				$row = $db->super_query("SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title, 
-				vass_artists.id AS artist_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id 
-				FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN 
+				$row = $db->super_query("SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title,
+				vass_artists.id AS artist_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id
+				FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN
 				vass_artists ON vass_songs.artist_id = vass_artists.id WHERE vass_songs.id = '" . $top['song_id'] . "'");
 					$songs .= "<li><a rel=\"child song\" rev=\"parent songs\" href=\"{$config['siteurl']}song/{$row['song_id']}\">" . stripslashes( $row['song_title'] ) . "</a> by <a href=\"{$config['siteurl']}search/" . trim(str_replace(" ", "+", stripslashes( $row['song_artist'] ))) . "\">" . stripslashes( $row['song_artist'] ) . "</a></li>";
 			}
 		}
-		
+
 		$content = '<h2>Top songs of the week on Kiandastream</h2><ol>' . $songs . '</ol>';
-		
+
 	}else{
-		
+
 		$name = $db->safesql ( $action );
-		
+
 		$row = $db->super_query ( "SELECT id FROM vass_genres WHERE name LIKE '%$name%' LIMIT 0,1" );
-		
-		$sql_result = $db->query ( "SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title, 
-		vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id FROM vass_songs LEFT JOIN vass_albums ON 
-		vass_songs.album_id = vass_albums.id LEFT JOIN vass_artists ON vass_songs.artist_id = vass_artists.id 
+
+		$sql_result = $db->query ( "SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title,
+		vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id FROM vass_songs LEFT JOIN vass_albums ON
+		vass_songs.album_id = vass_albums.id LEFT JOIN vass_artists ON vass_songs.artist_id = vass_artists.id
 		WHERE vass_artists.tag REGEXP '[[:<:]]" . $row ['id'] . "[[:>:]]' ORDER by vass_songs.id DESC LIMIT 0,500" );
-		
+
 		while ( $row = $db->get_row ( $sql_result ) ) {
-			
+
 			$songs .= "<li><a rel=\"child song\" rev=\"parent songs\" href=\"{$config['siteurl']}song/{$row['song_id']}\">" . stripslashes( $row['song_title'] ) . "</a> by <a href=\"{$config['siteurl']}search/" . trim(str_replace(" ", "+", stripslashes( $row['song_artist'] ))) . "\">" . stripslashes( $row['song_artist'] ) . "</a></li>";
-		
+
 		}
-		
+
 		$e_title = str_replace("%name%", $name, $config['genre_page']);
-		
+
 		$e_descr = str_replace("%name%", $name, $config['genre_page_descr']);
-		
+
 		$content = '<h2>Songs int tag: ' . $name . '</h2><ol>' . $songs . '</ol>';
-		
+
 	}
-	
+
 }elseif( $type == 'trending' ){
-	
+
 	if ( ! $action || $action == 'top-of-the-week' ){
-		
+
 		$trending = $db->query("SELECT COUNT(*) AS count, song_id FROM vass_analz WHERE `time` = '" . date( "Y-m-d" ) . "' GROUP BY song_id ORDER by count DESC LIMIT 0,20");
-		
+
 		while($top = $db->get_row($trending)){
-			
+
 			if($top['song_id']) {
-				$row = $db->super_query("SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title, 
-				vass_artists.id AS artist_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id 
-				FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN 
+				$row = $db->super_query("SELECT vass_songs.id AS song_id, vass_songs.loved, vass_songs.title AS song_title,
+				vass_artists.id AS artist_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id
+				FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN
 				vass_artists ON vass_songs.artist_id = vass_artists.id WHERE vass_songs.id = '" . $top['song_id'] . "'");
 					$songs .= "<li><a rel=\"child song\" rev=\"parent songs\"  href=\"{$config['siteurl']}song/{$row['song_id']}\">" . stripslashes( $row['song_title'] ) . "</a> by <a href=\"{$config['siteurl']}search/" . trim(str_replace(" ", "+", stripslashes( $row['song_artist'] ))) . "\">" . stripslashes( $row['song_artist'] ) . "</a></li>";
 			}
 		}
-		
+
 		$content = '<h2>Trending on Kiandastream</h2><ol>' . $songs . '</ol>';
-		
+
 	}
-	
+
 }elseif( $type == 'song' ){
-	
-	$row = $db->super_query("SELECT vass_songs.id, vass_songs.artist_id, vass_songs.id AS song_id, vass_songs.title AS song_title, 
-		vass_songs.album_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id 
-		FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id  LEFT JOIN vass_artists ON 
+
+	$row = $db->super_query("SELECT vass_songs.id, vass_songs.artist_id, vass_songs.id AS song_id, vass_songs.title AS song_title,
+		vass_songs.album_id, vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id
+		FROM vass_songs LEFT JOIN vass_albums ON vass_songs.album_id = vass_albums.id  LEFT JOIN vass_artists ON
 		vass_songs.artist_id = vass_artists.id WHERE vass_songs.id = '" . $ID . "' LIMIT 0,1");
-	
+
 	if( $row['song_title'] ){
-		
+
 		$e_title = str_replace("%name%", $row['song_title'], $config['song_page_title']);
-		
+
 		$e_title = str_replace("%artist%", $row['song_artist'], $e_title);
-		
+
 		$e_descr = str_replace("%name%", $row['song_title'], $config['song_page_descr']);
-		
+
 		$e_descr = str_replace("%artist%", $row['song_artist'], $e_descr);
-		
+
 		$content = '<h2>Listening ' . $e_title . '</h2><ol>' . $songs . '</ol>';
-		
+
 		$similar = $row['song_artist'];
-		
+
 		$hash = artisthash( $row['song_artist'] );
-		
+
 		if($row['artist_id']) {
-			
-			
+
+
 			$songs ['album'] = $row ['song_album'];
 			$songs ['url'] = stream ( $row ['hash'] );
-			
+
 			if($row ['artwork_url']) $songs ['image'] = songlist_images ( $row ['artwork_url'], $row['artist_id'] );
 			else $songs ['image'] = songlist_images ( $row ['album_id'], $row['artist_id'] );
-			
+
 			$songs ['artist'] = $row ['song_artist'];
-			
+
 			$facebook_image = $config[siteurl] . "static/albums/" . $row['album_id'] . '_large.jpg';
-			
+
 		}else{
-			
+
 			$songs ['album'] = $row ['description'];
 			$songs ['url'] = stream ( $row ['hash'] );
 			$songs ['image'] = songlist_images ( $row ['artwork_url'], $row['artist_id'] );
 			$songs ['artist'] = $row ['tag_list'];
-			
+
 			$facebook_image = $songs ['image']['large'];
-			
+
 		}
-		
+
 	}else{
-		
+
 		header('HTTP/1.0 404 Not Found');
-		
+
 	}
-	
+
 }elseif( $type == 'search' ){
-	
+
 	/*$keyword = trim($db->safesql($_GET['keyword']));
 	if(strlen($keyword) < 3) die();
-	$sql_result = $db->query ( "SELECT DISTINCT vass_songs.id AS song_id, vass_songs.title AS song_title, vass_songs.loved, 
-	vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id FROM vass_songs LEFT JOIN 
-	vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN vass_artists ON vass_songs.artist_id = vass_artists.id 
+	$sql_result = $db->query ( "SELECT DISTINCT vass_songs.id AS song_id, vass_songs.title AS song_title, vass_songs.loved,
+	vass_artists.name AS song_artist, vass_albums.name AS song_album, vass_albums.id AS album_id FROM vass_songs LEFT JOIN
+	vass_albums ON vass_songs.album_id = vass_albums.id LEFT JOIN vass_artists ON vass_songs.artist_id = vass_artists.id
 	WHERE vass_songs.title LIKE '%$keyword%' or vass_artists.name LIKE '%$keyword%' or vass_albums.name LIKE '%$keyword%' LIMIT 0,200" );
-	
+
 	while ( $row = $db->get_row ( $sql_result ) ) {
 		$songs .= "<li><a rel=\"child song\" rev=\"parent songs\" href=\"{$config['siteurl']}song/{$row['song_id']}\">" . stripslashes( $row['song_title'] ) . "</a> by <a href=\"{$config['siteurl']}search/" . trim(str_replace(" ", "+", stripslashes( $row['song_artist'] ))) . "\">" . stripslashes( $row['song_artist'] ) . "</a></li>";
 	}
-	
+
 	$e_title = str_replace("%keyword%", $keyword, $config['search_page_title']);
-	
+
 	$e_descr = str_replace("%keyword%",$keyword, $config['search_page_descr']);
-	
+
 	$content = '<h2>Searth Results</h2><ol>' . $songs . '</ol>';*/
-	
+
 }
 
 
@@ -247,8 +247,8 @@ HTML;
 
 $db->query ( "SELECT name FROM vass_genres ORDER by rand() LIMIT 0,100" );
 while($row = $db->get_row()){
-	$tags .= "<li><a rel=\"child tag\" rev=\"parent tags\" href=\"{$config['siteurl']}explore/{$row['name']}\">" . $row['name'] . "</a></li>";
-	
+$tags .= "<li><a rel=\"child tag\" rev=\"parent tags\" href=\"{$config['siteurl']}explore/{$row['name']}\">" . $row['name'] . "</a></li>";
+
 }
 
 echo <<<HTML
@@ -282,11 +282,11 @@ echo <<<HTML
 		if (hash.indexOf("/") != 0) {
 			hash = "/" + hash;
 		}
-		
+
 		//hash = hash.replace('trending/', 'trending');
-		
+
 		hash = hash.replace(/\/page\/[0-9]/g, '');
-		
+
 		if (hash == "/settings" || hash == "/settings/") {
 			window.location.href = player_root;
 		} else {
@@ -320,5 +320,5 @@ echo <<<HTML
 </html>
 HTML;
 
- $db->close ();
+$db->close ();
 ?>
