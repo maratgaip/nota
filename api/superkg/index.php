@@ -29,7 +29,15 @@
                     artistArr[i] = tempArtist;
                 }
             } else {
-                artistArr[0] = artist[0];
+                var tempArtist = '';
+                if (artist[0].charAt(artist[0].length-1) == " "){
+                    tempArtist = artist[0].slice(0,artist[0].length-1)
+                } else if (artist[0].charAt(0) == " "){
+                    tempArtist = artist[0].slice(1,artist[0].length)
+                } else {
+                    tempArtist = artist[0];
+                }
+                artistArr[0] = tempArtist;
             }
             obj.artist = artistArr;
             arr.push(obj);
