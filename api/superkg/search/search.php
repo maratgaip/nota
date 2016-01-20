@@ -13,33 +13,35 @@
 <script>
     $(document).ready(function() {
         var arr = [];
-
-        //var item = $('table.seriy tbody:first tr:first td:nth-child(2)')[2].childNodes[1];
-        //var item = $('table.seriy tbody:first tr:first td:nth-child(2)').find("div:not(:first-child)");
-        //var item = $('table.seriy tbody:first tr:first td:nth-child(2) div:not(:first)')[0].children[1];
-        var itemLength = $('table.seriy tbody:first tr:first td:nth-child(2) div:not(:first)').length;
         var item = $('table.seriy tbody:first tr:first td:nth-child(2) div:not(:first)');
 
-        console.log("aa", item)
-
-
         for (var i=0; i<item.length; i++) {
-            console.log("gg", item[i].childNodes[2])
+            //console.log("gg", item[i].childNodes[2])
         }
         $(item).each(function( index ) {
-
+            console.log("rrr",$(this)[0].children[1].children[0].innerText)
             var obj = {};
             obj.index = index;
-            console.log("lan",$(this).attr("href"))
-            obj.id = $(this).attr("href").split("/")[3];
-            obj.song = $(this).text().split('"')[1];
-            obj.artist = $(this).text().split('"')[0];
+            obj.id = $(this)[0].children[1].attributes['href'].value;
+            obj.song = $(this)[0].children[1].children[0].innerText;
             arr.push(obj);
         });
-
-        console.log(item);
+        var jsonObject = new Object();
+        jsonObject.list = arr;
         $("#superkg").html("");
-        $("#content").html(item);
+        $.ajax
+        ({
+            type: "POST",
+            dataType : 'json',
+            async: false,
+            url: 'resultSearch.php',
+            data: { data: JSON.stringify(jsonObject) },
+            success: function () {window.location.href = 'resultSearch.json';
+            },
+            failure: function() {alert("Error!");}
+        });
+
+        $("#superkg").html("");
 /*
         return false;
         $(item).each(function( index ) {
