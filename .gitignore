@@ -3,3 +3,4 @@
 includes/config.inc.php
 includes/db.php
 static/
+/.htaccess
