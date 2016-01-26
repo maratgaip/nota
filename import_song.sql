@@ -16,7 +16,7 @@ BEGIN
 		set l_artist_id = (select distinct id from vass_artists where name = i_artist);
         if l_artist_id is null then
         begin
-			insert into vass_artists (name, tag, bio, follow, link) values(i_artist, i_artist, i_artist, 0, '');
+			insert into vass_artists (name, tag, bio, follow, link) values(i_artist, '', i_artist, 0, '');
             set l_artist_id = last_insert_id();
 		end;
         end if;

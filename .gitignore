@@ -3,3 +3,5 @@
 includes/config.inc.php
 includes/db.php
 static/
+php.myadmin/
+word.press/
