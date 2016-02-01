@@ -6,7 +6,7 @@ define ("MYSQLHOST", "127.0.0.1");
 //for server
 //define ("MYSQLHOST", "localhost");
 
-define ("MYSQLDBNAME", "nota");
+define ("MYSQLDBNAME", "notadb");
 
 define ("MYSQLDBUSER", "root");
 

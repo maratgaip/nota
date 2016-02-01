@@ -9,7 +9,7 @@ json_data = json.loads(json_string)
 
 #import_song
 
-con = MySQLdb.connect(host='127.0.0.1', user='nota', passwd='nota', db='nota')
+con = MySQLdb.connect(host='127.0.0.1', user='root', passwd='Not@db', db='nota')
 cur = con.cursor()
 
 con.set_character_set('utf8')

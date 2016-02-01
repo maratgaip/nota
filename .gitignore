@@ -5,4 +5,5 @@ includes/db.php
 static/
 php.myadmin/
 word.press/
+/includes/db.php
 /.htaccess

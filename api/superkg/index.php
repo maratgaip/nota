@@ -54,7 +54,7 @@
             async: false,
             url: 'result.php',
             data: { data: JSON.stringify(jsonObject) },
-            success: function () {window.location.href = 'result.json';
+            success: function () {//window.location.href = 'result.json';
              },
             failure: function() {alert("Error!");}
         });
